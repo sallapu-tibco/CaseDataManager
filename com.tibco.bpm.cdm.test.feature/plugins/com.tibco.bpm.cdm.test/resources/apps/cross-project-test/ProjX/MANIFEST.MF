@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+RASC-Version: 2
+Application-Name: ProjX
+Application-Version: 441300.0.0.20191124112951538
+Application-Internal-Name: com.crossproj.projx
+Creation-Date: 2019-11-24T11:29:51.538Z
+Governance-State: DRAFT
+Micro-Services: Case-Manager
+Case-Manager: modelx1.dm,modelx2.dm 
+Application-Dependencies: com.crossproj.proja;version="[1.0.0,2.0.0)",com.crossproj.projb;version="[1.0.0,2.0.0)",com.crossproj.projc;version="[1.0.0,2.0.0)",com.crossproj.projd;version="[1.0.0,2.0.0)"
+

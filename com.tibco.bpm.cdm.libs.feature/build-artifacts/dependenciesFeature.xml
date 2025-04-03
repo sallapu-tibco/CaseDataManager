@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feature id="com.tibco.bpm.cdm.libs.feature.extension.site"
+         version="2.1.0.002.2025-03-07-0652"
+         label="com.tibco.bpm.cdm.libs.feature Dependencies Feature">
+    <requires>
+    </requires>
+</feature>

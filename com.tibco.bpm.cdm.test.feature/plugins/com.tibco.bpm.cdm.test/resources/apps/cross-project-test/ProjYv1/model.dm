@@ -1,0 +1,145 @@
+{
+   "namespace":"com.crossproj.projy.modely1",
+   "formatVersion":2,
+   "structuredTypes":[
+      {
+         "name":"CaseY1",
+         "label":"CaseY1",
+         "isCase":true,
+         "stateModel":{
+            "states":[
+               {
+                  "label":"Case Created",
+                  "value":"CASECREATED - Y1"
+               },
+               {
+                  "label":"Case Completed",
+                  "value":"CASECOMPLETED -Y1",
+                  "isTerminal":true
+               }
+            ]
+         },
+         "attributes":[
+            {
+               "name":"cid",
+               "label":"cid",
+               "type":"base:Text",
+               "isIdentifier":true,
+               "isSearchable":true,
+               "isSummary":true,
+               "constraints":[
+                  {
+                     "name":"length",
+                     "value":"50"
+                  }
+               ],
+               "isMandatory":true
+            },
+            {
+               "name":"state",
+               "label":"state",
+               "type":"base:Text",
+               "isSearchable":true,
+               "isState":true,
+               "isSummary":true,
+               "isMandatory":true
+            },
+            {
+               "name":"a2cross",
+               "label":"a2cross",
+               "type":"com.crossproj.proja.modela2.ClassA2"
+            },
+            {
+               "name":"b1cross",
+               "label":"b1cross",
+               "type":"com.crossproj.projb.modelb1.ClassB1"
+            },
+            {
+               "name":"c1cross",
+               "label":"c1cross",
+               "type":"com.crossproj.projc.modelc1.ClassC1"
+            },
+            {
+               "name":"d2cross",
+               "label":"d2cross",
+               "type":"com.crossproj.projd.modeld2.ClassD2"
+            }
+         ]
+      },
+      {
+         "name":"CaseY11",
+         "label":"CaseY11",
+         "isCase":true,
+         "stateModel":{
+            "states":[
+               {
+                  "label":"Case Created",
+                  "value":"CASECREATED - Y11"
+               },
+               {
+                  "label":"Case Completed",
+                  "value":"CASECOMPLETED - Y11",
+                  "isTerminal":true
+               }
+            ]
+         },
+         "attributes":[
+            {
+               "name":"cidy1",
+               "label":"cidy1",
+               "type":"base:Text",
+               "isIdentifier":true,
+               "isSearchable":true,
+               "isSummary":true,
+               "constraints":[
+                  {
+                     "name":"length",
+                     "value":"51"
+                  }
+               ],
+               "isMandatory":true
+            },
+            {
+               "name":"state",
+               "label":"state",
+               "type":"base:Text",
+               "isSearchable":true,
+               "isState":true,
+               "isSummary":true,
+               "isMandatory":true
+            }
+         ]
+      }
+   ],
+   "links":[
+      {
+         "id":"248163264",
+         "end1":{
+            "owner":"CaseY1",
+            "name":"refersthecase",
+            "label":"Refers the cases",
+            "isArray":false
+         },
+         "end2":{
+            "owner":"CaseY11",
+            "name":"referredbythecases",
+            "label":"Referred by the cases",
+            "isArray":true
+         }
+      },
+      {
+         "id":"249164267",
+         "end1":{
+            "owner":"CaseY11",
+            "name":"likesitsownkind",
+            "label":"Likes It's Own Kind",
+            "isArray":false
+         },
+         "end2":{
+            "owner":"CaseY11",
+            "name":"likedbyitsownkind",
+            "label":"Liked By It's Own Kind"
+         }
+      }
+   ]
+}

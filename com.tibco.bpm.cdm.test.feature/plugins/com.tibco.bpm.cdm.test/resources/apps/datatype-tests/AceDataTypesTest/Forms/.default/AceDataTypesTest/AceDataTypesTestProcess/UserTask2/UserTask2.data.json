@@ -1,0 +1,377 @@
+{
+    "body": {
+        "inputs": [
+
+        ],
+        "outputs": [
+
+        ],
+        "inouts": [
+            {
+                "name":"booleanParameter",
+                "simple": [
+                    true
+                ]
+            },
+            {
+                "name":"dateParameter",
+                "simple": [
+                    "2019-08-08"
+                ]
+            },
+            {
+                "name":"dateTimeParameter",
+                "simple": [
+                    "2019-08-08T15:31:12"
+                ]
+            },
+            {
+                "name":"numberDecimalParameter",
+                "simple": [
+                    1.00
+                ]
+            },
+            {
+                "name":"numberIntegerParameter",
+                "simple": [
+                    1
+                ]
+            },
+            {
+                "name":"performerParameter",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"textParameter",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"timeParameter",
+                "simple": [
+                    "15:31:12"
+                ]
+            },
+            {
+                "name":"uriParameter",
+                "simple": [
+                    "Text"
+                ]
+            },
+            {
+                "name":"simpleSingleAttributesParameter",
+                "structured": [
+                    {
+                        "booleanAttr": false,
+                        "dateAttr": "2019-08-08",
+                        "dateTimeTZAttr": "2019-08-08T15:31:12+01:00",
+                        "numberDecimalAttr": 1.0000,
+                        "numberIntegerAttr": 1,
+                        "performerAttr": "performerAttr",
+                        "textAttr": "textAttr",
+                        "textEnumAttr": "ENUMLIT1",
+                        "timeAttr": "15:31:12",
+                        "uriAttr": "http://example.com"
+                    }
+                ]
+            },
+            {
+                "name":"complexSingleParameter",
+                "structured": [
+                    {
+                        "parentAttr1": "parentAttr1",
+                        "parentAttr2": "parentAttr2",
+                        "child": {
+                            "childAttr1": "childAttr1",
+                            "childAttr2": "childAttr2"
+                        },
+                        "children": [
+                            {
+                                "childAttr1": "childAttr10",
+                                "childAttr2": "childAttr20"
+                            },
+                            {
+                                "childAttr1": "childAttr11",
+                                "childAttr2": "childAttr21"
+                            },
+                            {
+                                "childAttr1": "childAttr12",
+                                "childAttr2": "childAttr22"
+                            },
+                            {
+                                "childAttr1": "childAttr13",
+                                "childAttr2": "childAttr23"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name":"booleanArrayField",
+                "simple": [
+                    true,
+                    true,
+                    true,
+                    true
+
+                ]
+            },
+            {
+                "name":"dateArrayField",
+                "simple": [
+                    "2019-08-08",
+                    "2019-08-09",
+                    "2019-08-10",
+                    "2019-08-11"
+
+                ]
+            },
+            {
+                "name":"dateTimeArrayField",
+                "simple": [
+                    "2019-08-08T15:31:12",
+                    "2019-08-09T15:31:12",
+                    "2019-08-10T15:31:12",
+                    "2019-08-11T15:31:12"
+
+                ]
+            },
+            {
+                "name":"numberDecimalArrayField",
+                "simple": [
+                    1.00,
+                    2.00,
+                    3.00,
+                    4.00
+
+                ]
+            },
+            {
+                "name":"numberIntegerArrayField",
+                "simple": [
+                    1,
+                    2,
+                    3,
+                    4
+
+                ]
+            },
+            {
+                "name":"performerArrayField",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"textArrayField",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"timeArrayField",
+                "simple": [
+                    "15:31:12",
+                    "16:31:12",
+                    "17:31:12",
+                    "18:31:12"
+
+                ]
+            },
+            {
+                "name":"uriArrayField",
+                "simple": [
+                    "Text0",
+                    "Text1",
+                    "Text2",
+                    "Text3"
+
+                ]
+            },
+            {
+                "name":"simpleArrayAttributesField",
+                "structured": [
+                    {
+                        "booleanArrayAttr": [
+                            false,
+                            false,
+                            false,
+                            false
+                        ],
+                        "dateArrayAttr": [
+                            "2019-08-08",
+                            "2019-08-09",
+                            "2019-08-10",
+                            "2019-08-11"
+                        ],
+                        "dateTimeTZArrayAttr": [
+                            "2019-08-08T15:31:12+01:00",
+                            "2019-08-09T15:31:12+01:00",
+                            "2019-08-10T15:31:12+01:00",
+                            "2019-08-11T15:31:12+01:00"
+                        ],
+                        "numberDecimalArrayAttr": [
+                            1.0000,
+                            2.0000,
+                            3.0000,
+                            4.0000
+                        ],
+                        "numberIntegerArrayAttr": [
+                            1,
+                            2,
+                            3,
+                            4
+                        ],
+                        "performerArrayAttr": [
+                            "performerArrayAttr0",
+                            "performerArrayAttr1",
+                            "performerArrayAttr2",
+                            "performerArrayAttr3"
+                        ],
+                        "textArrayAttr": [
+                            "textArrayAttr0",
+                            "textArrayAttr1",
+                            "textArrayAttr2",
+                            "textArrayAttr3"
+                        ],
+                        "textEnumArrayAttr": [
+                            "ENUMLIT1"
+                        ],
+                        "timeArrayAttr": [
+                            "15:31:12",
+                            "16:31:12",
+                            "17:31:12",
+                            "18:31:12"
+                        ],
+                        "uriArrayAttr": [
+                            "http://example0.com",
+                            "http://example1.com",
+                            "http://example2.com",
+                            "http://example3.com"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name":"complexArrayField",
+                "structured": [
+                    {
+                        "parentAttr1": "parentAttr10",
+                        "parentAttr2": "parentAttr20",
+                        "child": {
+                            "childAttr1": "childAttr10",
+                            "childAttr2": "childAttr20"
+                        },
+                        "children": [
+                            {
+                                "childAttr1": "childAttr10",
+                                "childAttr2": "childAttr20"
+                            },
+                            {
+                                "childAttr1": "childAttr11",
+                                "childAttr2": "childAttr21"
+                            },
+                            {
+                                "childAttr1": "childAttr12",
+                                "childAttr2": "childAttr22"
+                            },
+                            {
+                                "childAttr1": "childAttr13",
+                                "childAttr2": "childAttr23"
+                            }
+                        ]
+                    },
+                    {
+                        "parentAttr1": "parentAttr11",
+                        "parentAttr2": "parentAttr21",
+                        "child": {
+                            "childAttr1": "childAttr11",
+                            "childAttr2": "childAttr21"
+                        },
+                        "children": [
+                            {
+                                "childAttr1": "childAttr11",
+                                "childAttr2": "childAttr21"
+                            },
+                            {
+                                "childAttr1": "childAttr12",
+                                "childAttr2": "childAttr22"
+                            },
+                            {
+                                "childAttr1": "childAttr13",
+                                "childAttr2": "childAttr23"
+                            },
+                            {
+                                "childAttr1": "childAttr14",
+                                "childAttr2": "childAttr24"
+                            }
+                        ]
+                    },
+                    {
+                        "parentAttr1": "parentAttr12",
+                        "parentAttr2": "parentAttr22",
+                        "child": {
+                            "childAttr1": "childAttr12",
+                            "childAttr2": "childAttr22"
+                        },
+                        "children": [
+                            {
+                                "childAttr1": "childAttr12",
+                                "childAttr2": "childAttr22"
+                            },
+                            {
+                                "childAttr1": "childAttr13",
+                                "childAttr2": "childAttr23"
+                            },
+                            {
+                                "childAttr1": "childAttr14",
+                                "childAttr2": "childAttr24"
+                            },
+                            {
+                                "childAttr1": "childAttr15",
+                                "childAttr2": "childAttr25"
+                            }
+                        ]
+                    },
+                    {
+                        "parentAttr1": "parentAttr13",
+                        "parentAttr2": "parentAttr23",
+                        "child": {
+                            "childAttr1": "childAttr13",
+                            "childAttr2": "childAttr23"
+                        },
+                        "children": [
+                            {
+                                "childAttr1": "childAttr13",
+                                "childAttr2": "childAttr23"
+                            },
+                            {
+                                "childAttr1": "childAttr14",
+                                "childAttr2": "childAttr24"
+                            },
+                            {
+                                "childAttr1": "childAttr15",
+                                "childAttr2": "childAttr25"
+                            },
+                            {
+                                "childAttr1": "childAttr16",
+                                "childAttr2": "childAttr26"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

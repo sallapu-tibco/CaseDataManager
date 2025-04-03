@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://cxf.apache.org/configuration/beans"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:cxf="http://cxf.apache.org/core"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://cxf.apache.org/configuration/beans 
+		http://cxf.apache.org/schemas/configuration/cxf-beans.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://cxf.apache.org/jaxrs 
+		http://cxf.apache.org/schemas/jaxrs.xsd
+        http://cxf.apache.org/core 
+        http://cxf.apache.org/schemas/core.xsd">
+
+    
+	<bean id="transactionManagerProxy" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>	
+
+	<bean id="scriptEngineTx"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="transactionManagerProxy" />
+		<property name="target" ref="scriptEngine" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRES_NEW,-Exception</prop>
+			</props>
+		</property>
+	</bean>	
+	
+	<bean id="scriptEngineInvoker" class="com.tibco.bpm.cdm.yy.ScriptEngineInvoker">
+		<property name="scriptEngine" ref="scriptEngineTx" />
+	</bean>
+
+	<bean id="scriptTester" class="com.tibco.bpm.cdm.yy.ScriptTester" depends-on="scriptEngineInvoker">
+		<property name="invoker" ref="scriptEngineInvoker" />
+	</bean>
+	
+	<bean id="clnObserverAll" class="com.tibco.bpm.cdm.yy.CLNObserver"/>
+	<bean id="clnObserverUpdated" class="com.tibco.bpm.cdm.yy.CLNObserver"/>
+	<bean id="clnObserverDeleted" class="com.tibco.bpm.cdm.yy.CLNObserver"/>
+	<bean id="clnObserverUpdatedAndDeleted" class="com.tibco.bpm.cdm.yy.CLNObserver"/>
+	
+	<!-- REST impl for /clns -->
+	<bean id="clnsService" class="com.tibco.bpm.cdm.yy.rest.impl.ClnsServiceImpl">
+		<property name="clnObserverAll" ref="clnObserverAll" />
+		<property name="clnObserverUpdated" ref="clnObserverUpdated" />
+		<property name="clnObserverDeleted" ref="clnObserverDeleted" />
+		<property name="clnObserverUpdatedAndDeleted" ref="clnObserverUpdatedAndDeleted" />
+	</bean>	
+
+	<bean id="autoPurgeService" class="com.tibco.bpm.cdm.yy.rest.impl.AutoPurgeServiceImpl">
+		<property name="jobQueue" ref="jobQueue" />
+	</bean>	
+
+	<bean id="toolsService" class="com.tibco.bpm.cdm.yy.rest.impl.ToolsServiceImpl">
+		<property name="dataSource" ref="dataSource" />
+	</bean>	
+
+	<bean id="jobQueue" class="com.tibco.bpm.cdm.yy.YYJobQueueImpl">
+		<property name="dataSource" ref="dataSource" />
+<!-- 		<property name="notificationThread" ref="pgNotificationThread" /> -->
+	</bean>
+		
+</beans>

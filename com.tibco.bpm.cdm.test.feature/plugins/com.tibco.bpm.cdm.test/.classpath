@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/jcommander-1.48.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-beans-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-context-support-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-core-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-dao-2.0.8.jar"/>
+	<classpathentry kind="lib" path="lib/spring-expression-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-jdbc-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-orm-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-test-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-tx-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-web-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-webmvc-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-websocket-4.3.10.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-42.1.4.jar"/>
+	<classpathentry kind="lib" path="resources"/>
+	<classpathentry kind="lib" path="lib/testng-6.14.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

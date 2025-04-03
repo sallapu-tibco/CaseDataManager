@@ -1,0 +1,22 @@
+{
+	"number": POLICYNUMBERTOBEREPLACED,
+	"state": "STATETOBEREPLACED",
+	"policyStartDate": "DATETOBEREPLACED",
+	"policyStartTime": "TIMETOBEREPLACED",
+	"premium": PREMIUMTOBEREPLACED,
+	"comments": "COMMENTSTOBEREPLACED",
+	"claims": [{
+		"date": "2004-06-15",
+		"blame": "POLICYHOLDER",
+		"description": ["Smelly yellow chair","Fashionable turquoise carpet","Fashionable green apple"]
+
+	}, {
+		"date": "1984-11-09",
+		"blame": "THIRD_PARTY",
+		"description": ["Fashionable bronze raspberry pi", "Fashionable black mat", "Interesting brown car"]
+	}, {
+		"date": "2014-06-06",
+		"blame": "ACT_OF_GOD",
+		"description": ["Shrunken beige elderberry", "Tragic gold date", "Slow green laptop"]
+	}]
+}

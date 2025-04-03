@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+RASC-Version: 2
+Application-Name: Housing
+Application-Version: 1.0.0.20190430153000001
+Application-Internal-Name: com.example.housing
+Creation-Date: 2019-04-30T15:30:00.001Z
+Governance-State: DRAFT
+Application-Dependencies: com.example.ProjectX;version="[1.0.0.0,2)"
+Micro-Services: Case-Manager
+Case-Manager: cm/housing.dm

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_cB6p8HDaEem_74EEWfKSTQ" name="com.tibco.ace.datainit.test">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cB6p8XDaEem_74EEWfKSTQ" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cB6p8nDaEem_74EEWfKSTQ" key="author" value="aprice"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cB6p83DaEem_74EEWfKSTQ" key="created" value="1557245509775"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cB6p9HDaEem_74EEWfKSTQ" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_d38XcHDaEem_74EEWfKSTQ" name="Pet">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_gdHp8HDaEem_74EEWfKSTQ" name="name" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gdQz4XDaEem_74EEWfKSTQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gdQz4nDaEem_74EEWfKSTQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_iJu8wHDaEem_74EEWfKSTQ" name="type" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJu8wnDaEem_74EEWfKSTQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJu8w3DaEem_74EEWfKSTQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cefRMHDaEem_74EEWfKSTQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cefRMXDaEem_74EEWfKSTQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_d38XcXDaEem_74EEWfKSTQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_d38XcnDaEem_74EEWfKSTQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_cCyMoHDaEem_74EEWfKSTQ" type="Business Object Model" element="_cB6p8HDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test?" name="DataInitTest.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_cTlowHDaEem_74EEWfKSTQ" type="1007" element="_cB6p8HDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test?">
+      <children xmi:type="notation:Node" xmi:id="_cTloxHDaEem_74EEWfKSTQ" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_cTloxXDaEem_74EEWfKSTQ" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_cTvZwHDaEem_74EEWfKSTQ" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZwXDaEem_74EEWfKSTQ" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZwnDaEem_74EEWfKSTQ" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZw3DaEem_74EEWfKSTQ" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZxHDaEem_74EEWfKSTQ" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZxXDaEem_74EEWfKSTQ" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZxnDaEem_74EEWfKSTQ" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_cTvZx3DaEem_74EEWfKSTQ" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_cTvZyHDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_cTvZyXDaEem_74EEWfKSTQ" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_cTvZynDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_cTvZy3DaEem_74EEWfKSTQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_cTlowXDaEem_74EEWfKSTQ" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_cTlownDaEem_74EEWfKSTQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cTlow3DaEem_74EEWfKSTQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_d4ZDYHDaEem_74EEWfKSTQ" type="1002" element="_d38XcHDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet?">
+      <children xmi:type="notation:Node" xmi:id="_d4ZDZHDaEem_74EEWfKSTQ" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_d4ZDZXDaEem_74EEWfKSTQ" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_d4ZDZnDaEem_74EEWfKSTQ" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_d4ZDZ3DaEem_74EEWfKSTQ" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_gdQz43DaEem_74EEWfKSTQ" type="2001" element="_gdHp8HDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet%3a%3aname?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gdQz5HDaEem_74EEWfKSTQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_iJ4GsHDaEem_74EEWfKSTQ" type="2001" element="_iJu8wHDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet%3a%3atype?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_iJ4GsXDaEem_74EEWfKSTQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_d4ZDaHDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_d4ZDaXDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_d4ZDanDaEem_74EEWfKSTQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_d4ZDa3DaEem_74EEWfKSTQ" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_d4ZDbHDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_d4ZDbXDaEem_74EEWfKSTQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_d4ZDbnDaEem_74EEWfKSTQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_d4ZDYXDaEem_74EEWfKSTQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_d4ZDYnDaEem_74EEWfKSTQ" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d4ZDY3DaEem_74EEWfKSTQ" x="239" y="125"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_cCyMoXDaEem_74EEWfKSTQ"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_cCyMonDaEem_74EEWfKSTQ"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_d4FhYHDaEem_74EEWfKSTQ" displayLabel="Pet" base_NamedElement="_d38XcHDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gdQz4HDaEem_74EEWfKSTQ" displayLabel="Name" base_NamedElement="_gdHp8HDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet%3a%3aname?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_iJu8wXDaEem_74EEWfKSTQ" displayLabel="Type" base_NamedElement="_iJu8wHDaEem_74EEWfKSTQ?com.tibco.ace.datainit.test%3a%3aPet%3a%3atype?"/>
+</xmi:XMI>

@@ -1,0 +1,153 @@
+  # YY API for CDM
+  swagger: '2.0'
+  info:
+    title: YY API
+    description: YY test companion for CDM
+    version: "1.0.0"
+  schemes:
+    [http, https]
+  basePath: /bpm/yy
+  consumes:
+    - application/json
+  produces:
+    - application/json
+  tags:
+    - name: CLN
+      description: Case Lifecycle Notifications
+    - name: Tools
+      description: Utility functions
+  paths:
+    /tools/setModificationTimestamp:
+      get:
+        summary: Sets the modification timestamp of the given case to the given ISO-8601 value
+        tags: 
+          - Tools
+        parameters:
+          - in: query
+            name: caseReference
+            type: string
+          - in: query
+            name: modificationTimestamp
+            type: string
+        responses:
+          200:
+            description: OK
+          500:
+            description: |
+              Internal Server Error
+            schema:
+              $ref: '#/definitions/Error'
+    /clns:
+      get:
+        summary: Fetch state of CLN capturer, optionally enabling/disabling it first according to the 'enabled' query parameter.
+        tags: 
+          - CLN        
+        parameters:
+          - in: query
+            name: enabled
+            type: boolean
+        responses:
+          200:
+            description: OK
+            schema:
+              $ref: '#/definitions/CLNsGetResponseBody'
+          500:
+            description: |
+              Internal Server Error
+            schema:
+              $ref: '#/definitions/Error'
+    /clns/messages:
+      get:
+        summary: Fetch all captured CLNs and remove them from the server
+        tags: 
+          - CLN            
+        responses:
+          200:
+            description: OK
+            schema:
+              $ref: '#/definitions/CLNsMessagesGetResponseBody'
+          500:
+            description: |
+              Internal Server Error
+            schema:
+              $ref: '#/definitions/Error'
+    /autoPurge/cancelJobs:
+      get:
+        summary: Cancels top-level Auto Purge jobs
+        tags:
+          - Auto Purge
+        responses:
+          200:
+            description: Status
+            schema:
+              type: string
+          default:
+            description: Error response
+            schema:
+              $ref: '#/definitions/Error'
+    /autoPurge/createJob:
+      get:
+        summary: Creates a new top-level Auto Purge job, set to run after the specified delay (seconds)
+        tags:
+          - Auto Purge
+        parameters:
+          - in: query
+            name: delay
+            type: integer
+        responses:
+          200:
+            description: Status
+            schema:
+              type: string
+          default:
+            description: Error response
+            schema:
+              $ref: '#/definitions/Error'
+  definitions:
+    CLNsGetResponseBody:
+      properties:
+        enabled:
+          type: boolean
+    CLNsMessagesGetResponseBody:
+      properties:
+        all:
+          $ref: '#/definitions/CLNsObserverInfo'
+        updated:
+          $ref: '#/definitions/CLNsObserverInfo'
+        deleted:
+          $ref: '#/definitions/CLNsObserverInfo'
+        updatedAndDeleted:
+          $ref: '#/definitions/CLNsObserverInfo'
+    CLNsObserverInfo:
+      properties:
+        clns:
+          type: array
+          items:
+            $ref: '#/definitions/CLN'
+    CLN:
+      properties:
+        event:
+          type: string
+        caseReferences:
+          type: array
+          items:
+            type: string          
+    ContextAttribute:
+      properties:
+        name: 
+          type: string
+        value:
+          type: string
+    Error:
+      type: object
+      properties:
+        errorMsg:
+          type: string
+        errorCode:
+          type: string
+        stackTrace:
+          type: string
+        contextAttributes:
+          type: array
+          items:
+            $ref: '#/definitions/ContextAttribute'

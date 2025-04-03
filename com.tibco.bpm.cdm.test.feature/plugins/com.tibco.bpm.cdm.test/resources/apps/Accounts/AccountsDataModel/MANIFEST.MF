@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+RASC-Version: 1
+Application-Name: AccountsDataModel
+Application-Version: 1.0.0.20190417163923357
+Application-Internal-Name: com.example.bankdatamodel
+Creation-Date: 2019-04-17T15:39:22.680Z
+Governance-State: DRAFT
+Micro-Services: Case-Manager
+Case-Manager: cm/com.example.bankdatamodel.dm
+

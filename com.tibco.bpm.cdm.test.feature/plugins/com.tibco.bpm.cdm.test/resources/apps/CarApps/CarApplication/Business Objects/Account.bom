@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BOMGlobalDataProfile="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0 pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_1EVckL9dEem8UKzfMV-V-Q" name="com.example.account">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1EVckb9dEem8UKzfMV-V-Q" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1EVckr9dEem8UKzfMV-V-Q" key="author" value="jaugusti"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1EVck79dEem8UKzfMV-V-Q" key="created" value="1565878132569"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1EVclL9dEem8UKzfMV-V-Q" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_2F_G0L9dEem8UKzfMV-V-Q" name="Account">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3EfWcL9dEem8UKzfMV-V-Q" name="accountId" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Esx0L9dEem8UKzfMV-V-Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Esx0b9dEem8UKzfMV-V-Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AYOLoL9eEem8UKzfMV-V-Q" name="accountState" type="_4XR0AL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AYOysr9eEem8UKzfMV-V-Q" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AYPZwL9eEem8UKzfMV-V-Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EHYlAL9eEem8UKzfMV-V-Q" name="name" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EHZMEb9eEem8UKzfMV-V-Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EHZMEr9eEem8UKzfMV-V-Q" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_OU6wAL9eEem8UKzfMV-V-Q" name="address" aggregation="composite">
+        <type xmi:type="uml:Class" href="CarApplication.bom#_2JJZwLQ_EemsXKl0xgIxkA?com.example.carapplication%3a%3aAddress?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OU7XEb9eEem8UKzfMV-V-Q"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OU7-IL9eEem8UKzfMV-V-Q" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_4XR0AL9dEem8UKzfMV-V-Q" name="AccountStates">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_51EAoL9dEem8UKzfMV-V-Q" name="ACTIVE" classifier="_4XR0AL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_51FOwL9dEem8UKzfMV-V-Q" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_51FOwb9dEem8UKzfMV-V-Q" value="ACTIVE"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6skQYL9dEem8UKzfMV-V-Q" name="INACTIVE" classifier="_4XR0AL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6sk3cL9dEem8UKzfMV-V-Q" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_6sk3cb9dEem8UKzfMV-V-Q" value="INACTIVE"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_1EVclb9dEem8UKzfMV-V-Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1EVclr9dEem8UKzfMV-V-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_2GA8AL9dEem8UKzfMV-V-Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2GA8Ab9dEem8UKzfMV-V-Q" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_1EfNkL9dEem8UKzfMV-V-Q" type="Business Object Model" element="_1EVckL9dEem8UKzfMV-V-Q?com.example.account?" name="Account.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_1FWwQL9dEem8UKzfMV-V-Q" type="1007" element="_1EVckL9dEem8UKzfMV-V-Q?com.example.account?">
+      <children xmi:type="notation:Node" xmi:id="_1FX-YL9dEem8UKzfMV-V-Q" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_1FX-Yb9dEem8UKzfMV-V-Q" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1FYlcL9dEem8UKzfMV-V-Q" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_1FYlcb9dEem8UKzfMV-V-Q" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_1FZMgL9dEem8UKzfMV-V-Q" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_1FZMgb9dEem8UKzfMV-V-Q" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_1FZMgr9dEem8UKzfMV-V-Q" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_1FZzkL9dEem8UKzfMV-V-Q" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_1FZzkb9dEem8UKzfMV-V-Q" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_1FaaoL9dEem8UKzfMV-V-Q" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_1Faaob9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_1Faaor9dEem8UKzfMV-V-Q" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_1Faao79dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_1FaapL9dEem8UKzfMV-V-Q"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_1FWwQb9dEem8UKzfMV-V-Q" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_1FWwQr9dEem8UKzfMV-V-Q"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1FWwQ79dEem8UKzfMV-V-Q"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_2GpOIL9dEem8UKzfMV-V-Q" type="1002" element="_2F_G0L9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount?">
+      <children xmi:type="notation:Node" xmi:id="_2Gp1ML9dEem8UKzfMV-V-Q" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_2GqcQL9dEem8UKzfMV-V-Q" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_2GrDUL9dEem8UKzfMV-V-Q" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_2GrDUb9dEem8UKzfMV-V-Q" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_3ExDQL9dEem8UKzfMV-V-Q" type="2001" element="_3EfWcL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountId?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_3ExDQb9dEem8UKzfMV-V-Q"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_AYUSQL9eEem8UKzfMV-V-Q" type="2001" element="_AYOLoL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountState?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AYUSQb9eEem8UKzfMV-V-Q"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EHc2cL9eEem8UKzfMV-V-Q" type="2001" element="_EHYlAL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aname?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EHc2cb9eEem8UKzfMV-V-Q"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_OVBdsL9eEem8UKzfMV-V-Q" type="2001" element="_OU6wAL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_OVBdsb9eEem8UKzfMV-V-Q"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_2GrDUr9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2GrDU79dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2GrDVL9dEem8UKzfMV-V-Q"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_2GrqYL9dEem8UKzfMV-V-Q" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_2GrqYb9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_2GrqYr9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_2GrqY79dEem8UKzfMV-V-Q"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_2GpOIb9dEem8UKzfMV-V-Q" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_2GpOIr9dEem8UKzfMV-V-Q" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2GpOI79dEem8UKzfMV-V-Q" x="398" y="259"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_4Xjg0L9dEem8UKzfMV-V-Q" type="1004" element="_4XR0AL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates?">
+      <children xmi:type="notation:Node" xmi:id="_4XkH4L9dEem8UKzfMV-V-Q" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_4XkH4b9dEem8UKzfMV-V-Q" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_4Xku8L9dEem8UKzfMV-V-Q" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_4XlWAL9dEem8UKzfMV-V-Q" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_51JgML9dEem8UKzfMV-V-Q" type="2003" element="_51EAoL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates%3a%3aACTIVE?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_51JgMb9dEem8UKzfMV-V-Q"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_6sn6wL9dEem8UKzfMV-V-Q" type="2003" element="_6skQYL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates%3a%3aINACTIVE?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_6sn6wb9dEem8UKzfMV-V-Q"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_4XlWAb9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_4XlWAr9dEem8UKzfMV-V-Q"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_4XlWA79dEem8UKzfMV-V-Q"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_4Xjg0b9dEem8UKzfMV-V-Q" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_4Xjg0r9dEem8UKzfMV-V-Q" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4Xjg079dEem8UKzfMV-V-Q" x="711" y="105"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_1EfNkb9dEem8UKzfMV-V-Q"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_1EfNkr9dEem8UKzfMV-V-Q"/>
+  </notation:Diagram>
+  <BOMGlobalDataProfile:Case xmi:id="_2F_t4L9dEem8UKzfMV-V-Q" base_Class="_2F_G0L9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount?" summaryAttributes="accountId accountState name"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_2GCKIL9dEem8UKzfMV-V-Q" displayLabel="Account" base_NamedElement="_2F_G0L9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount?"/>
+  <BOMGlobalDataProfile:AutoCaseIdentifier xmi:id="_3ErjsL9dEem8UKzfMV-V-Q" base_Property="_3EfWcL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountId?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_3EsKwL9dEem8UKzfMV-V-Q" displayLabel="accountId" base_NamedElement="_3EfWcL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountId?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_4XSbEL9dEem8UKzfMV-V-Q" displayLabel="AccountStates" base_NamedElement="_4XR0AL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_51EnsL9dEem8UKzfMV-V-Q" displayLabel="ACTIVE" base_NamedElement="_51EAoL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates%3a%3aACTIVE?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_6skQYb9dEem8UKzfMV-V-Q" displayLabel="INACTIVE" base_NamedElement="_6skQYL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates%3a%3aINACTIVE?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_AYOysL9eEem8UKzfMV-V-Q" base_Property="_AYOLoL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountState?" terminalStates="_6skQYL9dEem8UKzfMV-V-Q?com.example.account%3a%3aAccountStates%3a%3aINACTIVE?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_AYOysb9eEem8UKzfMV-V-Q" displayLabel="accountState" base_NamedElement="_AYOLoL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaccountState?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EHZMEL9eEem8UKzfMV-V-Q" displayLabel="name" base_NamedElement="_EHYlAL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aname?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_FAEggL9eEem8UKzfMV-V-Q" Searchable="true" base_Property="_EHYlAL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aname?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_OU7XEL9eEem8UKzfMV-V-Q" displayLabel="address" base_NamedElement="_OU6wAL9eEem8UKzfMV-V-Q?com.example.account%3a%3aAccount%3a%3aaddress?"/>
+</xmi:XMI>

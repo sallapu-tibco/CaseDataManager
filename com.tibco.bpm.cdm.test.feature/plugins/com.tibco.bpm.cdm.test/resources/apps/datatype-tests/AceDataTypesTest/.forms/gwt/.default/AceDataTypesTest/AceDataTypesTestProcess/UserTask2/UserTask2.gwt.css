@@ -1,0 +1,22 @@
+
+/**
+ * Forms 3.1.0 V12 compliant.
+ */
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_toolbar > .label {
+        display:none !important;
+    }
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_complexSingleParameter_children__add_delete > .label {
+        display:none !important;
+    }
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_complexArrayField_children__add_delete > .label {
+        display:none !important;
+    }
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_complexArrayField__master__add_delete > .label {
+        display:none !important;
+    }
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_content > .label {
+        
+display:block !important;    }
+    .f12127dd6-466f-40f0-a84b-5f9e29ea33a3 .pane_messages > .label {
+        display:none !important;
+    }

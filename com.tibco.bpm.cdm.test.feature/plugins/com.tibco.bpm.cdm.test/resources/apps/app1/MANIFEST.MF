@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+RASC-Version: 2
+Application-Name: ProjectX
+Application-Version: 1.0.0.20190215161126372
+Application-Internal-Name: com.example.ProjectX
+Creation-Date: 2016-02-01T12:00:35.226Z
+Governance-State: DRAFT
+Micro-Services: Case-Manager
+Case-Manager: model.dm

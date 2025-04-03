@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BOMGlobalDataProfile="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0 pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_-LhJUGv0EemiEagfCFXDtQ" name="com.crossproj.proja.modela1">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-LhJUWv0EemiEagfCFXDtQ" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-LhJUmv0EemiEagfCFXDtQ" key="author" value="smorgan"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-LhJU2v0EemiEagfCFXDtQ" key="created" value="1556707150053"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-LhJVGv0EemiEagfCFXDtQ" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_y6tG8Gv1EemiEagfCFXDtQ" name="CaseA1">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_0mt80Gv1EemiEagfCFXDtQ" name="cid" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0tSe4Gv1EemiEagfCFXDtQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0tSe4Wv1EemiEagfCFXDtQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_91yUcGv1EemiEagfCFXDtQ" name="state" type="_-yo-QGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_911-0Wv1EemiEagfCFXDtQ" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_912l4Gv1EemiEagfCFXDtQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_48pwYGv3EemiEagfCFXDtQ" name="a2" aggregation="composite">
+        <type xmi:type="uml:Class" href="modelA2.bom#_kgxiEGv3EemiEagfCFXDtQ?com.crossproj.proja.modela2%3a%3aClassA2?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_48q-gWv3EemiEagfCFXDtQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_48q-gmv3EemiEagfCFXDtQ" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_WCUJ4Gv2EemiEagfCFXDtQ" name="d1" aggregation="composite">
+        <type xmi:type="uml:Class" href="modelD1.bom#_S6T3IGv2EemiEagfCFXDtQ?com.crossproj.projd.modeld1%3a%3aClassD1?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WCWmIWv2EemiEagfCFXDtQ"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WCWmImv2EemiEagfCFXDtQ" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_-yo-QGv1EemiEagfCFXDtQ" name="States">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_AHZKsGv2EemiEagfCFXDtQ" name="CASECREATED" classifier="_-yo-QGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AHdcIGv2EemiEagfCFXDtQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_AHeDMGv2EemiEagfCFXDtQ" value="CASECREATED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_B1cA4Gv2EemiEagfCFXDtQ" name="CASECOMPLETED" classifier="_-yo-QGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_B1edIGv2EemiEagfCFXDtQ" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_B1edIWv2EemiEagfCFXDtQ" value="CASECOMPLETED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-eDDwGv0EemiEagfCFXDtQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-eE48Gv0EemiEagfCFXDtQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_UnXEQGv1EemiEagfCFXDtQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UnXrUGv1EemiEagfCFXDtQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_-L91QGv0EemiEagfCFXDtQ" type="Business Object Model" element="_-LhJUGv0EemiEagfCFXDtQ?com.crossproj.proja.modela1?" name="ProjA.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_-XUJoGv0EemiEagfCFXDtQ" type="1007" element="_-LhJUGv0EemiEagfCFXDtQ?com.crossproj.proja.modela1?">
+      <children xmi:type="notation:Node" xmi:id="_-XV-0Gv0EemiEagfCFXDtQ" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_-XV-0Wv0EemiEagfCFXDtQ" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_-XV-0mv0EemiEagfCFXDtQ" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_-XWl4Gv0EemiEagfCFXDtQ" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_-XWl4Wv0EemiEagfCFXDtQ" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_-XWl4mv0EemiEagfCFXDtQ" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_-XXM8Gv0EemiEagfCFXDtQ" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_-XXM8Wv0EemiEagfCFXDtQ" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_-XYbEGv0EemiEagfCFXDtQ" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_-XaQQGv0EemiEagfCFXDtQ" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_-XaQQWv0EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_-XaQQmv0EemiEagfCFXDtQ" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-XaQQ2v0EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-XaQRGv0EemiEagfCFXDtQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_-XUJoWv0EemiEagfCFXDtQ" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_-XUJomv0EemiEagfCFXDtQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-XUJo2v0EemiEagfCFXDtQ"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_y7IkwGv1EemiEagfCFXDtQ" type="1002" element="_y6tG8Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1?">
+      <children xmi:type="notation:Node" xmi:id="_y7LoEGv1EemiEagfCFXDtQ" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_y7LoEWv1EemiEagfCFXDtQ" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_y7MPIGv1EemiEagfCFXDtQ" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_y7MPIWv1EemiEagfCFXDtQ" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_0thvcGv1EemiEagfCFXDtQ" type="2001" element="_0mt80Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3acid?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_0tiWgGv1EemiEagfCFXDtQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_92FPYGv1EemiEagfCFXDtQ" type="2001" element="_91yUcGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3astate?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_92FPYWv1EemiEagfCFXDtQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_484Z4Gv3EemiEagfCFXDtQ" type="2001" element="_48pwYGv3EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3aa2?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_484Z4Wv3EemiEagfCFXDtQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_WCeh8Gv2EemiEagfCFXDtQ" type="2001" element="_WCUJ4Gv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3ad1?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_WCeh8Wv2EemiEagfCFXDtQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_y7MPImv1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_y7MPI2v1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_y7MPJGv1EemiEagfCFXDtQ"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_y7M2MGv1EemiEagfCFXDtQ" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_y7M2MWv1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_y7M2Mmv1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_y7M2M2v1EemiEagfCFXDtQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_y7IkwWv1EemiEagfCFXDtQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_y7Jy4Gv1EemiEagfCFXDtQ" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_y7Jy4Wv1EemiEagfCFXDtQ" x="265" y="105" height="168"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_-y7SIGv1EemiEagfCFXDtQ" type="1004" element="_-yo-QGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates?">
+      <children xmi:type="notation:Node" xmi:id="_-y8gQGv1EemiEagfCFXDtQ" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_-y9HUGv1EemiEagfCFXDtQ" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_-y9HUWv1EemiEagfCFXDtQ" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_-y9uYGv1EemiEagfCFXDtQ" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_AHtTwGv2EemiEagfCFXDtQ" type="2003" element="_AHZKsGv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates%3a%3aCASECREATED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_AHtTwWv2EemiEagfCFXDtQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_B1ttsGv2EemiEagfCFXDtQ" type="2003" element="_B1cA4Gv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates%3a%3aCASECOMPLETED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_B1ttsWv2EemiEagfCFXDtQ"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_-y9uYWv1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_-y9uYmv1EemiEagfCFXDtQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_-y9uY2v1EemiEagfCFXDtQ"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_-y7SIWv1EemiEagfCFXDtQ" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_-y7SImv1EemiEagfCFXDtQ" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-y7SI2v1EemiEagfCFXDtQ" x="439" y="82"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_-L91QWv0EemiEagfCFXDtQ"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-L91Qmv0EemiEagfCFXDtQ"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_UngOMGv1EemiEagfCFXDtQ" displayLabel="com.crossproj.proja.modela1" base_NamedElement="_-LhJUGv0EemiEagfCFXDtQ?com.crossproj.proja.modela1?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_y6u8IGv1EemiEagfCFXDtQ" base_Class="_y6tG8Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1?" summaryAttributes=""/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_y6x_cGv1EemiEagfCFXDtQ" displayLabel="CaseA1" base_NamedElement="_y6tG8Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_0tPbkGv1EemiEagfCFXDtQ" displayLabel="cid" base_NamedElement="_0mt80Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3acid?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_0tQCoGv1EemiEagfCFXDtQ" integerLength="19" integerSubType="fixedLength" base_Property="_0mt80Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3acid?" booleanDefaultValue="false"/>
+  <BOMGlobalDataProfile:CaseIdentifier xmi:id="_1iLfgGv1EemiEagfCFXDtQ" base_Property="_0mt80Gv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3acid?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_91zikGv1EemiEagfCFXDtQ" base_Property="_91yUcGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3astate?" terminalStates="_B1cA4Gv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates%3a%3aCASECOMPLETED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_911-0Gv1EemiEagfCFXDtQ" displayLabel="state" base_NamedElement="_91yUcGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3astate?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_-ysooGv1EemiEagfCFXDtQ" displayLabel="States" base_NamedElement="_-yo-QGv1EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_AHaY0Gv2EemiEagfCFXDtQ" displayLabel="Case Created" base_NamedElement="_AHZKsGv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates%3a%3aCASECREATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_B1d2EGv2EemiEagfCFXDtQ" displayLabel="Case Completed" base_NamedElement="_B1cA4Gv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aStates%3a%3aCASECOMPLETED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_WCWmIGv2EemiEagfCFXDtQ" displayLabel="d1" base_NamedElement="_WCUJ4Gv2EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3ad1?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_48q-gGv3EemiEagfCFXDtQ" displayLabel="a2" base_NamedElement="_48pwYGv3EemiEagfCFXDtQ?com.crossproj.proja.modela1%3a%3aCaseA1%3a%3aa2?"/>
+</xmi:XMI>

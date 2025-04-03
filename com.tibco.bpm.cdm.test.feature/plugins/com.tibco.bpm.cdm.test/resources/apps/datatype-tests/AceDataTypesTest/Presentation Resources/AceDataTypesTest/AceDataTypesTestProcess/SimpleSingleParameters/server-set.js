@@ -1,0 +1,10 @@
+booleanParameter = true;
+dateParameter = DateTimeUtil.createDate();
+dateTimeParameter = DateTimeUtil.createDatetime();
+numberDecimalParameter = 123.45;
+numberIntegerParameter = 123;
+performerParameter = "Participant";
+textParameter = "Some text";
+timeParameter = DateTimeUtil.createTime();
+uriParameter = "https://www.tibco.com/";
+Log.write("Set process parameters");

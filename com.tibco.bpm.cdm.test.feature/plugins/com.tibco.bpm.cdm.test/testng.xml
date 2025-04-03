@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CDM Unit Tests">
+	<test name="cdm" preserve-order="true">
+		<classes>
+ 			<class name="com.tibco.bpm.cdm.test.CLNTest" />
+			<class name="com.tibco.bpm.cdm.test.DQLSearchTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPICRUDTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPIExistsTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPIIsActiveTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPILinkTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPIValidationTest" />
+			<class name="com.tibco.bpm.cdm.test.PrivateAPIProcessDataTest" />
+			<class name="com.tibco.bpm.cdm.test.DeploymentTest" />
+			<class name="com.tibco.bpm.cdm.test.CaseCRUDTest" />
+			<class name="com.tibco.bpm.cdm.test.TypesTest" />
+			<class name="com.tibco.bpm.cdm.test.ScriptTest" />
+			<class name="com.tibco.bpm.cdm.test.ScriptTestQA" />
+			<class name="com.tibco.bpm.cdm.test.CaseLinkTest" />
+			<class name="com.tibco.bpm.cdm.test.CaseActivityTest" />
+		</classes>
+	</test>
+</suite>

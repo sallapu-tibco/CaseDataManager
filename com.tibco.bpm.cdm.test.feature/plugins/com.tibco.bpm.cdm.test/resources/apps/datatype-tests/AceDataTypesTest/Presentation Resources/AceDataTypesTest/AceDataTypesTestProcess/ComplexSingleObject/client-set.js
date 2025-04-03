@@ -1,0 +1,13 @@
+var complexSingleParameter = factory.com_tibco_ace_datatypes.createComplexParent();
+data.setComplexSingleParameter(complexSingleParameter);
+complexSingleParameter.setParentAttr1("Some text");
+complexSingleParameter.setParentAttr2("Some more text");
+var child = factory.com_tibco_ace_datatypes.createComplexChild();
+complexSingleParameter.setChild(child);
+child.setChildAttr1("Some child text");
+child.setChildAttr2("Some more child text");
+var children = factory.com_tibco_ace_datatypes.createComplexChild();
+complexSingleParameter.getChildren().add(children);
+children.setChildAttr1("Some children text");
+children.setChildAttr2("Some more children text");
+logger.info("Set form data");

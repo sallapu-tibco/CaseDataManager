@@ -1,0 +1,10 @@
+booleanParameter = false;
+dateParameter = null;
+dateTimeParameter = null;
+numberDecimalParameter = null;
+numberIntegerParameter = null;
+performerParameter = null;
+textParameter = null;
+timeParameter = null;
+uriParameter = null;
+Log.write("Cleared process parameters");

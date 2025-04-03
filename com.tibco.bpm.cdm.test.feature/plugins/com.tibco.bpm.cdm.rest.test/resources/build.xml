@@ -1,0 +1,79 @@
+<project name="CDMTests" xmlns:if="ant:if" xmlns:unless="ant:unless" default="test" basedir=".">
+    <description>
+		Run CDM Tests. Set BUILDER_HOME environment variable to point to top-level builder folder containing 'configurations' directory
+	</description>
+    <property name="lib.dir" value="..\lib" />
+    <property name="test.classes.dir" value="..\bin" />
+    <property name="cdm.test.classes.dir" value="..\..\com.tibco.bpm.cdm.test\bin" />
+    <property environment="env" />
+    <condition property="builder.isSet" value="true" else="false">
+        <isset property="env.BUILDER_HOME" />
+    </condition>
+    <echo unless:set="env.BUILDER_HOME">!!!!!ERROR::BUILDER_HOME NOT SET!! Please Set BUILDER_HOME environment variable to point to top-level builder folder containing 'configurations' directory</echo>
+    <property name="tibco.builder" value="${env.BUILDER_HOME}" />
+    <property name="report.dir" value="${tibco.builder}\candidates\artifacts\cdm_restAssured_report" />
+    <property name="test.config.dir" value="${tibco.builder}\configurations\lblm\BPM\CaseDataManager\com.tibco.bpm.cdm.test.feature\extensionLoc\eclipse\plugins" />
+    <property name="cdm.test.dir" value="${tibco.builder}\candidates\BPM\CaseDataManager\com.tibco.bpm.cdm.test.feature" />
+    <property name="cdm.test.resources.dir" value="..\..\com.tibco.bpm.cdm.test\resources" />
+    <property name="cdm.rest.test.resources.dir" value="..\resources" />	
+    <path id="test.path">
+        <!-- Include all jars under configurations\lblm\BPM\CaseDataManager\com.tibco.bpm.cdm.test.feature\extensionLoc\eclipse\plugins -->
+        <fileset dir="${test.config.dir}">
+            <include name="**/*.jar" />
+        </fileset>
+        <!-- Include classes under configurations\lblm\BPM\CaseDataManager\com.tibco.bpm.cdm.test.feature\extensionLoc\eclipse\plugins\com.tibco.bpm.cdm.core_* folder -->
+        <path id="cdm.core.dir">
+            <dirset dir="${test.config.dir}">
+                <include name="com.tibco.bpm.cdm.core_*" />
+                <include name="com.tibco.bpm.cdm.libs.dql_*" />
+            </dirset>
+        </path>
+		<path id="se.api.dir">
+            <dirset dir="${test.config.dir}">
+                <include name="com.tibco.bpm.se.api_*" />
+            </dirset>
+        </path>
+		<last id="cdm.tests.dir.latest">
+			<sort>
+				<date xmlns="antlib:org.apache.tools.ant.types.resources.comparators"/>
+				<resources>
+					<dirset dir="${cdm.test.dir}">
+						<include name="*"/>
+					</dirset>
+				</resources>
+			</sort>
+		</last>
+		<fileset dir="${toString:cdm.tests.dir.latest}\jar\release\plugins">
+				<include name="*.jar"/>
+		</fileset>
+        <path id="manifest.classpath">
+            <pathelement path="${lib.dir}/Manifest-path.jar" />
+        </path>
+    </path>
+    <taskdef name="testng" classname="org.testng.TestNGAntTask">
+        <classpath location="${lib.dir}/testng-6.14.2.jar" />
+    </taskdef>
+    <target name="test" if="builder.isSet">
+        <path id="lib.path">
+            <!-- Include the following jars under CaseDataManager\com.tibco.bpm.cdm.test.feature\plugins\com.tibco.bpm.cdm.test\lib -->
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar" />
+            </fileset>
+        </path>
+        <manifestclasspath property="jar.classpath" jarfile="${lib.dir}/Manifest-path.jar">
+            <classpath refid="lib.path" />
+        </manifestclasspath>
+        <jar destfile="${lib.dir}/Manifest-path.jar">
+            <manifest>
+                <attribute name="Built-By" value="joshy" />
+                <attribute name="Class-Path" value="${jar.classpath}" />
+            </manifest>
+        </jar>
+        <testng classpathref="test.path" outputDir="${report.dir}" haltOnFailure="true">
+			<classpath location="${cdm.test.resources.dir}" />
+			<classpath location="${cdm.rest.test.resources.dir}" />
+            <!-- Tell Ant where is testng.xml -->
+            <xmlfileset dir="..\" includes="testng.xml" />
+        </testng>
+    </target>
+</project>

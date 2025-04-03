@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+RASC-Version: 2
+Application-Name: ProjectY
+Application-Version: 1.2.3.20190415342615342
+Application-Internal-Name: com.example.ProjectY
+Creation-Date: 2019-03-07T15:56:13.938Z
+Governance-State: DRAFT
+Micro-Services: Case-Manager
+Case-Manager: cm/model1.dm, cm/model2.dm,cm/model1.js, cm/model2.js

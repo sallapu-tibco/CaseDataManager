@@ -1,0 +1,1 @@
+{"dataProjectDependencies":[{"projectId":"com.example.ace_2449_data","version":"[1.0.0,2.0.0)"}]}

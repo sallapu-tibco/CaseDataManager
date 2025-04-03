@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CDM REST Tests">
+	<test name="cdm1" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.CLNTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.CaseLinkTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.TypesTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.SystemActionNegativeTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.SystemActionPositiveTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.TerminalStateUpdatesTest" />
+		</classes>
+	</test>
+	
+	<test name="cdm2" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.DQLTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.ACE_1834_MinMaxValueRange" />
+			<class name="com.tibco.bpm.cdm.rest.test.CreateUpdateArrayTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.PurgeCasesTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.UnsuccessfulUpgradeScenariosTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.SuccessfulUpgradeScenariosWithCasesTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.CasesViewTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.CrossReferenceProjectsTest" />
+		</classes>
+	</test>
+	
+	<test name="cdm3" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.CRUDUsingCaseRefTest" /> 
+		</classes>
+	</test>
+
+	<test name="cdm4" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.SearchTest" />
+			<class name="com.tibco.bpm.cdm.rest.test.ACE_2198_SearchableSummaryAttributes" />
+		</classes>
+	</test>
+	
+	<test name="cdm5" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.GetCasesTest" />
+		</classes>
+	</test>
+	
+	<test name="post" preserve-order="true">
+		<classes>
+			<class name="com.tibco.bpm.cdm.rest.test.TearAll" />
+		</classes>
+	</test> 
+</suite>

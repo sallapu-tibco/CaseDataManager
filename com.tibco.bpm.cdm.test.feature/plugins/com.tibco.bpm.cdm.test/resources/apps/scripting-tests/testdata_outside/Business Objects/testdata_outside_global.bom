@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_eLlnwLhNEemHrNzaDxJOkw" name="com.example.testdata_outside_global">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eLlnwbhNEemHrNzaDxJOkw" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eLlnwrhNEemHrNzaDxJOkw" key="author" value="nashtapu"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eLlnw7hNEemHrNzaDxJOkw" key="created" value="1565101448892"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eLlnxLhNEemHrNzaDxJOkw" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Qg1dELhPEemHrNzaDxJOkw" name="EmploymentDetails">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_S31wsLhPEemHrNzaDxJOkw" name="numberofyears" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S32-0LhPEemHrNzaDxJOkw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S32-0bhPEemHrNzaDxJOkw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_T_BJQLhREemHrNzaDxJOkw" name="yearlyRenumeration" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_T_BwUbhREemHrNzaDxJOkw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_T_BwUrhREemHrNzaDxJOkw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_EKwJ0LhSEemHrNzaDxJOkw" name="employmentStatus" type="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EKxX8rhSEemHrNzaDxJOkw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EKxX87hSEemHrNzaDxJOkw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_F_on0LhSEemHrNzaDxJOkw" name="employeeID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F_p18bhSEemHrNzaDxJOkw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F_p18rhSEemHrNzaDxJOkw" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_zUPxoLhPEemHrNzaDxJOkw" name="EmploymentStatus">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1Z1lILhPEemHrNzaDxJOkw" name="SELFEMPLOYED" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1Z2zQLhPEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_1Z2zQbhPEemHrNzaDxJOkw" value="SELFEMPLOYED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2XKwELhPEemHrNzaDxJOkw" name="FULLTIMESALARIED" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2XL-MLhPEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_2XL-MbhPEemHrNzaDxJOkw" value="FULLTIMESALARIED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_4BYPILhPEemHrNzaDxJOkw" name="PARTTIMESALARIED" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4BY2MLhPEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_4BY2MbhPEemHrNzaDxJOkw" value="PARTTIMESALARIED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_7R9PELhPEemHrNzaDxJOkw" name="RETIRED" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7R-dMLhPEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_7R-dMbhPEemHrNzaDxJOkw" value="RETIRED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8VH8QLhPEemHrNzaDxJOkw" name="ONVACATION" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8VKYgLhPEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_8VKYgbhPEemHrNzaDxJOkw" value="ONVACATION"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Naa-YLhSEemHrNzaDxJOkw" name="RESIGNED" classifier="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NablcLhSEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_NablcbhSEemHrNzaDxJOkw" value="RESIGNED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_gmGwILhSEemHrNzaDxJOkw" name="AccountType">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gmGwIbhSEemHrNzaDxJOkw" name="SAVINGS" classifier="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gmGwIrhSEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_gmGwI7hSEemHrNzaDxJOkw" value="SAVINGS"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gmGwJLhSEemHrNzaDxJOkw" name="CURRENT" classifier="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gmGwJbhSEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_gmGwJrhSEemHrNzaDxJOkw" value="CURRENT"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_gmGwJ7hSEemHrNzaDxJOkw" name="FIXEDDEPOSIT" classifier="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gmGwKLhSEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_gmGwKbhSEemHrNzaDxJOkw" value="FIXEDDEPOSIT"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wysTgLhSEemHrNzaDxJOkw" name="INVESTMENT" classifier="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wys6kbhSEemHrNzaDxJOkw" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_wythoLhSEemHrNzaDxJOkw" value="INVESTMENT"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_eLlnxbhNEemHrNzaDxJOkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eLlnxrhNEemHrNzaDxJOkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Qg1dEbhPEemHrNzaDxJOkw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Qg1dErhPEemHrNzaDxJOkw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_eLlnx7hNEemHrNzaDxJOkw" type="Business Object Model" element="_eLlnwLhNEemHrNzaDxJOkw?com.example.testdata_outside_global?" name="testdata_outside_global.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_eMgNwLhNEemHrNzaDxJOkw" type="1007" element="_eLlnwLhNEemHrNzaDxJOkw?com.example.testdata_outside_global?">
+      <children xmi:type="notation:Node" xmi:id="_eMgNxLhNEemHrNzaDxJOkw" type="4023">
+        <styles xmi:type="notation:FontStyle" xmi:id="_eMgNxbhNEemHrNzaDxJOkw" fontName="Segoe UI" fontHeight="10" bold="true"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_eMg00LhNEemHrNzaDxJOkw" type="4024"/>
+      <children xmi:type="notation:Node" xmi:id="_eMg00bhNEemHrNzaDxJOkw" type="4025"/>
+      <children xmi:type="notation:Node" xmi:id="_eMg00rhNEemHrNzaDxJOkw" type="4026"/>
+      <children xmi:type="notation:Node" xmi:id="_eMhb4LhNEemHrNzaDxJOkw" type="4027"/>
+      <children xmi:type="notation:Node" xmi:id="_eMhb4bhNEemHrNzaDxJOkw" type="4028"/>
+      <children xmi:type="notation:Node" xmi:id="_eMhb4rhNEemHrNzaDxJOkw" type="4029"/>
+      <children xmi:type="notation:Node" xmi:id="_eMhb47hNEemHrNzaDxJOkw" type="4030"/>
+      <children xmi:type="notation:Node" xmi:id="_eMhb5LhNEemHrNzaDxJOkw" type="5007">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_eMhb5bhNEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_eMhb5rhNEemHrNzaDxJOkw" showTitle="true"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_eMhb57hNEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_eMhb6LhNEemHrNzaDxJOkw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_eMgNwbhNEemHrNzaDxJOkw" fontName="Segoe UI" fontHeight="10" fillColor="16316150" lineColor="37120"/>
+      <styles xmi:type="notation:FillStyle" xmi:id="_eMgNwrhNEemHrNzaDxJOkw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_eMgNw7hNEemHrNzaDxJOkw" x="30" y="30"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_QhaE0LhPEemHrNzaDxJOkw" type="1002" element="_Qg1dELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails?">
+      <children xmi:type="notation:Node" xmi:id="_Qhar4LhPEemHrNzaDxJOkw" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_Qhar4bhPEemHrNzaDxJOkw" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_Qhar4rhPEemHrNzaDxJOkw" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_Qhar47hPEemHrNzaDxJOkw" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_S39sgLhPEemHrNzaDxJOkw" type="2001" element="_S31wsLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3anumberofyears?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_S39sgbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_T_Go0LhREemHrNzaDxJOkw" type="2001" element="_T_BJQLhREemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3ayearlyRenumeration?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_T_Go0bhREemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_EK4FoLhSEemHrNzaDxJOkw" type="2001" element="_EKwJ0LhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3aemploymentStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_EK4FobhSEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_F_vVgLhSEemHrNzaDxJOkw" type="2001" element="_F_on0LhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3aemployeeID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_F_vVgbhSEemHrNzaDxJOkw"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_Qhar5LhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_Qhar5bhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_Qhar5rhPEemHrNzaDxJOkw"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_QhbS8LhPEemHrNzaDxJOkw" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_QhbS8bhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_QhbS8rhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_QhbS87hPEemHrNzaDxJOkw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_QhaE0bhPEemHrNzaDxJOkw" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_QhaE0rhPEemHrNzaDxJOkw" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QhaE07hPEemHrNzaDxJOkw" x="405" y="30" width="331" height="213"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_zUawwLhPEemHrNzaDxJOkw" type="1004" element="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?">
+      <children xmi:type="notation:Node" xmi:id="_zUbX0LhPEemHrNzaDxJOkw" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_zUb-4LhPEemHrNzaDxJOkw" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_zUb-4bhPEemHrNzaDxJOkw" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_zUcl8LhPEemHrNzaDxJOkw" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_1Z7rwLhPEemHrNzaDxJOkw" type="2003" element="_1Z1lILhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aSELFEMPLOYED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_1Z7rwbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_2XPokLhPEemHrNzaDxJOkw" type="2003" element="_2XKwELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aFULLTIMESALARIED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_2XPokbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_4Bb5gLhPEemHrNzaDxJOkw" type="2003" element="_4BYPILhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aPARTTIMESALARIED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_4Bb5gbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_7SDVsLhPEemHrNzaDxJOkw" type="2003" element="_7R9PELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aRETIRED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_7SDVsbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_8VWlwLhPEemHrNzaDxJOkw" type="2003" element="_8VH8QLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aONVACATION?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_8VWlwbhPEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_Nagd8LhSEemHrNzaDxJOkw" type="2003" element="_Naa-YLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aRESIGNED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_Nagd8bhSEemHrNzaDxJOkw"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_zUcl8bhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_zUcl8rhPEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_zUcl87hPEemHrNzaDxJOkw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_zUawwbhPEemHrNzaDxJOkw" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_zUawwrhPEemHrNzaDxJOkw" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zUaww7hPEemHrNzaDxJOkw" x="810" y="30" width="244" height="188"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_gmGJE7hSEemHrNzaDxJOkw" type="1004" element="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?">
+      <children xmi:type="notation:Node" xmi:id="_gmGJFLhSEemHrNzaDxJOkw" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_gmGJFbhSEemHrNzaDxJOkw" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_gmGJFrhSEemHrNzaDxJOkw" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_gmGJF7hSEemHrNzaDxJOkw" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_gmGJGLhSEemHrNzaDxJOkw" type="2003" element="_gmGwIbhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aSAVINGS?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gmGJGbhSEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gmGJGrhSEemHrNzaDxJOkw" type="2003" element="_gmGwJLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aCURRENT?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gmGJG7hSEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_gmGJHLhSEemHrNzaDxJOkw" type="2003" element="_gmGwJ7hSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aFIXEDDEPOSIT?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_gmGJHbhSEemHrNzaDxJOkw"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wyzoQLhSEemHrNzaDxJOkw" type="2003" element="_wysTgLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aINVESTMENT?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_wyzoQbhSEemHrNzaDxJOkw"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_gmGJHrhSEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_gmGJH7hSEemHrNzaDxJOkw"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_gmGJILhSEemHrNzaDxJOkw"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_gmGJIbhSEemHrNzaDxJOkw" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_gmGJIrhSEemHrNzaDxJOkw" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gmGJI7hSEemHrNzaDxJOkw" x="1110" y="30" width="226" height="136"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_eLlnyLhNEemHrNzaDxJOkw"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_eLlnybhNEemHrNzaDxJOkw"/>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Qg2EILhPEemHrNzaDxJOkw" displayLabel="Employment Details" base_NamedElement="_Qg1dELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_S32XwLhPEemHrNzaDxJOkw" displayLabel="Number of years" base_NamedElement="_S31wsLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3anumberofyears?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_zUQYsLhPEemHrNzaDxJOkw" displayLabel="Employment Status" base_NamedElement="_zUPxoLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_1Z2MMLhPEemHrNzaDxJOkw" displayLabel="Self Employed" base_NamedElement="_1Z1lILhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aSELFEMPLOYED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_2XLXILhPEemHrNzaDxJOkw" displayLabel="Full Time Salaried" base_NamedElement="_2XKwELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aFULLTIMESALARIED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_4BYPIbhPEemHrNzaDxJOkw" displayLabel="Part Time Salaried" base_NamedElement="_4BYPILhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aPARTTIMESALARIED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_7R92ILhPEemHrNzaDxJOkw" displayLabel="Retired" base_NamedElement="_7R9PELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aRETIRED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_8VJKYLhPEemHrNzaDxJOkw" displayLabel="On Vacation" base_NamedElement="_8VH8QLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aONVACATION?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_FLgHELhQEemHrNzaDxJOkw" decimalLength="2" decimalPlaces="0" decimalDefaultValue="2" decimalSubType="fixedPoint" base_Property="_S31wsLhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3anumberofyears?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_T_BwULhREemHrNzaDxJOkw" displayLabel="Yearly Renumeration" base_NamedElement="_T_BJQLhREemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3ayearlyRenumeration?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_EKxX8bhSEemHrNzaDxJOkw" displayLabel="Employment Status" base_NamedElement="_EKwJ0LhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3aemploymentStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_F_p18LhSEemHrNzaDxJOkw" displayLabel="Employee ID" base_NamedElement="_F_on0LhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3aemployeeID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_Naa-YbhSEemHrNzaDxJOkw" displayLabel="Resigned" base_NamedElement="_Naa-YLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentStatus%3a%3aRESIGNED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gmFiALhSEemHrNzaDxJOkw" displayLabel="Current" base_NamedElement="_gmGwJLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aCURRENT?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gmGJELhSEemHrNzaDxJOkw" displayLabel="Fixed Deposit" base_NamedElement="_gmGwJ7hSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aFIXEDDEPOSIT?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gmGJEbhSEemHrNzaDxJOkw" displayLabel="Savings" base_NamedElement="_gmGwIbhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aSAVINGS?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_gmGJErhSEemHrNzaDxJOkw" displayLabel="Account Type" base_NamedElement="_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_wys6kLhSEemHrNzaDxJOkw" displayLabel="Investment" base_NamedElement="_wysTgLhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType%3a%3aINVESTMENT?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_JsooYL0QEem1XMMziRI13w" decimalDefaultValue="15000.60" base_Property="_T_BJQLhREemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3ayearlyRenumeration?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_OSUaEL0QEem1XMMziRI13w" textDefaultValue="DEFAULT EMP ID" base_Property="_F_on0LhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails%3a%3aemployeeID?" booleanDefaultValue="false"/>
+</xmi:XMI>

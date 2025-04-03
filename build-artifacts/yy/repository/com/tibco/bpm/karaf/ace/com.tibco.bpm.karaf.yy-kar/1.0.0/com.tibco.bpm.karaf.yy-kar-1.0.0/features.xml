@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="tibco.bpm.template-1.0.0">
+  <feature description="YY feature for Container Edition (ACE)" name="tibco.bpm.cdm.yy" version="1.0.0">
+    <feature version="[3,4)">cxf</feature>
+    <feature version="[1,5)">jndi</feature>
+    <feature version="[3,6)">spring</feature>
+    <feature version="[2,3)">fasterxml</feature>
+    <feature version="[1,2)">tibco.bpm.template</feature>
+    <feature version="[1,2)">tibco.bpm.se</feature>
+    <feature version="[1,2)">tibco.bpm.auth</feature>
+    <feature version="[1,2)">tibco-ace-admin-common</feature>
+    <feature version="[1,2)">tibco-ace-admin-provider</feature>
+    <feature version="[1,2)">tibco.bpm.cdm</feature>
+    <bundle start-level="80">mvn:com.tibco.bpm.karaf.ace/yy/1.0.0</bundle>
+  </feature>
+</features>

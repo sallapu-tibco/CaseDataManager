@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://cxf.apache.org/configuration/beans"
+	xmlns:jaxrs="http://cxf.apache.org/jaxrs" xmlns:cxf="http://cxf.apache.org/core"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://cxf.apache.org/configuration/beans 
+		http://cxf.apache.org/schemas/configuration/cxf-beans.xsd
+		http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.1.xsd
+		http://cxf.apache.org/jaxrs 
+		http://cxf.apache.org/schemas/jaxrs.xsd
+        http://cxf.apache.org/core 
+        http://cxf.apache.org/schemas/core.xsd">
+
+	<import resource="classpath:/com/tibco/bpm/logging/probe/testprobe/config/ContainerTestProbeSpringConfig.xml"/>
+	
+	<!-- This is provided to us in the real environment -->
+	<bean id="dataSource" class="org.postgresql.ds.PGPoolingDataSource">
+	  <property name="url" value="jdbc:postgresql://localhost:5432/postgres"/>
+	  
+	  <property name="user" value="bpmuser"/>
+	  <property name="password" value="bpmuser"/>
+	  <property name="portNumber" value="5432"/>
+	</bean>
+	
+	<bean id="daoFactory" name="daoFactory" class="com.tibco.bpm.cdm.core.dao.DAOFactory">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- TODO consider transactions: real system will use caller's transactions, but need to do explicitly here -->
+<!-- 	<bean id="transactionManagerProxy" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"> -->
+<!-- 		<property name="dataSource" ref="dataSource"/> -->
+<!-- 	</bean> -->
+
+	<bean id="applicationDAO" class="com.tibco.bpm.cdm.core.dao.impl.ApplicationDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+	
+	<bean id="dataModelDAO" class="com.tibco.bpm.cdm.core.dao.impl.DataModelDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="typeDAO" class="com.tibco.bpm.cdm.core.dao.impl.TypeDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="linkDAO" class="com.tibco.bpm.cdm.core.dao.impl.LinkDAOImpl">
+	<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="stateDAO" class="com.tibco.bpm.cdm.core.dao.impl.StateDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="simpleSearchRenderer" class="com.tibco.bpm.cdm.core.dao.impl.SimpleSearchRendererImpl" />
+	<bean id="conditionRenderer" class="com.tibco.bpm.cdm.core.dao.impl.ConditionRendererImpl" />
+	
+	<bean id="caseDAO" class="com.tibco.bpm.cdm.core.dao.impl.CaseDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	 	<property name="simpleSearchRenderer" ref="simpleSearchRenderer"  />
+		<property name="conditionRenderer" ref="conditionRenderer" />
+	</bean>
+	
+	<bean id="caseLinkDAO" class="com.tibco.bpm.cdm.core.dao.impl.CaseLinkDAOImpl">
+		<property name="simpleSearchRenderer" ref="simpleSearchRenderer"  />
+		<property name="conditionRenderer" ref="conditionRenderer" />
+		<property name="linkDAO" ref="linkDAO" />
+	 	<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+	
+	<bean id="identifierValueDAO" class="com.tibco.bpm.cdm.core.dao.impl.IdentifierValueDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="identifierInitialisationInfoDAO" class="com.tibco.bpm.cdm.core.dao.impl.IdentifierInitialisationInfoDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="casesTableIndexDAO" class="com.tibco.bpm.cdm.core.dao.impl.CasesTableIndexDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="dataModelDependencyDAO" class="com.tibco.bpm.cdm.core.dao.impl.DataModelDependencyDAOImpl">
+		<constructor-arg index="0">
+	 		<bean class="org.postgresql.ds.PGPoolingDataSource" />
+	 	</constructor-arg>
+	</bean>
+
+	<bean id="cdmPrivateAPI" class="com.tibco.bpm.cdm.core.CaseDataManagerImpl">
+		<property name="caseManager" ref="caseManager"  />
+	</bean>
+	
+
+	<!-- REST impl for /cases -->
+	<bean id="casesServiceImplV1" class="com.tibco.bpm.cdm.core.rest.v1.CasesServiceImpl">
+	</bean>	
+	
+	<!-- REST impl for /types -->
+	
+	<bean id="typesServiceLocal" class="com.tibco.bpm.cdm.core.TypesPrivateServiceImpl">
+		<property name="dataModelManager" ref="dataModelManager" />
+	</bean>	 
+	
+	<bean id="typesServiceImplV1" class="com.tibco.bpm.cdm.core.rest.v1.TypesServiceImpl">
+		<property name="typesServiceLocal" ref="typesServiceLocal" />
+	</bean>	
+
+	<!-- Impl for DEM's deployment interface -->	
+	<bean id="deploymentServiceImpl" class="com.tibco.bpm.cdm.core.deployment.DeploymentComponentServiceImpl">
+		<property name="deploymentManager" ref="deploymentManager" />
+			<property name="daoFactory" ref="daoFactory" />
+	</bean>
+	
+	<!-- Internal Deployment management bean -->
+	<bean id="deploymentManager" class="com.tibco.bpm.cdm.core.deployment.DeploymentManager">
+			<property name="daoFactory" ref="daoFactory" />
+	</bean>
+	
+	<bean id="dataModelManager" class="com.tibco.bpm.cdm.core.deployment.DataModelManager">
+			<property name="daoFactory" ref="daoFactory" />
+		<property name="securityService" ref="mockSecurityService"/>		
+	</bean>
+	
+	<bean id="mockSecurityService" class="com.tibco.bpm.cdm.test.util.MockSecurityService" />
+	
+	<bean id="clnObserverList" class="com.tibco.bpm.cdm.core.cln.CLNObserverList"/>
+
+	<bean id="clnDispatcher" class="com.tibco.bpm.cdm.core.cln.CLNDispatcher">
+		<property name="clnObserverList" ref="clnObserverList"/>
+	</bean>
+	
+	<bean id="daemonHandlerThread" class="com.tibco.bpm.cdm.core.CaseIdDaemonHandlerThread">
+	</bean>
+	
+	<bean id="caseSequenceCache" class="com.tibco.bpm.cdm.core.CaseSequenceCache">
+		<property name="daemonHandlerThread" ref="daemonHandlerThread" />		
+	</bean>
+
+	<bean id="caseManager" class="com.tibco.bpm.cdm.core.CaseManager">
+			<property name="daoFactory" ref="daoFactory" />
+		<property name="securityService" ref="mockSecurityService"/>
+		<property name="clnDispatcher" ref="clnDispatcher" />
+		<property name="caseSequenceCache" ref="caseSequenceCache" />
+	</bean>	
+	
+
+	
+	<bean id="scriptEngineService" class="com.tibco.bpm.cdm.core.script.ScriptEngineServiceImpl">
+			<property name="daoFactory" ref="daoFactory" />
+		<property name="cdmAPI" ref="cdmPrivateAPI" />		
+	</bean>
+	
+
+	
+</beans>

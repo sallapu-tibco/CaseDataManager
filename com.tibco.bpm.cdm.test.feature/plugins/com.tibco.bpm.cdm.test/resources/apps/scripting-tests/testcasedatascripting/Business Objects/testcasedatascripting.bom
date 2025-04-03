@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BOMGlobalDataProfile="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0" xmlns:PrimitiveTypeFacets="http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0" xmlns:bomnotation="http://www.tibco.com/models/bomnotation" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:elx="http://www.tibco.com/EnumLiteralExt" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/BOMGlobalDataProfile/_-rxZEHyPEeCumvZ6xHSUiw/0 pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw http:///schemas/PrimitiveTypeFacets/_8TmTUMtlEdy7K9XeCH7Hrw/0 pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw">
+  <uml:Model xmi:id="_GPoU4LnBEem7RYemWV-Nng" name="com.example.testcasedatascripting">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GPoU4bnBEem7RYemWV-Nng" source="model.metadata">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GPoU4rnBEem7RYemWV-Nng" key="author" value="nashtapu"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GPoU47nBEem7RYemWV-Nng" key="created" value="1565261061038"/>
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GPoU5LnBEem7RYemWV-Nng" key="version" value="1000"/>
+    </eAnnotations>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G5cfMLnHEem7RYemWV-Nng" name="Customer">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfMbnHEem7RYemWV-Nng" name="accounts" type="_G5dtULnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount?" association="_G5figLnHEem7RYemWV-Nng">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfMrnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfM7nHEem7RYemWV-Nng" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfNLnHEem7RYemWV-Nng" name="customerID" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfNbnHEem7RYemWV-Nng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfNrnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfN7nHEem7RYemWV-Nng" name="customerCategory" type="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfOLnHEem7RYemWV-Nng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfObnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfOrnHEem7RYemWV-Nng" name="dateofBirth" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AmUlgHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDate?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfO7nHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfPLnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfPbnHEem7RYemWV-Nng" name="age" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfPrnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfP7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfQLnHEem7RYemWV-Nng" name="totalIncome" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfQbnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfQrnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfQ7nHEem7RYemWV-Nng" name="residentialAddress" type="_G5e7cLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfRLnHEem7RYemWV-Nng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfRbnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5cfRrnHEem7RYemWV-Nng" name="employmentDetails" aggregation="composite">
+        <type xmi:type="uml:Class" href="testdata_outside_global.bom#_Qg1dELhPEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aEmploymentDetails?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5cfR7nHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5cfSLnHEem7RYemWV-Nng" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G5dtULnHEem7RYemWV-Nng" name="Account">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtUbnHEem7RYemWV-Nng" name="customer" type="_G5cfMLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer?" association="_G5figLnHEem7RYemWV-Nng">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtUrnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtU7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtVLnHEem7RYemWV-Nng" name="accountId" isReadOnly="true" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtVbnHEem7RYemWV-Nng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtVrnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtV7nHEem7RYemWV-Nng" name="accountStatus" type="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtWLnHEem7RYemWV-Nng" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtWbnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtWrnHEem7RYemWV-Nng" name="accountOpened" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtW7nHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtXLnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtXbnHEem7RYemWV-Nng" name="accountLastAccessed" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_UcSGcIvhEd68OqPx9MxH3A?BomPrimitiveTypes%3a%3aDateTimeTZ?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtXrnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtX7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtYLnHEem7RYemWV-Nng" name="accountBalance" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g?BomPrimitiveTypes%3a%3aDecimal?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtYbnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtYrnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtY7nHEem7RYemWV-Nng" name="accountInstitution" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtZLnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtZbnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtZrnHEem7RYemWV-Nng" name="institutionAddress" type="_G5e7cLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress?" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtZ7nHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dtaLnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5dtabnHEem7RYemWV-Nng" name="accountType" aggregation="composite">
+        <type xmi:type="uml:Enumeration" href="testdata_outside_global.bom#_gmGwILhSEemHrNzaDxJOkw?com.example.testdata_outside_global%3a%3aAccountType?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5dtarnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5dta7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_G5e7cLnHEem7RYemWV-Nng" name="Address">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7cbnHEem7RYemWV-Nng" name="firstLine" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7crnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7c7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7dLnHEem7RYemWV-Nng" name="secondLine" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7dbnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7drnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7d7nHEem7RYemWV-Nng" name="city" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7eLnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7ebnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7ernHEem7RYemWV-Nng" name="county" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7e7nHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7fLnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7fbnHEem7RYemWV-Nng" name="country" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7frnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7f7nHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_G5e7gLnHEem7RYemWV-Nng" name="postcode" aggregation="composite">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug?BomPrimitiveTypes%3a%3aText?"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_G5e7gbnHEem7RYemWV-Nng"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_G5e7grnHEem7RYemWV-Nng" value="1"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_G5e7g7nHEem7RYemWV-Nng" name="CustomerCategory">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_G5e7hLnHEem7RYemWV-Nng" name="HIGHACTIVITY" classifier="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G5e7hbnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_G5e7hrnHEem7RYemWV-Nng" value="HIGHACTIVITY"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_G5e7h7nHEem7RYemWV-Nng" name="MEDIUMACTIVITY" classifier="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G5e7iLnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_G5e7ibnHEem7RYemWV-Nng" value="MEDIUMACTIVITY"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_G5e7irnHEem7RYemWV-Nng" name="LOWACTIVITY" classifier="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G5e7i7nHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_G5e7jLnHEem7RYemWV-Nng" value="LOWACTIVITY"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_G5e7jbnHEem7RYemWV-Nng" name="TERMINATED" classifier="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G5e7jrnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_G5e7j7nHEem7RYemWV-Nng" value="TERMINATED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_G5figLnHEem7RYemWV-Nng" memberEnd="_G5dtUbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3acustomer? _G5cfMbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aaccounts?"/>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_QoHj8LnHEem7RYemWV-Nng" name="AccountStatus">
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QoHj8bnHEem7RYemWV-Nng" name="ACTIVE" classifier="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QoHj8rnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_QoHj87nHEem7RYemWV-Nng" value="ACTIVE"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QoHj9LnHEem7RYemWV-Nng" name="DORMANT" classifier="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QoHj9bnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_QoHj9rnHEem7RYemWV-Nng" value="DORMANT"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QoHj97nHEem7RYemWV-Nng" name="TOBETERMINATED" classifier="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QoHj-LnHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_QoHj-bnHEem7RYemWV-Nng" value="TOBETERMINATED"/>
+        </eAnnotations>
+      </ownedLiteral>
+      <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QoHj-rnHEem7RYemWV-Nng" name="BARRED" classifier="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QoHj-7nHEem7RYemWV-Nng" source="domain">
+          <contents xmi:type="elx:SingleValue" xmi:id="_QoHj_LnHEem7RYemWV-Nng" value="BARRED"/>
+        </eAnnotations>
+      </ownedLiteral>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_GTjyoLnBEem7RYemWV-Nng">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GTjyobnBEem7RYemWV-Nng" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_-r7KEXyPEeCumvZ6xHSUiw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://GLOBALDATA_PROFILES/BOMGlobalData.profile.uml#_20kHsWs1EeC_hvle0zpSaA?BOM%20Global%20Data%20Profile?"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_G5Y00LnHEem7RYemWV-Nng">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_G5Y00bnHEem7RYemWV-Nng" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_8TmTUstlEdy7K9XeCH7Hrw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://BOM_TYPES/PrimitiveTypeFacets.profile.uml#_3A574HcJEdytQ9AWEvOuug?PrimitiveTypeFacets?"/>
+    </profileApplication>
+  </uml:Model>
+  <notation:Diagram xmi:id="_GPoU5bnBEem7RYemWV-Nng" type="Business Object Model" element="_GPoU4LnBEem7RYemWV-Nng?com.example.testcasedatascripting?" name="testCasedataScripting.bom" measurementUnit="Pixel">
+    <children xmi:type="notation:Node" xmi:id="_G5bRGLnHEem7RYemWV-Nng" type="1002" element="_G5cfMLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer?">
+      <children xmi:type="notation:Node" xmi:id="_G5bRGbnHEem7RYemWV-Nng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_G5bRGrnHEem7RYemWV-Nng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_G5bRG7nHEem7RYemWV-Nng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_G5bRHLnHEem7RYemWV-Nng" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_G5bRHbnHEem7RYemWV-Nng" type="2001" element="_G5cfNLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerID?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRHrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRH7nHEem7RYemWV-Nng" type="2001" element="_G5cfN7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerCategory?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRILnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRIbnHEem7RYemWV-Nng" type="2001" element="_G5cfOrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3adateofBirth?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRIrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRI7nHEem7RYemWV-Nng" type="2001" element="_G5cfPbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aage?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRJLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRJbnHEem7RYemWV-Nng" type="2001" element="_G5cfQLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3atotalIncome?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRJrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRJ7nHEem7RYemWV-Nng" type="2001" element="_G5cfQ7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aresidentialAddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRKLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5bRKbnHEem7RYemWV-Nng" type="2001" element="_G5cfRrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aemploymentDetails?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5bRKrnHEem7RYemWV-Nng"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5bRK7nHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5bRLLnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5bRLbnHEem7RYemWV-Nng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5bRLrnHEem7RYemWV-Nng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5bRL7nHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5bRMLnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5bRMbnHEem7RYemWV-Nng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_G5bRMrnHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_G5bRM7nHEem7RYemWV-Nng" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5bRNLnHEem7RYemWV-Nng" x="667" y="165" width="275" height="273"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_G5b4ILnHEem7RYemWV-Nng" type="1002" element="_G5dtULnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount?">
+      <children xmi:type="notation:Node" xmi:id="_G5b4IbnHEem7RYemWV-Nng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4IrnHEem7RYemWV-Nng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4I7nHEem7RYemWV-Nng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4JLnHEem7RYemWV-Nng" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_G5b4JbnHEem7RYemWV-Nng" type="2001" element="_G5dtVLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountId?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4JrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4J7nHEem7RYemWV-Nng" type="2001" element="_G5dtV7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountStatus?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4KLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4KbnHEem7RYemWV-Nng" type="2001" element="_G5dtWrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountOpened?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4KrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4K7nHEem7RYemWV-Nng" type="2001" element="_G5dtXbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountLastAccessed?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4LLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4LbnHEem7RYemWV-Nng" type="2001" element="_G5dtYLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountBalance?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4LrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4L7nHEem7RYemWV-Nng" type="2001" element="_G5dtY7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountInstitution?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4MLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4MbnHEem7RYemWV-Nng" type="2001" element="_G5dtZrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3ainstitutionAddress?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4MrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4M7nHEem7RYemWV-Nng" type="2001" element="_G5dtabnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountType?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4NLnHEem7RYemWV-Nng"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5b4NbnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5b4NrnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5b4N7nHEem7RYemWV-Nng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5b4OLnHEem7RYemWV-Nng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5b4ObnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5b4OrnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5b4O7nHEem7RYemWV-Nng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_G5b4PLnHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_G5b4PbnHEem7RYemWV-Nng" gradStartColor="16096809" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5b4PrnHEem7RYemWV-Nng" x="650" y="504" width="350" height="303"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_G5b4P7nHEem7RYemWV-Nng" type="1002" element="_G5e7cLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress?">
+      <children xmi:type="notation:Node" xmi:id="_G5b4QLnHEem7RYemWV-Nng" type="4003"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4QbnHEem7RYemWV-Nng" type="4004"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4QrnHEem7RYemWV-Nng" type="4005"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4Q7nHEem7RYemWV-Nng" type="5002">
+        <children xmi:type="notation:Node" xmi:id="_G5b4RLnHEem7RYemWV-Nng" type="2001" element="_G5e7cbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3afirstLine?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4RbnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4RrnHEem7RYemWV-Nng" type="2001" element="_G5e7dLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3asecondLine?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4R7nHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4SLnHEem7RYemWV-Nng" type="2001" element="_G5e7d7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acity?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4SbnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4SrnHEem7RYemWV-Nng" type="2001" element="_G5e7ernHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acounty?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4S7nHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4TLnHEem7RYemWV-Nng" type="2001" element="_G5e7fbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acountry?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4TbnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4TrnHEem7RYemWV-Nng" type="2001" element="_G5e7gLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3apostcode?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4T7nHEem7RYemWV-Nng"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5b4ULnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5b4UbnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5b4UrnHEem7RYemWV-Nng"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5b4U7nHEem7RYemWV-Nng" type="5003">
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5b4VLnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5b4VbnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5b4VrnHEem7RYemWV-Nng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_G5b4V7nHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_G5b4WLnHEem7RYemWV-Nng" gradStartColor="6356832" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5b4WbnHEem7RYemWV-Nng" x="390" y="165" width="215" height="228"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_G5b4WrnHEem7RYemWV-Nng" type="1004" element="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?">
+      <children xmi:type="notation:Node" xmi:id="_G5b4W7nHEem7RYemWV-Nng" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4XLnHEem7RYemWV-Nng" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4XbnHEem7RYemWV-Nng" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_G5b4XrnHEem7RYemWV-Nng" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_G5b4X7nHEem7RYemWV-Nng" type="2003" element="_G5e7hLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aHIGHACTIVITY?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4YLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4YbnHEem7RYemWV-Nng" type="2003" element="_G5e7h7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aMEDIUMACTIVITY?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4YrnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4Y7nHEem7RYemWV-Nng" type="2003" element="_G5e7irnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aLOWACTIVITY?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4ZLnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_G5b4ZbnHEem7RYemWV-Nng" type="2003" element="_G5e7jbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aTERMINATED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_G5b4ZrnHEem7RYemWV-Nng"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_G5b4Z7nHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_G5b4aLnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_G5b4abnHEem7RYemWV-Nng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_G5b4arnHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_G5b4a7nHEem7RYemWV-Nng" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_G5b4bLnHEem7RYemWV-Nng" x="1005" y="164"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_QoG857nHEem7RYemWV-Nng" type="1004" element="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?">
+      <children xmi:type="notation:Node" xmi:id="_QoG86LnHEem7RYemWV-Nng" type="4015"/>
+      <children xmi:type="notation:Node" xmi:id="_QoG86bnHEem7RYemWV-Nng" type="4016"/>
+      <children xmi:type="notation:Node" xmi:id="_QoG86rnHEem7RYemWV-Nng" type="4017"/>
+      <children xmi:type="notation:Node" xmi:id="_QoG867nHEem7RYemWV-Nng" type="5004">
+        <children xmi:type="notation:Node" xmi:id="_QoG87LnHEem7RYemWV-Nng" type="2003" element="_QoHj8bnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aACTIVE?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QoG87bnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QoG87rnHEem7RYemWV-Nng" type="2003" element="_QoHj9LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aDORMANT?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QoG877nHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QoG88LnHEem7RYemWV-Nng" type="2003" element="_QoHj97nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aTOBETERMINATED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QoG88bnHEem7RYemWV-Nng"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_QoG88rnHEem7RYemWV-Nng" type="2003" element="_QoHj-rnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aBARRED?">
+          <layoutConstraint xmi:type="notation:Location" xmi:id="_QoG887nHEem7RYemWV-Nng"/>
+        </children>
+        <styles xmi:type="notation:DrawerStyle" xmi:id="_QoG89LnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:SortingStyle" xmi:id="_QoG89bnHEem7RYemWV-Nng"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_QoG89rnHEem7RYemWV-Nng"/>
+      </children>
+      <styles xmi:type="notation:ShapeStyle" xmi:id="_QoG897nHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <styles xmi:type="bomnotation:ShapeGradientStyle" xmi:id="_QoG8-LnHEem7RYemWV-Nng" gradStartColor="8454143" gradEndColor="16777215"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_QoG8-bnHEem7RYemWV-Nng" x="420" y="450" width="170" height="141"/>
+    </children>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_GPoU5rnBEem7RYemWV-Nng"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_GPoU57nBEem7RYemWV-Nng"/>
+    <edges xmi:type="notation:Edge" xmi:id="_G5gJkLnHEem7RYemWV-Nng" type="3002" element="_G5figLnHEem7RYemWV-Nng" source="_G5bRGLnHEem7RYemWV-Nng" target="_G5b4ILnHEem7RYemWV-Nng">
+      <children xmi:type="notation:Node" xmi:id="_G5gJkbnHEem7RYemWV-Nng" type="4010">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_G5gJkrnHEem7RYemWV-Nng" y="-15"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5gJk7nHEem7RYemWV-Nng" type="4011">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_G5gJlLnHEem7RYemWV-Nng" y="-15"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5gJlbnHEem7RYemWV-Nng" type="4012">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_G5gJlrnHEem7RYemWV-Nng" y="15"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5gJl7nHEem7RYemWV-Nng" type="4013">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_G5gJmLnHEem7RYemWV-Nng" y="-15"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_G5gJmbnHEem7RYemWV-Nng" type="4014">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_G5gJmrnHEem7RYemWV-Nng" y="15"/>
+      </children>
+      <styles xmi:type="notation:ConnectorStyle" xmi:id="_G5gJm7nHEem7RYemWV-Nng"/>
+      <styles xmi:type="notation:FontStyle" xmi:id="_G5gJnLnHEem7RYemWV-Nng" fontName="Segoe UI" fontHeight="10"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G5gJnbnHEem7RYemWV-Nng" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G5gJnrnHEem7RYemWV-Nng" id="(0.49818181818181817,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G5gJn7nHEem7RYemWV-Nng" id="(0.5,0.0)"/>
+    </edges>
+  </notation:Diagram>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aC8LnHEem7RYemWV-Nng" displayLabel="City" base_NamedElement="_G5e7d7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acity?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aC8bnHEem7RYemWV-Nng" displayLabel="First Line" base_NamedElement="_G5e7cbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3afirstLine?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aC8rnHEem7RYemWV-Nng" displayLabel="Account Opened" base_NamedElement="_G5dtWrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountOpened?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aC87nHEem7RYemWV-Nng" displayLabel="Customer" base_NamedElement="_G5cfMLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_G5aC9LnHEem7RYemWV-Nng" textLength="100" textDefaultValue="Default Institution" base_Property="_G5dtY7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountInstitution?" booleanDefaultValue="false"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aC9bnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5dtYLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountBalance?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqALnHEem7RYemWV-Nng" displayLabel="Institution Address" base_NamedElement="_G5dtZrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3ainstitutionAddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqAbnHEem7RYemWV-Nng" displayLabel="Account Type" base_NamedElement="_G5dtabnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqArnHEem7RYemWV-Nng" displayLabel="Medium Activity" base_NamedElement="_G5e7h7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aMEDIUMACTIVITY?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqA7nHEem7RYemWV-Nng" displayLabel="Terminated" base_NamedElement="_G5e7jbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aTERMINATED?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_G5aqBLnHEem7RYemWV-Nng" textLength="10" textDefaultValue="DEFAULT" base_Property="_G5e7gLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3apostcode?" booleanDefaultValue="false"/>
+  <BOMGlobalDataProfile:Case xmi:id="_G5aqBbnHEem7RYemWV-Nng" base_Class="_G5cfMLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer?" summaryAttributes="customerID customerCategory dateofBirth age totalIncome"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqBrnHEem7RYemWV-Nng" displayLabel="Customer Category" base_NamedElement="_G5cfN7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerCategory?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqB7nHEem7RYemWV-Nng" displayLabel="Account Id" base_NamedElement="_G5dtVLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountId?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_G5aqCLnHEem7RYemWV-Nng" base_Property="_G5cfN7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerCategory?" terminalStates="_G5e7jbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aTERMINATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqCbnHEem7RYemWV-Nng" displayLabel="Employment Details" base_NamedElement="_G5cfRrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aemploymentDetails?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqCrnHEem7RYemWV-Nng" displayLabel="Low Activity" base_NamedElement="_G5e7irnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aLOWACTIVITY?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqC7nHEem7RYemWV-Nng" displayLabel="High Activity" base_NamedElement="_G5e7hLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory%3a%3aHIGHACTIVITY?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqDLnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5dtabnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountType?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqDbnHEem7RYemWV-Nng" displayLabel="County" base_NamedElement="_G5e7ernHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acounty?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqDrnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5dtY7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountInstitution?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqD7nHEem7RYemWV-Nng" displayLabel="Account Balance" base_NamedElement="_G5dtYLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountBalance?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqELnHEem7RYemWV-Nng" displayLabel="Postcode" base_NamedElement="_G5e7gLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3apostcode?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqEbnHEem7RYemWV-Nng" displayLabel="Customer Category" base_NamedElement="_G5e7g7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomerCategory?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_G5aqErnHEem7RYemWV-Nng" decimalUpper="125.00" decimalLower="0.00" decimalLowerInclusive="false" decimalLength="5" decimalDefaultValue="26.25" decimalSubType="fixedPoint" base_Property="_G5cfPbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aage?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_G5aqE7nHEem7RYemWV-Nng" textLength="10" textDefaultValue="Customer01" base_Property="_G5cfNLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerID?" booleanDefaultValue="false"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqFLnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5cfPbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aage?"/>
+  <BOMGlobalDataProfile:Case xmi:id="_G5aqFbnHEem7RYemWV-Nng" base_Class="_G5dtULnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount?" summaryAttributes="accountId accountStatus accountLastAccessed accountBalance accountInstitution accountType"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqFrnHEem7RYemWV-Nng" displayLabel="Residential Address" base_NamedElement="_G5cfQ7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aresidentialAddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqF7nHEem7RYemWV-Nng" displayLabel="Address" base_NamedElement="_G5e7cLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqGLnHEem7RYemWV-Nng" displayLabel="Account" base_NamedElement="_G5dtULnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount?"/>
+  <BOMGlobalDataProfile:CaseIdentifier xmi:id="_G5aqGbnHEem7RYemWV-Nng" base_Property="_G5cfNLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerID?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqGrnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5dtXbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountLastAccessed?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqG7nHEem7RYemWV-Nng" displayLabel="Account Status" base_NamedElement="_G5dtV7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountStatus?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_G5aqHLnHEem7RYemWV-Nng" decimalUpper="999999999.99" decimalLower="0.1" decimalLength="8" decimalPlaces="1" decimalDefaultValue="40000" base_Property="_G5cfQLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3atotalIncome?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqHbnHEem7RYemWV-Nng" displayLabel="Customer ID" base_NamedElement="_G5cfNLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3acustomerID?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqHrnHEem7RYemWV-Nng" displayLabel="Date of Birth" base_NamedElement="_G5cfOrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3adateofBirth?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqH7nHEem7RYemWV-Nng" Searchable="true" base_Property="_G5dtWrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountOpened?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqILnHEem7RYemWV-Nng" displayLabel="Accounts" base_NamedElement="_G5cfMbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aaccounts?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqIbnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5cfQLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3atotalIncome?"/>
+  <BOMGlobalDataProfile:Searchable xmi:id="_G5aqIrnHEem7RYemWV-Nng" Searchable="true" base_Property="_G5cfOrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3adateofBirth?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5aqI7nHEem7RYemWV-Nng" displayLabel="Account Institution" base_NamedElement="_G5dtY7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountInstitution?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRELnHEem7RYemWV-Nng" displayLabel="Country" base_NamedElement="_G5e7fbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acountry?"/>
+  <BOMGlobalDataProfile:AutoCaseIdentifier xmi:id="_G5bREbnHEem7RYemWV-Nng" base_Property="_G5dtVLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountId?" minDigits="5" prefix="Account"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRErnHEem7RYemWV-Nng" displayLabel="Customer" base_NamedElement="_G5dtUbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3acustomer?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRE7nHEem7RYemWV-Nng" displayLabel="Account Last Accessed" base_NamedElement="_G5dtXbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountLastAccessed?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRFLnHEem7RYemWV-Nng" displayLabel="Total Income" base_NamedElement="_G5cfQLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3atotalIncome?"/>
+  <BOMGlobalDataProfile:CaseState xmi:id="_G5bRFbnHEem7RYemWV-Nng" base_Property="_G5dtV7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountStatus?" terminalStates="_QoHj-rnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aBARRED? _QoHj97nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aTOBETERMINATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRFrnHEem7RYemWV-Nng" displayLabel="Second Line" base_NamedElement="_G5e7dLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3asecondLine?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_G5bRF7nHEem7RYemWV-Nng" displayLabel="Age" base_NamedElement="_G5cfPbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3aage?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QoG84rnHEem7RYemWV-Nng" displayLabel="Account Status" base_NamedElement="_QoHj8LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QoG847nHEem7RYemWV-Nng" displayLabel="Dormant" base_NamedElement="_QoHj9LnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aDORMANT?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QoG85LnHEem7RYemWV-Nng" displayLabel="To be Terminated" base_NamedElement="_QoHj97nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aTOBETERMINATED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QoG85bnHEem7RYemWV-Nng" displayLabel="Barred" base_NamedElement="_QoHj-rnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aBARRED?"/>
+  <PrimitiveTypeFacets:LabeledElement xmi:id="_QoG85rnHEem7RYemWV-Nng" displayLabel="Active" base_NamedElement="_QoHj8bnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccountStatus%3a%3aACTIVE?"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_HZvO8LzfEemBJpS-Zgql7g" base_Property="_G5cfOrnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aCustomer%3a%3adateofBirth?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_iVywQLzgEemBJpS-Zgql7g" base_Property="_G5dtXbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountLastAccessed?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_3rG8oL0PEem1XMMziRI13w" textDefaultValue="Default First Line" base_Property="_G5e7cbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3afirstLine?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_43wV8L0PEem1XMMziRI13w" textDefaultValue="Default Second Line" base_Property="_G5e7dLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3asecondLine?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_5-Z08L0PEem1XMMziRI13w" textDefaultValue="Default City" base_Property="_G5e7d7nHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acity?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_63G-kL0PEem1XMMziRI13w" textDefaultValue="Default County" base_Property="_G5e7ernHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acounty?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_8IGsYL0PEem1XMMziRI13w" textDefaultValue="Default Country" base_Property="_G5e7fbnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAddress%3a%3acountry?" booleanDefaultValue="false"/>
+  <PrimitiveTypeFacets:RestrictedType xmi:id="_BydAEL0QEem1XMMziRI13w" decimalDefaultValue="3000" base_Property="_G5dtYLnHEem7RYemWV-Nng?com.example.testcasedatascripting%3a%3aAccount%3a%3aaccountBalance?" booleanDefaultValue="false"/>
+</xmi:XMI>

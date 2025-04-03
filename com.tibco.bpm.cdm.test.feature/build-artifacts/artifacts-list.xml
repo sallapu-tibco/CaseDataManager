@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<project name="com.tibco.bpm.cdm.test.feature artifacts">
+<!-- THIS IS A GENERATED FILE.  Any changes you make will be destroyed. -->
+    <property name="feature_com.tibco.bpm.cdm.test.feature" value="1.0.0.DEV-2025-04-02-0716-sallapu" />
+    <property name="plugin_com.tibco.bpm.cdm.test.feature-com.tibco.bpm.cdm.test" value="1.0.0.DEV-2025-04-02-0716-sallapu" />
+    <property name="plugin_com.tibco.bpm.cdm.test.feature-com.tibco.bpm.cdm.yy" value="1.0.0.DEV-2025-04-02-0716-sallapu" />
+    <property name="plugin_com.tibco.bpm.cdm.test.feature-com.tibco.bpm.cdm.rest.test" value="1.0.0.DEV-2025-04-02-0716-sallapu" />
+</project>

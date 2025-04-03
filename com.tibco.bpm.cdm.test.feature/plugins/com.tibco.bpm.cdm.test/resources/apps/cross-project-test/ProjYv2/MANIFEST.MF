@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+RASC-Version: 2
+Application-Name: ProjY
+Application-Version: 1.0.1.20191124112951540
+Application-Internal-Name: com.crossproj.projy
+Creation-Date: 2019-11-24T11:29:51.540Z
+Governance-State: DRAFT
+Micro-Services: Case-Manager
+Case-Manager: model.dm
+Application-Dependencies: com.crossproj.proja;version="[1.0.0,2.0.0)",com.crossproj.projb;version="[1.0.0,2.0.0)",com.crossproj.projc;version="[1.0.0,2.0.0)",com.crossproj.projd;version="[1.0.0,2.0.0)",com.crossproj.projx;version="[441300.0.0,441301.0.0)"
+
+

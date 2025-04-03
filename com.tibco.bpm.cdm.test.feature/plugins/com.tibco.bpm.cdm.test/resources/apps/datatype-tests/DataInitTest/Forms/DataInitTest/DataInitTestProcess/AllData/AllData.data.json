@@ -1,0 +1,28 @@
+{
+    "items":[
+        {
+            "$param":"booleanParam",
+            "$value":true
+        },
+        {
+            "$param":"dateParam",
+            "$value":"2019-05-10T09:38:59"
+        },
+        {
+            "$param":"numberParam",
+            "$value":"1.0"
+        },
+        {
+            "$param":"textParam",
+            "$value":"Text"
+        },
+        {
+            "$param":"objectParam",
+            "$value":{
+                "$type":"com.tibco.ace.datainit.test.Pet",
+                "name":"name",
+                "type":"type"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+   "accountID":ACCOUNTIDTOBEREPLACED,
+   "state":"STATETOBEREPLACED",
+   "accountType":"ACCOUNTTYPETOBEREPLACED",
+   "dateofAccountOpening":"DATEOFACCOUNTOPENINGTOBEREPLACED",
+   "dateofAccountClosing":"DATEOFACCOUNTCLOSINGTOBEREPLACED",
+   "timeofAccountOpening":"TIMEOFACCOUNTOPENINGTOBEREPLACED",
+   "timeofAccountClosing":"TIMEOFACCOUNTCLOSINGTOBEREPLACED",
+   "accountLiabilityHolding":ACCOUNTLIABILITYHOLDINGTOBEREPLACED,
+   "institutionDetails":{
+      "institutionCode":"INSTITUTIONCODETOBEREPLACED",
+      "nameoftheInstitution":"NAMEOFTHEINSTITUTIONTOBEREPLACED",
+      "institutionBranchAddress":{
+         "firstLine":"FIRSTLINETOBEREPLACED",
+         "secondLine":"SECONDLINETOBEREPLACED",
+         "city":"CITYTOBEREPLACED",
+         "county":"COUNTYTOBEREPLACED",
+         "country":"COUNTRYTOBEREPLACED",
+         "postCode":"POSTCODETOBEREPLACED"
+      }
+   }
+}

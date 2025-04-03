@@ -1,0 +1,12 @@
+complexSingleParameter = com_tibco_ace_datatypes_Factory.createComplexParent();
+complexSingleParameter.parentAttr1 = "Some text";
+complexSingleParameter.parentAttr2 = "Some more text";
+var child = com_tibco_ace_datatypes_Factory.createComplexChild();
+complexSingleParameter.child = child;
+child.childAttr1 = "Some child text";
+child.childAttr2 = "Some more child text";
+var children = com_tibco_ace_datatypes_Factory.createComplexChild();
+complexSingleParameter.children.add(children);
+children.childAttr1 = "Some children text";
+children.childAttr2 = "Some more children text";
+logger.info("Set form data");

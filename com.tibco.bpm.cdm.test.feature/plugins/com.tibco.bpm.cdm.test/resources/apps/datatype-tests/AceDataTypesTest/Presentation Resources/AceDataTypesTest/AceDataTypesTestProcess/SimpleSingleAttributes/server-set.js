@@ -1,0 +1,10 @@
+simpleSingleAttributesParameter.booleanAttr = true;
+simpleSingleAttributesParameter.dateAttr = DateTimeUtil.createDate();
+simpleSingleAttributesParameter.dateTimeTZAttr = DateTimeUtil.createDatetime();
+simpleSingleAttributesParameter.numberDecimalAttr = 123.45;
+simpleSingleAttributesParameter.numberIntegerAttr = 123;
+simpleSingleAttributesParameter.performerAttr = "Participant";
+simpleSingleAttributesParameter.textAttr = "Some text";
+simpleSingleAttributesParameter.timeAttr = DateTimeUtil.createTime();
+simpleSingleAttributesParameter.uriAttr = "https://www.tibco.com/";
+logger.info("Set form data");

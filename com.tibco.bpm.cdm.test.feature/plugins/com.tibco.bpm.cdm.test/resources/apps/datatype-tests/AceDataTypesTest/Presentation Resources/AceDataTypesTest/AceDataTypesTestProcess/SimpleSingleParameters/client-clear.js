@@ -1,0 +1,10 @@
+data.setBooleanParameter(false);
+data.setDateParameter(null);
+data.setDateTimeParameter(null);
+data.setNumberDecimalParameter(null);
+data.setNumberIntegerParameter(null);
+data.setPerformerParameter(null);
+data.setTextParameter(null);
+data.setTimeParameter(null);
+data.setUriParameter(null);
+logger.info("Cleared form data");

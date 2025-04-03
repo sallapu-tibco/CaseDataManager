@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint default-activation="eager"
+	xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jaxrs="http://cxf.apache.org/blueprint/jaxrs" xmlns:cxf="http://cxf.apache.org/blueprint/core"
+	xsi:schemaLocation="
+             http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+             http://cxf.apache.org/blueprint/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd
+             http://cxf.apache.org/blueprint/core http://cxf.apache.org/schemas/blueprint/core.xsd
+             ">
+
+	<reference id="blueDataSource" interface="javax.sql.DataSource" />
+
+	<reference id="seService" interface="com.tibco.bpm.se.api.ScriptEngineService" />
+	
+	<bean id="springBridge" class="com.tibco.bpm.blueprint.spring.bridge.SpringBridge" init-method="init" destroy-method="destroy">
+		<property name="bundleInfo" ref="bundleInfo" />
+		<property name="springContexts">
+			<list>
+				<value>classpath:/com/tibco/bpm/cdm/yy/config/yyBeans.xml
+				</value>
+			</list>
+		</property>
+		<property name="blueprintToSpringMappings">
+			<map>
+				<entry key="dataSource" value-ref="blueDataSource" />			
+				<entry key="scriptEngine" value-ref="seService" />
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="bundleInfoFactory" class="com.tibco.bpm.blueprint.spring.bridge.BundleInfoFactory">
+		<property name="blueprintBundle" ref="blueprintBundle" />
+	</bean>
+	
+	<bean id="bundleInfo" factory-ref="bundleInfoFactory" factory-method="createBundleInfo" />
+	
+	<bean id="clnObserverUpdatedAndDeleted" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="clnObserverUpdatedAndDeleted" />
+	</bean>
+	<service ref="clnObserverUpdatedAndDeleted" interface="com.tibco.bpm.cdm.api.CaseLifecycleNotificationObserver">
+		<service-properties>
+			<entry key="events" value="UPDATED,DELETED"/>
+		</service-properties>	
+	</service>
+
+	<bean id="clnObserverUpdated" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="clnObserverUpdated" />
+	</bean>
+	<service ref="clnObserverUpdated" interface="com.tibco.bpm.cdm.api.CaseLifecycleNotificationObserver">
+		<service-properties>
+			<entry key="events" value="UPDATED"/>
+		</service-properties>	
+	</service>
+
+	<bean id="clnObserverDeleted" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="clnObserverDeleted" />
+	</bean>
+	<service ref="clnObserverDeleted" interface="com.tibco.bpm.cdm.api.CaseLifecycleNotificationObserver">
+		<service-properties>
+			<entry key="events" value="DELETED"/>
+		</service-properties>	
+	</service>
+
+	<bean id="clnObserverAll" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="clnObserverAll" />
+	</bean>
+	<service ref="clnObserverAll" interface="com.tibco.bpm.cdm.api.CaseLifecycleNotificationObserver">
+	</service>
+
+		
+	<!-- ================================= -->
+	<!-- REST service implementation beans -->
+	<!-- ================================= -->
+	
+	<bean id="clnsService" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="clnsService" />
+	</bean>
+	
+	<bean id="autoPurgeService" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="autoPurgeService" />
+	</bean>
+	
+	<bean id="toolsService" factory-ref="springBridge" factory-method="lookupSpringBean">
+		<argument value="toolsService" />
+	</bean>
+	
+	<!-- JAX-RS Endpoint -->
+	
+	<jaxrs:server id="yyServiceREST" address="/yy">
+		<jaxrs:serviceBeans>
+			<ref component-id="clnsService" />
+			<ref component-id="autoPurgeService" />
+			<ref component-id="toolsService" />
+ 		</jaxrs:serviceBeans>
+
+		<jaxrs:extensionMappings>
+			<entry key="json" value="application/json" />
+		</jaxrs:extensionMappings>
+
+		<jaxrs:providers>
+			<bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+			<bean id="exceptionMapper" class="com.tibco.bpm.cdm.core.rest.v1.ExceptionMapper"/>
+		</jaxrs:providers>
+	</jaxrs:server>
+	
+</blueprint>

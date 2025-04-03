@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" generated="true" generatorSource="DataInitTest.xpdl#_3gTRuHDaEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aActivity%26q=DataInitTest%3a%3aDataInitTestProcess%26n=AllData?" formatVersion="11.0.0">
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="DataInitTest/DataInitTestProcess/AllData/AllData.properties" sfRelative="true" internal="true" localized="true"/>
+    <form:externalResource name="resource.ProcessData" uri="ProcessData.js" sfRelative="true"/>
+    <form:externalResource name="resource.instantiateProcessData" uri="instantiate-process-data.js" sfRelative="true"/>
+    <form:externalResource name="resource.execServerScript" uri="exec-server-script.js" sfRelative="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" generatorSource="DataInitTest.xpdl#_thK5oXDbEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=booleanParam?" name="data.booleanParam" label="Boolean Param" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="DataInitTest.xpdl#_0NckYXDbEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=dateParam?" name="data.dateParam" label="Date Param" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="DataInitTest.xpdl#_CEP8IXDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=numberParam?" name="data.numberParam" label="Number Param" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g" decimalPlaces="2" length="10" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="DataInitTest.xpdl#_GujvIXDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=textParam?" name="data.textParam" label="Text Param" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" generatorSource="DataInitTest.xpdl#_JIUb0XDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=objectParam?" name="data.objectParam" label="Object Param" dataType="uml:Class DataInitTest.bom#_d38XcHDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datainit.test%26n=Pet?" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule name="rule.formOpen" label="Form Open" enabled="false">
+      <form:event source="#//@form" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#open" subject="form.open"/>
+      <form:action xsi:type="form:ScriptAction" name="action.formOpen" label="Form Open">
+        <form:script>/** Currently unused */&#xD;
+//setup(logger);&#xD;
+//var jsonData = undefined;</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule name="rule.test" label="Test">
+      <form:event source="#control.test" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.test.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.test" label="Test">
+        <form:script>var processData = createProcessData();&#xD;
+setup(logger, factory, processData);&#xD;
+test();</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_K6_d4HDdEem_74EEWfKSTQ">
+      <form:source target="data.booleanParam" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.booleanParam.value"></form:source>
+      <form:destination target="control.booleanParam" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.booleanParam.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d4XDdEem_74EEWfKSTQ">
+      <form:source target="data.dateParam" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dateParam.value"></form:source>
+      <form:destination target="control.dateParam" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dateParam.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d4nDdEem_74EEWfKSTQ">
+      <form:source target="data.numberParam" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.numberParam.value"></form:source>
+      <form:destination target="control.numberParam" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.numberParam.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d43DdEem_74EEWfKSTQ">
+      <form:source target="data.textParam" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.textParam.value"></form:source>
+      <form:destination target="control.textParam" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.textParam.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d5HDdEem_74EEWfKSTQ">
+      <form:source target="data.objectParam" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.objectParam.value"></form:source>
+      <form:destination target="pane.objectParam" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.objectParam.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d5XDdEem_74EEWfKSTQ">
+      <form:source target="pane.objectParam" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value DataInitTest.bom#_gdHp8HDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datainit.test%3a%3aPet%26n=name?" data="form.pane.objectParam.value.name"></form:source>
+      <form:destination target="control.objectParam_name" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.objectParam_name.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_K6_d5nDdEem_74EEWfKSTQ">
+      <form:source target="pane.objectParam" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value DataInitTest.bom#_iJu8wHDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datainit.test%3a%3aPet%26n=type?" data="form.pane.objectParam.value.type"></form:source>
+      <form:destination target="control.objectParam_type" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.objectParam_type.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>All Data</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" generatorSource="DataInitTest.xpdl#_thK5oXDbEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=booleanParam?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.booleanParam">
+      <form:label>Boolean Param</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="DataInitTest.xpdl#_0NckYXDbEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=dateParam?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.dateParam">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>Date Param</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="DataInitTest.xpdl#_CEP8IXDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=numberParam?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.numberParam">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>15</et:displayLength>
+        <et:maxLength>10</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_decimal_2</et:formatRef>
+      </form:propertySet>
+      <form:label>Number Param</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:control generated="true" generatorSource="DataInitTest.xpdl#_GujvIXDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=textParam?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.textParam">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Text Param</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>true</form:required>
+    </form:control>
+    <form:pane generated="true" generatorSource="DataInitTest.xpdl#_JIUb0XDcEem_74EEWfKSTQ?p=DataInitTest%26s=Process%20Packages%26t=xpdl2%3aFormalParameter%26q=DataInitTest%3a%3aDataInitTestProcess%26n=objectParam?" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class DataInitTest.bom#_d38XcHDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datainit.test%26n=Pet?" name="pane.objectParam" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Object Param</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" generatorSource="DataInitTest.bom#_gdHp8HDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datainit.test%3a%3aPet%26n=name?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.objectParam_name">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Name</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" generatorSource="DataInitTest.bom#_iJu8wHDaEem_74EEWfKSTQ?p=DataInitTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datainit.test%3a%3aPet%26n=type?" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.objectParam_type">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Type</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.test">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Test</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

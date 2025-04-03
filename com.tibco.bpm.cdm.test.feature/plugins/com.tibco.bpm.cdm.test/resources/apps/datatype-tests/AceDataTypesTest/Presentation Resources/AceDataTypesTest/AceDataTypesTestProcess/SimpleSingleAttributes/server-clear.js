@@ -1,0 +1,11 @@
+simpleSingleAttributesParameter.booleanAttr = false;
+simpleSingleAttributesParameter.dateAttr = null;
+simpleSingleAttributesParameter.dateTimeTZAttr = null;
+simpleSingleAttributesParameter.numberDecimalAttr = null;
+simpleSingleAttributesParameter.numberIntegerAttr = null;
+simpleSingleAttributesParameter.performerAttr = null;
+simpleSingleAttributesParameter.textAttr = null;
+simpleSingleAttributesParameter.textEnumAttr = null;
+simpleSingleAttributesParameter.timeAttr = null;
+simpleSingleAttributesParameter.uriAttr = null;
+logger.info("Cleared form data");

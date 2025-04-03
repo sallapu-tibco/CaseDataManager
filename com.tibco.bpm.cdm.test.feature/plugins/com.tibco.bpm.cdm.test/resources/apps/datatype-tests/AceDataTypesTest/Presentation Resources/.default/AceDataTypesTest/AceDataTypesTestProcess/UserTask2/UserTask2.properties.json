@@ -1,0 +1,92 @@
+{"pane_content_label":"User Task 2",
+  "pane_complexSingleParameter_children_property_rowLabel":"{0}",
+  "control_complexSingleParameter_parentAttr1_label":"Parent Attr 1",
+  "control_simpleSingleAttributesParameter_dateTimeTZAttr_label":
+  "DateTimeTZ Attr","pane_complexArrayField_children_label":"Children",
+  "pane_simpleSingleAttributesParameter_label":
+  "Simple Single Attributes Parameter",
+  "control_complexArrayField_parentAttr1_label":"Parent Attr 1",
+  "control_simpleSingleAttributesParameter_dateAttr_label":"Date Attr",
+  "pane_complexSingleParameter_label":"Complex Single Parameter",
+  "pane_complexArrayField__detail_label":"Detail",
+  "control_complexArrayField_children_childAttr1_label":"Child Attr 1",
+  "control_dateTimeParameter_label":"DateTime Parameter",
+  "form_required_message":"{0} is a required field.",
+  "pane_complexSingleParameter_child_label":"Child",
+  "control_complexSingleParameter_parentAttr2_label":"Parent Attr 2",
+  "control_simpleSingleAttributesParameter_textEnumAttr_label":
+  "Text (Enum) Attr",
+  "control_simpleArrayAttributesField_numberIntegerArrayAttr_label":
+  "Number (Integer) Array Attr","control_performerArrayField_label":
+  "Performer Array Field","control_performerParameter_label":
+  "Performer Parameter",
+  "control_simpleArrayAttributesField_textArrayAttr_label":
+  "Text Array Attr","control_complexArrayField_child_childAttr2_label":
+  "Child Attr 2","pane_messages_label":"Invalid Entries",
+  "control_simpleArrayAttributesField_textEnumArrayAttr_label":
+  "Text (Enum) Array Attr",
+  "control_simpleSingleAttributesParameter_textEnumAttr_property_choiceLabels_3":
+  "ENUMLIT4",
+  "control_simpleSingleAttributesParameter_textEnumAttr_property_choiceLabels_2":
+  "ENUMLIT3",
+  "control_simpleSingleAttributesParameter_textEnumAttr_property_choiceLabels_1":
+  "ENUMLIT2",
+  "control_simpleSingleAttributesParameter_textEnumAttr_property_choiceLabels_0":
+  "ENUMLIT1","control_uriParameter_label":"URI Parameter",
+  "control_simpleArrayAttributesField_textEnumArrayAttr_property_choiceLabels_3":
+  "ENUMLIT4","control_dateArrayField_label":"Date Array Field",
+  "control_simpleArrayAttributesField_textEnumArrayAttr_property_choiceLabels_2":
+  "ENUMLIT3","control_textArrayField_label":"Text Array Field",
+  "control_simpleArrayAttributesField_textEnumArrayAttr_property_choiceLabels_1":
+  "ENUMLIT2","control_complexArrayField_children_childAttr2_label":
+  "Child Attr 2","pane_simpleArrayAttributesField_label":
+  "Simple Array Attributes Field",
+  "control_complexArrayField_parentAttr2__master_label":"Parent Attr 2",
+  "control_cancel_label":"Cancel",
+  "pane_complexSingleParameter_children_label":"Children",
+  "control_simpleArrayAttributesField_textEnumArrayAttr_property_choiceLabels_0":
+  "ENUMLIT1","control_simpleSingleAttributesParameter_textAttr_label":
+  "Text Attr","control_submit_label":"Submit","control_textParameter_label":
+  "Text Parameter",
+  "control_simpleSingleAttributesParameter_numberIntegerAttr_label":
+  "Number (Integer) Attr",
+  "control_complexSingleParameter_child_childAttr2_label":"Child Attr 2",
+  "control_timeArrayField_label":"Time Array Field",
+  "control_simpleSingleAttributesParameter_uriAttr_label":"URI Attr",
+  "control_simpleArrayAttributesField_performerArrayAttr_label":
+  "Performer Array Attr","pane_toolbar_label":"Toolbar",
+  "control_dateTimeArrayField_label":"DateTime Array Field",
+  "control_simpleSingleAttributesParameter_performerAttr_label":
+  "Performer Attr","control_numberIntegerArrayField_label":
+  "Number (Integer) Array Field",
+  "control_simpleSingleAttributesParameter_numberDecimalAttr_label":
+  "Number (Decimal) Attr","control_numberIntegerParameter_label":
+  "Number (Integer) Parameter",
+  "control_simpleArrayAttributesField_timeArrayAttr_label":
+  "Time Array Attr","form_action_error_message":
+  "Error in script for action {0} ({1}): {2}",
+  "control_numberDecimalArrayField_label":"Number (Decimal) Array Field",
+  "control_simpleSingleAttributesParameter_timeAttr_label":"Time Attr",
+  "pane_complexArrayField_children_property_rowLabel":"{0}",
+  "control_booleanParameter_label":"Boolean Parameter",
+  "control_complexSingleParameter_children_childAttr1_label":
+  "Child Attr 1","control_simpleArrayAttributesField_uriArrayAttr_label":
+  "URI Array Attr","control_complexArrayField_parentAttr1__master_label":
+  "Parent Attr 1","control_simpleArrayAttributesField_dateArrayAttr_label":
+  "Date Array Attr","control_complexArrayField_parentAttr2_label":
+  "Parent Attr 2","pane_complexArrayField_child_label":"Child",
+  "control_simpleSingleAttributesParameter_booleanAttr_label":
+  "Boolean Attr","control_complexSingleParameter_child_childAttr1_label":
+  "Child Attr 1","control_timeParameter_label":"Time Parameter",
+  "pane_complexArrayField_label":"Complex Array Field","control_close_label":
+  "Close","control_uriArrayField_label":"URI Array Field",
+  "control_simpleArrayAttributesField_numberDecimalArrayAttr_label":
+  "Number (Decimal) Array Attr","form_validation_error_message":
+  "Error in script for validation {0} of Control {1} ({2}): {3}",
+  "control_complexArrayField_child_childAttr1_label":"Child Attr 1",
+  "control_complexSingleParameter_children_childAttr2_label":
+  "Child Attr 2",
+  "control_simpleArrayAttributesField_dateTimeTZArrayAttr_label":
+  "DateTimeTZ Array Attr","control_numberDecimalParameter_label":
+  "Number (Decimal) Parameter","pane_complexArrayField__master_label":
+  "Master","control_dateParameter_label":"Date Parameter"}

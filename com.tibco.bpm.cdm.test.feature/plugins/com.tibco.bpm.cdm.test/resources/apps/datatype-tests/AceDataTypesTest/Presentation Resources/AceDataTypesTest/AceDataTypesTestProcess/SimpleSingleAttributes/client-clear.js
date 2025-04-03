@@ -1,0 +1,12 @@
+var simpleSingleAttributesParameter = data.getSimpleSingleAttributesParameter();
+simpleSingleAttributesParameter.setBooleanAttr(false);
+simpleSingleAttributesParameter.setDateAttr(null);
+simpleSingleAttributesParameter.setDateTimeTZAttr(null);
+simpleSingleAttributesParameter.setNumberDecimalAttr(null);
+simpleSingleAttributesParameter.setNumberIntegerAttr(null);
+simpleSingleAttributesParameter.setPerformerAttr(null);
+simpleSingleAttributesParameter.setTextAttr(null);
+simpleSingleAttributesParameter.setTextEnumAttr(null);
+simpleSingleAttributesParameter.setTimeAttr(null);
+simpleSingleAttributesParameter.setUriAttr(null);
+logger.info("Cleared form data");

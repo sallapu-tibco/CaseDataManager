@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_YUdwsMPwEemDKLStVJ6Eng" xpdExt:DisplayName="ace_2449_process" Name="ace_2449_process">
+  <xpdl2:PackageHeader xpdExt:Language="en_US">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2019-08-21</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>USD</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>nashtapu</xpdl2:Author>
+    <xpdl2:Version>1.0.0.qualifier</xpdl2:Version>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_fjzsRcPwEemDKLStVJ6Eng" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_fjtloMPwEemDKLStVJ6Eng">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_fjzsRsPwEemDKLStVJ6Eng" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_ZhwqQMPwEemDKLStVJ6Eng" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_YUpW4MPwEemDKLStVJ6Eng">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_ZhwqQcPwEemDKLStVJ6Eng" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_GSgHoMQSEemDKLStVJ6Eng" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_GSgHosQSEemDKLStVJ6Eng">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_GSgHocQSEemDKLStVJ6Eng" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_YUpW4MPwEemDKLStVJ6Eng" xpdExt:DisplayName="create case different application" Name="createcasedifferentapplication">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_NvC-QMP9EemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOM" Name="FieldBOM">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="differentApplicationName.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_NFgk8MPwEemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_QdpSgMP9EemDKLStVJ6Eng" xpdExt:DisplayName="FieldCase" Name="FieldCase">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="differentApplicationName.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_NFgk8MPwEemDKLStVJ6Eng"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_SbiikMP9EemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOMRead" Name="FieldBOMRead">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="differentApplicationName.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_NFgk8MPwEemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_ZhwqQsPwEemDKLStVJ6Eng" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_ZhwqQcPwEemDKLStVJ6Eng" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="55.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_ZhwqQ8PwEemDKLStVJ6Eng" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_ZhwqQcPwEemDKLStVJ6Eng" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="592.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_V-NYEMP9EemDKLStVJ6Eng" Name="ScriptCreateCaseDifferentApplication" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Create Case Different Application">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">data.FieldBOM = factory.com_example_differentapplicationbusinessobjectmodel.createDifferentApplicationCase();&#xD;
+data.FieldBOM.caseid = &quot;case 1 - different Application&quot;;&#xD;
+data.FieldBOM.caseState = pkg.com_example_differentapplicationbusinessobjectmodel.states.CREATED;&#xD;
+//create different bom case&#xD;
+//data.FieldCase = bpm.caseData.create(data.FieldBOM,'com.example.differentapplicationbusinessobjectmodel.DifferentApplicationCase');&#xD;
+data.FieldBOMRead = bpm.caseData.read(data.FieldCase);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_ZhwqQcPwEemDKLStVJ6Eng" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="176.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_ZhwqRMPwEemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_V-NYEMP9EemDKLStVJ6Eng" To="_ZhwqQ8PwEemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_V-NYEcP9EemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_ZhwqQsPwEemDKLStVJ6Eng" To="_V-NYEMP9EemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_fjtloMPwEemDKLStVJ6Eng" xpdExt:DisplayName="create case different bom" Name="createcasedifferentbom">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_4wCR4MP1EemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOM" Name="FieldBOM">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="ace_2449_data.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="__6FFcMPvEemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_86jKgMP1EemDKLStVJ6Eng" xpdExt:DisplayName="FieldCase" Name="FieldCase">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="ace_2449_data.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="__6FFcMPvEemDKLStVJ6Eng"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_0y4N4MP3EemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOMRead" Name="FieldBOMRead">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="ace_2449_data.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="__6FFcMPvEemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_fjzsR8PwEemDKLStVJ6Eng" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_fjzsRsPwEemDKLStVJ6Eng" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="55.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_fjzsSMPwEemDKLStVJ6Eng" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_fjzsRsPwEemDKLStVJ6Eng" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="592.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_0wNmUMP1EemDKLStVJ6Eng" Name="ScriptCreateCasesDifferentBOM" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Create Cases Different BOM">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">//create different bom case data&#xD;
+data.FieldBOM = factory.com_example_differentbusinessobjectmodel.createDifferentBOMCase();&#xD;
+data.FieldBOM.caseid = &quot;case 1 - different BOM&quot;;&#xD;
+data.FieldBOM.caseState = pkg.com_example_differentbusinessobjectmodel.states.CREATED;&#xD;
+//create different bom case&#xD;
+//data.FieldCase = bpm.caseData.create(data.FieldBOM,'com.example.differentbusinessobjectmodel.DifferentBOMCase');&#xD;
+data.FieldBOMRead = bpm.caseData.read(data.FieldCase);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_fjzsRsPwEemDKLStVJ6Eng" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="155.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_fjzsScPwEemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_0wNmUMP1EemDKLStVJ6Eng" To="_fjzsSMPwEemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_0wONYMP1EemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_fjzsR8PwEemDKLStVJ6Eng" To="_0wNmUMP1EemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_GSgHosQSEemDKLStVJ6Eng" xpdExt:DisplayName="create case different application different bom" Name="createcasedifferentapplicationdifferentbom">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_GSgHqMQSEemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOM" Name="FieldBOM">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="different_bom.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_49tQwMQREemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_GSgHqcQSEemDKLStVJ6Eng" xpdExt:DisplayName="FieldCase" Name="FieldCase">
+          <xpdl2:DataType>
+            <xpdl2:RecordType>
+              <xpdl2:Member>
+                <xpdl2:ExternalReference location="different_bom.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_49tQwMQREemDKLStVJ6Eng"/>
+              </xpdl2:Member>
+            </xpdl2:RecordType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_GSgHqsQSEemDKLStVJ6Eng" xpdExt:DisplayName="FieldBOMRead" Name="FieldBOMRead">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="different_bom.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_49tQwMQREemDKLStVJ6Eng"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_GSgHo8QSEemDKLStVJ6Eng" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_GSgHocQSEemDKLStVJ6Eng" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="55.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_GSgHpMQSEemDKLStVJ6Eng" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_GSgHocQSEemDKLStVJ6Eng" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="592.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_GSgHpcQSEemDKLStVJ6Eng" Name="ScriptCreateCaseDifferentApplication" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Create Case Different Application">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">//create different bom different application case data&#xD;
+data.FieldBOM = factory.com_example_different_bom_different_application.createDifferentBOMDifferentApplication();&#xD;
+data.FieldBOM.caseid = &quot;case 1 - different Application different BOM&quot;;&#xD;
+data.FieldBOM.caseState = pkg.com_example_different_bom_different_application.states.CREATED;&#xD;
+//create different bom different application case&#xD;
+//data.FieldCase = bpm.caseData.create(data.FieldBOM,'com.example.different_bom_different_application.DifferentBOMDifferentApplication');&#xD;
+data.FieldBOMRead = bpm.caseData.read(data.FieldCase);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_GSgHocQSEemDKLStVJ6Eng" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="176.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_GSgHpsQSEemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_GSgHpcQSEemDKLStVJ6Eng" To="_GSgHpMQSEemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_GSgHp8QSEemDKLStVJ6Eng" xpdExt:DisplayName="" Name="" From="_GSgHo8QSEemDKLStVJ6Eng" To="_GSgHpcQSEemDKLStVJ6Eng">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="1000"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="1000"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

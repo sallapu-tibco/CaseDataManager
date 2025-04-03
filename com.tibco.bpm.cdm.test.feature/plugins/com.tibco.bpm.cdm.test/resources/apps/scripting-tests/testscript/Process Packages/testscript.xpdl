@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xpdl2:Package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:email="http://www.tibco.com/XPD/email1.0.0" xmlns:orchestrator="http://www.tibco.com/XPD/orchestrator1.0.0" xmlns:order="http://www.tibco.com/XPD/order1.0.0" xmlns:xpdExt="http://www.tibco.com/XPD/xpdExtension1.0.0" xmlns:xpdl2="http://www.wfmc.org/2008/XPDL2.1" xsi:schemaLocation="http://www.wfmc.org/2008/XPDL2.1 http://www.wfmc.org/standards/bpmnxpdl_31.xsd" Id="_e3bEIJi-Eemai478WcQ_jw" xpdExt:DisplayName="testscript" Name="testscript">
+  <xpdl2:PackageHeader xpdExt:Language="en_US">
+    <xpdl2:XPDLVersion>2.1</xpdl2:XPDLVersion>
+    <xpdl2:Vendor>TIBCO</xpdl2:Vendor>
+    <xpdl2:Created>2019-06-27</xpdl2:Created>
+    <xpdl2:Description></xpdl2:Description>
+    <xpdl2:Documentation></xpdl2:Documentation>
+    <xpdl2:CostUnit>USD</xpdl2:CostUnit>
+  </xpdl2:PackageHeader>
+  <xpdl2:RedefinableHeader PublicationStatus="UNDER_REVISION">
+    <xpdl2:Author>nashtapu</xpdl2:Author>
+  </xpdl2:RedefinableHeader>
+  <xpdl2:Pools>
+    <xpdl2:Pool Id="_E-S9sNofEemKf7yDj0M7gA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_E-GJYNofEemKf7yDj0M7gA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_E-S9sdofEemKf7yDj0M7gA" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_glAAQJi-Eemai478WcQ_jw" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_e3bEIZi-Eemai478WcQ_jw">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_glAnUJi-Eemai478WcQ_jw" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+    <xpdl2:Pool Id="_Wpx4oJ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="Pool" Name="Pool" BoundaryVisible="true" Process="_Wpx4op1xEem5lq9Ch4kVBA">
+      <xpdl2:Lanes>
+        <xpdl2:Lane Id="_Wpx4oZ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="Lane" Name="Lane">
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo Height="314.0"/>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Lane>
+      </xpdl2:Lanes>
+      <xpdl2:NodeGraphicsInfos>
+        <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="223,179,0" IsVisible="true"/>
+      </xpdl2:NodeGraphicsInfos>
+    </xpdl2:Pool>
+  </xpdl2:Pools>
+  <xpdl2:WorkflowProcesses>
+    <xpdl2:WorkflowProcess Id="_e3bEIZi-Eemai478WcQ_jw" xpdExt:DisplayName="testscript-Process" Name="testscriptProcess">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_pXE1sJjFEemai478WcQ_jw" xpdExt:DisplayName="DFText" Name="DFText">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>200</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_tGefoJjFEemai478WcQ_jw" xpdExt:DisplayName="DFNumber" Name="DFNumber">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>4</xpdl2:Precision>
+              <xpdl2:Scale>0</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_ydkgIJjFEemai478WcQ_jw" xpdExt:DisplayName="DFFixedPointNumber" Name="DFFixedPointNumber">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>6</xpdl2:Precision>
+              <xpdl2:Scale>3</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_1hQ6oJjFEemai478WcQ_jw" xpdExt:DisplayName="DFBoolean" Name="DFBoolean">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_5HR_EJjFEemai478WcQ_jw" xpdExt:DisplayName="DFDate" Name="DFDate">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATE"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_7lcDkJjFEemai478WcQ_jw" xpdExt:DisplayName="DFTime" Name="DFTime">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="TIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_8_2MEJjFEemai478WcQ_jw" xpdExt:DisplayName="DFDateTimeZone" Name="DFDateTimeZone">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATETIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_UjgDoJjGEemai478WcQ_jw" xpdExt:DisplayName="BOMFieldTestData" Name="BOMFieldTestData">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="testdata.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_xWaH8Ji-Eemai478WcQ_jw"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_QNfqAL6UEemCEvD9pZ0wsA" xpdExt:DisplayName="DFImplicitText" Name="DFImplicitText">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>500</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_6jci8L6UEemCEvD9pZ0wsA" xpdExt:DisplayName="DFUri" Name="DFUri">
+          <xpdl2:DataType>
+            <xpdl2:BasicType xpdExt:FieldFormat="URI" Type="STRING"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_-wdV8L6UEemCEvD9pZ0wsA" xpdExt:DisplayName="DFPerformer" Name="DFPerformer">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_hP9g8L6eEemCEvD9pZ0wsA" xpdExt:DisplayName="DFFixedPointNumberImplicit1" Name="DFFixedPointNumberImplicit1">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>6</xpdl2:Precision>
+              <xpdl2:Scale>3</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_mM1DkL6eEemCEvD9pZ0wsA" xpdExt:DisplayName="DFFixedPointNumberImplicit2" Name="DFFixedPointNumberImplicit2">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>6</xpdl2:Precision>
+              <xpdl2:Scale>3</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_9Iu-oL6eEemCEvD9pZ0wsA" xpdExt:DisplayName="DFNumberImplicit" Name="DFNumberImplicit">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_glAnUZi-Eemai478WcQ_jw" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="52.0" LaneId="_glAnUJi-Eemai478WcQ_jw" Width="73.0">
+              <xpdl2:Coordinates XCoordinate="87.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_glAnUpi-Eemai478WcQ_jw" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="52.0" LaneId="_glAnUJi-Eemai478WcQ_jw" Width="67.0">
+              <xpdl2:Coordinates XCoordinate="594.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_A5xgcJjFEemai478WcQ_jw" Name="ScriptTaskBOMManipulation" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task BOM Manipulation">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">//initialize bom &#xD;
+var bomData = factory.com_example_businessobjectmodel.createTestclass();&#xD;
+&#xD;
+bomData.attributeText = &quot;BOM Data value&quot;;&#xD;
+bomData.attributeText = bomData.attributeText.concat(&quot; - Simple&quot;);&#xD;
+bomData.attributeText = bomData.attributeText.toLowerCase();&#xD;
+//expected value is - bom data value - simple&#xD;
+&#xD;
+//bom boolean manipulation&#xD;
+bomData.attributeBoolean = false;&#xD;
+//boolean values attribute has the same operations as text&#xD;
+//expected value is - true&#xD;
+&#xD;
+//bom uri manipulation&#xD;
+bomData.attributeUri = &quot;http://www.tibco-integration.com&quot;;&#xD;
+bomData.attributeUri = bomData.attributeUri.concat(&quot;/help/guid=abcdefghiklmnop&quot;);&#xD;
+bomData.attributeUri = bomData.attributeUri.substr(0,46);&#xD;
+bomData.attributeUri = bomData.attributeUri.concat(&quot;#1234&quot;);&#xD;
+//expected value is - &quot;http://www.tibco-integration.com/help/guid=abcd#1234&quot;&#xD;
+&#xD;
+//bom number manupulation&#xD;
+bomData.attributeNumber = 1234.56;&#xD;
+bomData.attributeNumber.add(7890.123);&#xD;
+bomData.attributeNumber.multiply(0.1);&#xD;
+bomData.attributeNumber.divide(0.2);&#xD;
+bomData.attributeNumber.subtract(1234);&#xD;
+//‭expected value is - 3,328.3415‬&#xD;
+&#xD;
+//bom fixed point manupulation&#xD;
+bomData.attributeFixedPointNumber = 123456.7891;&#xD;
+bomData.attributeFixedPointNumber.add(123456.7891);&#xD;
+bomData.attributeFixedPointNumber.multiply(2);&#xD;
+bomData.attributeFixedPointNumber.divide(2);&#xD;
+bomData.attributeFixedPointNumber.subtract(1111.1111);&#xD;
+//‭expected value is - 245802.4671&#xD;
+&#xD;
+//bom date manupulation&#xD;
+bomData.attributeDate = new Date(&quot;2019-01-02&quot;);&#xD;
+bomData.attributeDate.setDate(12);&#xD;
+bomData.attributeDate.setMonth(11);&#xD;
+bomData.attributeDate.setFullYear(2079);&#xD;
+//‭expected value is - 2079-11-12‬&#xD;
+&#xD;
+//bom time manupulation&#xD;
+//ACE-2330&#xD;
+//temporarily commented - bomData.attributeTime = new Date(&quot;23:19:11&quot;);&#xD;
+bomData.attributeTime.setHours(22);&#xD;
+bomData.attributeTime.setMinutes(44);&#xD;
+bomData.attributeTime.setSeconds(11);&#xD;
+//‭expected value is - 22:44:11&#xD;
+&#xD;
+//bom DateTimeZone manupulation&#xD;
+//ACE-2330&#xD;
+//temporarily commented - bomData.attributeDateTimeTZ = new Date('2019-11-12T19:31:11.231+4:30');&#xD;
+bomData.attributeDateTimeTZ.setFullYear(2012);&#xD;
+bomData.attributeDateTimeTZ.setMonth(3);&#xD;
+bomData.attributeDateTimeTZ.setDate(4);&#xD;
+bomData.attributeDateTimeTZ.setHours(6);&#xD;
+bomData.attributeDateTimeTZ.setMinutes(10);&#xD;
+bomData.attributeDateTimeTZ.setSeconds(24);&#xD;
+bomData.attributeDateTimeTZ.setMilliseconds(100);&#xD;
+Log.write(bomData.attributeDateTimeTZ.getTimezoneOffset());&#xD;
+//missing set - bomData.attributeDateTimeTZ.getTimezoneOffset()&#xD;
+//expected value is - 2012-03-04T06:10:24.100+4:30Z&#xD;
+&#xD;
+&#xD;
+//&quot;{\&quot;attributeText\&quot;:\&quot;bom data value - simple\&quot;,&#xD;
+//\&quot;attributeTime\&quot;:\&quot;22:44:11\&quot;,&#xD;
+//\&quot;attributeDate\&quot;:\&quot;2079-12-12\&quot;,&#xD;
+//\&quot;attributeDateTimeTZ\&quot;:\&quot;2012-04-04T05:10:24.100Z\&quot;,&#xD;
+//\&quot;attributeNumber\&quot;:1234.56,&#xD;
+//\&quot;attributeUri\&quot;:\&quot;http://www.tibco-integration.com/help/guid=abc#1234\&quot;,&#xD;
+//\&quot;attributeBoolean\&quot;:\&quot;false\&quot;,&#xD;
+//\&quot;attributeFixedPointNumber\&quot;:123456.7891}</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_glAnUJi-Eemai478WcQ_jw" Width="114.0">
+              <xpdl2:Coordinates XCoordinate="183.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_9JrtcJjZEemai478WcQ_jw" Name="ScriptTaskSimpleDataManipulation" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task Simple Data Manipulation">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">//boolean df&#xD;
+data.DFBoolean = true;&#xD;
+//expected value - true&#xD;
+&#xD;
+//date df&#xD;
+data.DFDate = new Date();&#xD;
+data.DFDate.setDate(26);&#xD;
+data.DFDate.setMonth(4);&#xD;
+data.DFDate.setFullYear(2019);&#xD;
+//expected value - 2019-04-26&#xD;
+&#xD;
+//time df&#xD;
+//ACE-2330&#xD;
+//temporarily commented - data.DFTime = new Date('11:11:11');&#xD;
+data.DFTime.setHours(17);&#xD;
+data.DFTime.setMinutes(40);&#xD;
+data.DFTime.setSeconds(34);&#xD;
+//expected value - 17:40:34&#xD;
+&#xD;
+//datetimetz df&#xD;
+//ACE-2330&#xD;
+//temporarily commented - data.DFDateTimeZone = new Date();&#xD;
+data.DFDateTimeZone.setFullYear(1992);&#xD;
+data.DFDateTimeZone.setDate(1);&#xD;
+data.DFDateTimeZone.setMonth(6);&#xD;
+data.DFDateTimeZone.setHours(18);&#xD;
+data.DFDateTimeZone.setMinutes(24);&#xD;
+data.DFDateTimeZone.setSeconds(16);&#xD;
+data.DFDateTimeZone.setMilliseconds(343);&#xD;
+//expected value - 1992-06-01T18:24:16.343Z&#xD;
+&#xD;
+//fixed point number df&#xD;
+data.DFFixedPointNumber = 248.163;&#xD;
+data.DFFixedPointNumber.add(0.836);&#xD;
+//expected value - 248.999&#xD;
+&#xD;
+//number df&#xD;
+data.DFNumber = 2480;&#xD;
+data.DFNumber.add(836);&#xD;
+//expected value - 3316&#xD;
+&#xD;
+//text df&#xD;
+data.DFText = &quot;Simple Data Text&quot;;&#xD;
+data.DFText.replace(&quot;Text&quot;,&quot;String&quot;);&#xD;
+data.DFText.concat(&quot;- value&quot;);&#xD;
+data.DFText.toUpperCase();&#xD;
+//expected value - SIMPLE DATA STRING - VALUE&#xD;
+&#xD;
+//uri df&#xD;
+data.DFUri = &quot;http://www.tibco.com&quot;;&#xD;
+data.DFUri.concat(&quot;/customers&quot;);&#xD;
+//expected value - http://www.tibco.com/customers&#xD;
+&#xD;
+//performer df&#xD;
+data.DFPerformer = 'resource1';&#xD;
+&#xD;
+//Assert.assertEquals(result.get(&quot;DFBoolean&quot;), Boolean.TRUE, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFDate&quot;), &quot;2019-05-26&quot;, &quot;incorrect value&quot;);&#xD;
+//ACE-1879 is resolved&#xD;
+//Assert.assertEquals(result.get(&quot;DFTime&quot;), &quot;17:40:34&quot;, &quot;incorrect value&quot;);&#xD;
+//ACE-1879 is resolved&#xD;
+//Assert.assertEquals(result.get(&quot;DFDateTimeZone&quot;), &quot;1992-07-01T17:24:16.343Z&quot;, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFFixedPointNumber&quot;), 248.999, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFNumber&quot;), 3316, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFText&quot;), &quot;SIMPLE DATA STRING- VALUE&quot;, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFUri&quot;), &quot;http://www.tibco.com/customers&quot;, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFPerformer&quot;), &quot;resource1&quot;, &quot;incorrect value&quot;);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_glAnUJi-Eemai478WcQ_jw" Width="166.0">
+              <xpdl2:Coordinates XCoordinate="348.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_Xz_hUL6UEemCEvD9pZ0wsA" Name="ScriptTaskImplicitTypeConversion" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task Implicit Type Conversion">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">data.DFImplicitText = data.DFImplicitText + 'Date: ';&#xD;
+data.DFImplicitText = data.DFImplicitText + data.DFDate;&#xD;
+data.DFImplicitText = data.DFImplicitText + ' DateTimeZome: ';&#xD;
+data.DFImplicitText = data.DFImplicitText + data.DFDateTimeZone;&#xD;
+data.DFImplicitText = data.DFImplicitText + ' Time: ';&#xD;
+data.DFImplicitText = data.DFImplicitText + data.DFTime;&#xD;
+data.DFImplicitText = data.DFImplicitText + ' URI: ';&#xD;
+data.DFImplicitText = data.DFImplicitText + data.DFUri;&#xD;
+data.DFImplicitText = data.DFImplicitText + ' Performer : ';&#xD;
+data.DFImplicitText = data.DFImplicitText + data.DFPerformer;&#xD;
+//Assert.assertEquals(result.get(&quot;DFImplicitText&quot;), &quot;Date: 2019-05-26 DateTimeZone: 1992-07-01T17:24:16.343Z Time: 17:40:34 URI: http://www.tibco.com/customers Performer : resource1, &quot;incorrect value&quot;);&#xD;
+//number assigned to fixed point number&#xD;
+data.DFNumberImplicit = 123.4564;&#xD;
+data.DFFixedPointNumberImplicit1 = data.DFNumberImplicit;&#xD;
+data.DFNumberImplicit = 123.4567;&#xD;
+data.DFFixedPointNumberImplicit2 = data.DFNumberImplicit;&#xD;
+//fixed point number assigned to number&#xD;
+data.DFNumberImplicit = data.DFFixedPointNumber;&#xD;
+//Assert.assertEquals(result.get(&quot;DFNumberImplicit&quot;), 248.999, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFFixedPointNumberImplicit1&quot;), 123.456, &quot;incorrect value&quot;);&#xD;
+//Assert.assertEquals(result.get(&quot;DFFixedPointNumberImplicit2&quot;), 123.457, &quot;incorrect value&quot;);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_glAnUJi-Eemai478WcQ_jw" Width="96.0">
+              <xpdl2:Coordinates XCoordinate="510.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_glAnU5i-Eemai478WcQ_jw" xpdExt:DisplayName="" Name="" From="_Xz_hUL6UEemCEvD9pZ0wsA" To="_glAnUpi-Eemai478WcQ_jw">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_A5xgcZjFEemai478WcQ_jw" xpdExt:DisplayName="" Name="" From="_glAnUZi-Eemai478WcQ_jw" To="_A5xgcJjFEemai478WcQ_jw">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_9JrtcZjZEemai478WcQ_jw" xpdExt:DisplayName="" Name="" From="_A5xgcJjFEemai478WcQ_jw" To="_9JrtcJjZEemai478WcQ_jw">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_Xz_hUb6UEemCEvD9pZ0wsA" xpdExt:DisplayName="" Name="" From="_9JrtcJjZEemai478WcQ_jw" To="_Xz_hUL6UEemCEvD9pZ0wsA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_Wpx4op1xEem5lq9Ch4kVBA" xpdExt:DisplayName="testscript-Process_arrays" Name="testscriptProcess_arrays">
+      <xpdl2:ProcessHeader>
+        <xpdl2:Description></xpdl2:Description>
+      </xpdl2:ProcessHeader>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_Wpx4qp1xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFTextArray" Name="DFTextArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>200</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4q51xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFNumberArray" Name="DFNumberArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4rJ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFFixedPointNumberArray" Name="DFFixedPointNumberArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>8</xpdl2:Precision>
+              <xpdl2:Scale>5</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4rZ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFBooleanArray" Name="DFBooleanArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4rp1xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFDateArray" Name="DFDateArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATE"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4r51xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFTimeArray" Name="DFTimeArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="TIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4sJ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="DFDateTimeZoneArray" Name="DFDateTimeZoneArray" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATETIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_Wpx4sZ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="BOMCallingClass" Name="BOMCallingClass" IsArray="false">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="testdata.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_NZI-UJ8fEemJyaNWJB5-FQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uQyRQLONEemp9tMw2vLQgg" xpdExt:DisplayName="BOMOutsideClasses" Name="BOMOutsideClasses" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:ExternalReference location="testdata_outside.bom" namespace="http://www.eclipse.org/uml2/5.0.0/UML" xref="_liB0cJ8gEemJyaNWJB5-FQ"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_Wpx4o51xEem5lq9Ch4kVBA" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="52.0" LaneId="_Wpx4oZ1xEem5lq9Ch4kVBA" Width="73.0">
+              <xpdl2:Coordinates XCoordinate="87.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_Wpx4pJ1xEem5lq9Ch4kVBA" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="52.0" LaneId="_Wpx4oZ1xEem5lq9Ch4kVBA" Width="67.0">
+              <xpdl2:Coordinates XCoordinate="593.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_Wpx4pZ1xEem5lq9Ch4kVBA" Name="ScriptTaskBOMArrayManipulation" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task BOM Array Manipulation">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">var bomCallingClass = factory.com_example_businessobjectmodel.createTestclasscalling();&#xD;
+var bomLocallyCalledClass = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+var bomLocallyCalledClass_1 = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+var bomLocallyCalledClass_2 = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+var bomLocallyCalledClass_3 = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+var bomOutsideCalledClass_1 = factory.com_example_testdata_outside.createOutside_class();&#xD;
+var bomOutsideCalledClass_2 = factory.com_example_testdata_outside.createOutside_class();&#xD;
+var bomOutsideCalledClass_3 = factory.com_example_testdata_outside.createOutside_class();&#xD;
+var bomOutsideCalledClassObject_1 = factory.com_example_testdata_outside.createOutside_class_object();&#xD;
+var bomOutsideCalledClassObject_2 = factory.com_example_testdata_outside.createOutside_class_object();&#xD;
+//boolean&#xD;
+data.DFBooleanArray.push(true);&#xD;
+data.DFBooleanArray.push(false);&#xD;
+bomCallingClass.attributeBooleanArray.pushAll(data.DFBooleanArray);&#xD;
+for(var i=0; i&lt;data.DFBooleanArray.length; i++)&#xD;
+{&#xD;
+bomCallingClass.attributeBooleanArray.push(data.DFBooleanArray[i]);&#xD;
+}&#xD;
+bomCallingClass.attributeBooleanArray.push(false);&#xD;
+bomCallingClass.attributeBooleanArray.reverse();&#xD;
+var objectBooleanArrayLength = bomCallingClass.attributeBooleanArray.length;&#xD;
+//3&#xD;
+bomCallingClass.attributeBooleanArray.push(true);&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeBooleanArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling boolean array elements: ' + bomCallingClass.attributeBooleanArray[i]);&#xD;
+}&#xD;
+//false, false, true, true &#xD;
+//date&#xD;
+data.DFDateArray.push(new Date('1992-11-19'));&#xD;
+data.DFDateArray.push(new Date('2002-10-18'));&#xD;
+bomCallingClass.attributeDateArray.pushAll(data.DFDateArray);&#xD;
+bomCallingClass.attributeDateArray.push(new Date('1968-02-11'), new Date('2023-09-08'), new Date('2029-01-03'));&#xD;
+var objectDateArrayLength = bomCallingClass.attributeDateArray.length;&#xD;
+//5&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeDateArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling date array elements: ' + bomCallingClass.attributeDateArray[i]);&#xD;
+}&#xD;
+//1992-11-19, 2002-10-18, 1968-02-11, 2023-09-08, 2029-01-03&#xD;
+//date time zone&#xD;
+bomCallingClass.attributeDateTimeTZArray.push(new Date('1992-06-01T18:24:16.343+00:30'));&#xD;
+bomCallingClass.attributeDateTimeTZArray.push(new Date('1993-11-29T01:10:13.979-00:30'));&#xD;
+bomCallingClass.attributeDateTimeTZArray.reverse();&#xD;
+var objectDateTimeTZArrayLength = bomCallingClass.attributeDateTimeTZArray.length;&#xD;
+//2&#xD;
+bomCallingClass.attributeDateTimeTZArray.push(new Date('2021-12-26T11:12:13.123'));&#xD;
+for(var i=0; i&lt;bomCallingClass.attributeDateTimeTZArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling date time TZ array elements: ' + bomCallingClass.attributeDateTimeTZArray[i]);&#xD;
+}&#xD;
+//1992-06-01T18:54:16, 1993-11-29T00:40:13, 2021-12-26T11:12:13&#xD;
+//text&#xD;
+data.DFTextArray.push(&quot;first value in bom text array&quot;);&#xD;
+data.DFTextArray.push(&quot;second value in bom text array&quot;);&#xD;
+&#xD;
+for(var i=0; i&lt;data.DFTextArray.length; i++)&#xD;
+{&#xD;
+	bomCallingClass.attributeTextArray.push(data.DFTextArray[i]);&#xD;
+}&#xD;
+bomCallingClass.attributeTextArray.push(&quot;third value in bom text array&quot;);&#xD;
+for(var i=3; i&lt;8; i++)&#xD;
+{&#xD;
+	bomCallingClass.attributeTextArray.push((i+1).toString() + 'TH value in bom text array');&#xD;
+}&#xD;
+bomCallingClass.attributeTextArray[2] = bomCallingClass.attributeTextArray[2].toUpperCase();&#xD;
+bomCallingClass.attributeTextArray[4] = bomCallingClass.attributeTextArray[4].toLowerCase();&#xD;
+bomCallingClass.attributeTextArray[5] = bomCallingClass.attributeTextArray[5].substr(0, 5);&#xD;
+var objectTextArrayLength = bomCallingClass.attributeTextArray.length;&#xD;
+//8&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeTextArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling text array elements: ' + bomCallingClass.attributeTextArray[i]);&#xD;
+}&#xD;
+//first value in bom text array, second value in bom text array, THIRD VALUE IN BOM TEXT ARRAY, 4TH value in bom text array, 5th value in bom text array,&#xD;
+//6TH v, 7TH value in bom text array, 8TH value in bom text array&#xD;
+//URI&#xD;
+bomCallingClass.attributeUriArray.push(&quot;http://www.tibco.com&quot;);&#xD;
+bomCallingClass.attributeUriArray.push(&quot;http://www.vista-equity.com&quot;);&#xD;
+bomCallingClass.attributeUriArray.push(&quot;http://www.citibank.com&quot;);&#xD;
+bomCallingClass.attributeUriArray[2] = bomCallingClass.attributeUriArray[2].concat(&quot;/guid=abcd/customer-success-story&quot;);&#xD;
+bomCallingClass.attributeUriArray.reverse();&#xD;
+var objectUriLength = bomCallingClass.attributeUriArray.length;&#xD;
+//3&#xD;
+bomCallingClass.attributeUriArray.push('http://www.spotfire.org/');&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeUriArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling uri array elements: ' + bomCallingClass.attributeUriArray[i]);&#xD;
+}&#xD;
+//http://www.citibank.com/guid=abcd/customer-success-story, http://www.vista-equity.com, http://www.tibco.com, http://www.spotfire.org/&#xD;
+//time&#xD;
+data.DFTimeArray.push(new Date('10:11:12'));&#xD;
+data.DFTimeArray.push(new Date('13:14:15'));&#xD;
+//bomCallingClass.attributeTimeArray = data.DFTimeArray;&#xD;
+for(var i=0; i&lt;data.DFTimeArray.length; i++)&#xD;
+{&#xD;
+bomCallingClass.attributeTimeArray.push(data.DFTimeArray[i]);&#xD;
+}&#xD;
+bomCallingClass.attributeTimeArray.push(new Date('16:17:18'), new Date('19:20:21'), new Date('01:02:03'), new Date('22:23:24'));&#xD;
+var objectTimeArrayLength = bomCallingClass.attributeTimeArray.length;&#xD;
+//6&#xD;
+bomCallingClass.attributeTimeArray.pop();&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeTimeArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling time array elements: ' + bomCallingClass.attributeTimeArray[i]);&#xD;
+}&#xD;
+//10:11:12, 13:14:15, 16:17:18, 19:20:21, 01:02:03&#xD;
+//Fixed point number&#xD;
+data.DFFixedPointNumberArray.push(1001.234);&#xD;
+data.DFFixedPointNumberArray.push(2002.345);&#xD;
+//bomCallingClass.attributeFixedPointNumberArray = data.DFFixedPointNumberArray;&#xD;
+for(var i=0; i&lt;data.DFFixedPointNumberArray.length; i++)&#xD;
+{&#xD;
+bomCallingClass.attributeFixedPointNumberArray.push(data.DFFixedPointNumberArray[i]);&#xD;
+}&#xD;
+bomCallingClass.attributeFixedPointNumberArray.push(3003.456, 4004.567);&#xD;
+bomCallingClass.attributeFixedPointNumberArray.push(bomCallingClass.attributeFixedPointNumberArray[1] + bomCallingClass.attributeFixedPointNumberArray[2]);&#xD;
+var objectFixedPointNumberArrayLength = bomCallingClass.attributeFixedPointNumberArray.length;&#xD;
+//5&#xD;
+for(var i=0; i&lt; bomCallingClass.attributeFixedPointNumberArray.length; i++)&#xD;
+{&#xD;
+	Log.write('value of calling fixed point number array elements: ' + bomCallingClass.attributeFixedPointNumberArray[i]);&#xD;
+}&#xD;
+//1001.234, 2002.345, 3003.456, 4004.567, 5005.801&#xD;
+//object mapping&#xD;
+bomLocallyCalledClass_1.attributeDateLocallyCalledArray.push(new Date('1990-04-26'));&#xD;
+bomLocallyCalledClass_1.attributeDateLocallyCalledArray.push(new Date('2019-07-07'));&#xD;
+bomLocallyCalledClass_1.attributeLocallyCalledEnumeration = pkg.com_example_businessobjectmodel.testenumeration.INTERMEDIATE1234567890;&#xD;
+bomLocallyCalledClass_1.attributeNumberLocallyCalled = (12345 * 0.13); //1604.85&#xD;
+bomLocallyCalledClass_1.attributeTextLocallyCalled = &quot;First&quot;;&#xD;
+bomCallingClass.attributeLocalCallingArray.push(bomLocallyCalledClass_1);&#xD;
+bomCallingClass.attributeLocalCallingArray[0].attributeDateLocallyCalledArray.push(new Date('2019-10-15'));&#xD;
+bomCallingClass.attributeLocalCallingArray[0].attributeNumberLocallyCalled.add(0.2); //2469.334&#xD;
+&#xD;
+bomLocallyCalledClass_2.attributeLocallyCalledEnumeration = pkg.com_example_businessobjectmodel.testenumeration.COMPLETED1234435645689;&#xD;
+bomLocallyCalledClass_2.attributeNumberLocallyCalled = (12340 * 0.2); //2468&#xD;
+bomLocallyCalledClass_2.attributeTextLocallyCalled = &quot;SECON&quot;;&#xD;
+bomCallingClass.attributeLocalCallingArray.push(bomLocallyCalledClass_2);&#xD;
+bomCallingClass.attributeLocalCallingArray[1].attributeNumberLocallyCalled.multiply(2); //4936&#xD;
+bomCallingClass.attributeLocalCallingArray[1].attributeTextLocallyCalled = bomCallingClass.attributeLocalCallingArray[1].attributeTextLocallyCalled.toLowerCase();&#xD;
+&#xD;
+bomLocallyCalledClass_3.attributeDateLocallyCalledArray.push(new Date('2990-04-26'));&#xD;
+bomLocallyCalledClass_3.attributeDateLocallyCalledArray.push(new Date('1019-07-07'));&#xD;
+bomLocallyCalledClass_3.attributeDateLocallyCalledArray.push(new Date('1947-08-15'));&#xD;
+bomLocallyCalledClass_3.attributeDateLocallyCalledArray.push(new Date('1984-04-26'));&#xD;
+bomLocallyCalledClass_3.attributeTextLocallyCalled = &quot;third&quot;;&#xD;
+bomCallingClass.attributeLocalCallingArray.push(bomLocallyCalledClass_3);&#xD;
+bomCallingClass.attributeLocalCallingArray[2].attributeTextLocallyCalled = bomCallingClass.attributeLocalCallingArray[2].attributeTextLocallyCalled.toUpperCase();&#xD;
+bomCallingClass.attributeLocalCallingArray.reverse();&#xD;
+//conact is not working, so using push&#xD;
+//@Birju - As per the concat() API, it returns a new array. It does not change the existing array.&#xD;
+//+&quot;bomCallingClass.attributeLocalCallingArray.concat(bomLocallyCalledClass_1);&#xD;
+bomCallingClass.attributeLocalCallingArray.push(bomCallingClass.attributeLocalCallingArray[2]);&#xD;
+//pushing array-1 which is bomLocallyCalledClass_1&#xD;
+//copyWithin is not not working&#xD;
+//@Birju - copyWithin() is an ES6 API that does not seem to be supported in Nashorn.&#xD;
+//+&quot;bomCallingClass.attributeLocalCallingArray.copyWithin(3,2,4);&#xD;
+//but copying bomLocallyCalledClass_1 values&#xD;
+//TODO insterted by nashtapu [Jul 8, 2019 5:01:14 PM] need some debugging here the value gets updated to all copies&#xD;
+bomCallingClass.attributeLocalCallingArray[3].attributeDateLocallyCalledArray.push(new Date('1948-01-30'));&#xD;
+bomCallingClass.attributeLocalCallingArray[3].attributeLocallyCalledEnumeration = pkg.com_example_businessobjectmodel.testenumeration.CANCELLED;&#xD;
+bomCallingClass.attributeLocalCallingArray[3].attributeNumberLocallyCalled = bomCallingClass.attributeLocalCallingArray[3].attributeDateLocallyCalledArray.length;&#xD;
+//THIRD 2990-04-26 101907-07, 1947-08-15, 1984-04-26&#xD;
+//secon COMPLETED1234435645689, 49.36&#xD;
+//First INTERMEDIATE1234567890, 1604.9, 1990-04-26, 2019-07-07, 2019-10-15&#xD;
+//First CANCELLED, 4, 1990-04-26, 2019-07-07, 2019-10-15, 1948-01-30&#xD;
+//evaluate one of the objects in the array&#xD;
+var objectLocallyCalledObjectArrayLength = bomCallingClass.attributeLocalCallingArray.length;&#xD;
+var bomLocallyCalledClass_Evaluate_1 = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+var bomLocallyCalledClass_Evaluate_2 = factory.com_example_businessobjectmodel.createLocallycalledclass();&#xD;
+bomLocallyCalledClass_Evaluate_1 = bomCallingClass.attributeLocalCallingArray[3];&#xD;
+bomLocallyCalledClass_Evaluate_2 = bomCallingClass.attributeLocalCallingArray[1];&#xD;
+&#xD;
+//outside enumeration&#xD;
+bomCallingClass.attributeOutsideEnumeration = pkg.com_example_testdata_outside.outside_enumeration.OUTSIDEENUMERATION1;&#xD;
+//construct outside class object - 1&#xD;
+var xString = &quot;http://www.twitter.com&quot;;&#xD;
+bomOutsideCalledClassObject_1.outsideClassObjectAttributeURI = xString;&#xD;
+bomOutsideCalledClassObject_1.outsideClassObjectAttributeURI = bomOutsideCalledClassObject_1.outsideClassObjectAttributeURI.concat(&quot;/celebrityProfile1&quot;);&#xD;
+bomOutsideCalledClassObject_1.outsideClassObjectAttributeBoolean = true;&#xD;
+//construct outside class - 1&#xD;
+data.DFDateTimeZoneArray.pop();&#xD;
+data.DFDateTimeZoneArray.pop();&#xD;
+data.DFDateTimeZoneArray.pop();&#xD;
+data.DFDateTimeZoneArray.push(new Date('1993-11-19'), new Date('2003-10-18'));&#xD;
+bomOutsideCalledClass_1.outsideAttributeDateTimeZoneArray.pushAll(data.DFDateTimeZoneArray);&#xD;
+bomOutsideCalledClass_1.outsideAttributeDateTimeZoneArray.push(new Date('1680-05-29'));&#xD;
+for(var i=0; i&lt;2; i++)&#xD;
+{&#xD;
+	data.DFTextArray.pop();&#xD;
+}&#xD;
+data.DFTextArray.push('1st text value inserted using pushAll(array)', &quot;2nd text value inserted using pushAll(array)&quot;);&#xD;
+bomOutsideCalledClass_1.outsideAttributeTextArray.pushAll(data.DFTextArray);&#xD;
+bomOutsideCalledClass_1.outsideAttributeTextArray.push('3rd text value inserted using push(object)');&#xD;
+bomOutsideCalledClass_1.outsideAttributeObject = bomOutsideCalledClassObject_1;&#xD;
+&#xD;
+//construct outside class object - 2&#xD;
+var yString = &quot;http://www.instagram.com&quot;;&#xD;
+bomOutsideCalledClassObject_2.outsideClassObjectAttributeURI = yString;&#xD;
+bomOutsideCalledClassObject_2.outsideClassObjectAttributeURI = bomOutsideCalledClassObject_1.outsideClassObjectAttributeURI.concat(&quot;/politicianProfile1&quot;);&#xD;
+bomOutsideCalledClassObject_2.outsideClassObjectAttributeBoolean = false;&#xD;
+&#xD;
+//construct outside class - 2&#xD;
+//trying &lt;array>.length = 0; to clear array&#xD;
+data.DFDateTimeZoneArray.length = 0;&#xD;
+data.DFDateTimeZoneArray.push(new Date('1994-11-19'), new Date('2004-10-18'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1857-06-13'));&#xD;
+bomOutsideCalledClass_2.outsideAttributeDateTimeZoneArray.pushAll(data.DFDateTimeZoneArray);&#xD;
+bomOutsideCalledClass_2.outsideAttributeDateTimeZoneArray.push(new Date('1680-05-29'));&#xD;
+&#xD;
+data.DFTextArray.length = 0;&#xD;
+var objectTextArrayLength2 = data.DFTextArray.length;&#xD;
+data.DFTextArray.push('single value in text array - should still be considered as array');&#xD;
+var objectTextArrayLength3 = data.DFTextArray.length;&#xD;
+bomOutsideCalledClass_2.outsideAttributeTextArray.pushAll(data.DFTextArray);&#xD;
+bomOutsideCalledClass_2.outsideAttributeObject = bomOutsideCalledClassObject_2;&#xD;
+&#xD;
+data.BOMOutsideClasses.push(bomOutsideCalledClass_2, bomOutsideCalledClass_1);&#xD;
+bomCallingClass.attributeOutsideCallingArray.pushAll(data.BOMOutsideClasses);&#xD;
+data.BOMCallingClass = bomCallingClass;&#xD;
+&#xD;
+&#xD;
+//			Object objectBooleanArrayLength = scope.getValue(&quot;objectBooleanArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectBooleanArrayLength.toString(), &quot;3&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectDateArrayLength = scope.getValue(&quot;objectDateArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectDateArrayLength.toString(), &quot;5&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectDateTimeTZArrayLength = scope.getValue(&quot;objectDateTimeTZArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectDateTimeTZArrayLength.toString(), &quot;2&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectTextArrayLength = scope.getValue(&quot;objectTextArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectTextArrayLength.toString(), &quot;8&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectTextArrayLength2 = scope.getValue(&quot;objectTextArrayLength2&quot;);&#xD;
+//			Assert.assertEquals(objectTextArrayLength2.toString(), &quot;0&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectTextArrayLength3 = scope.getValue(&quot;objectTextArrayLength3&quot;);&#xD;
+//			Assert.assertEquals(objectTextArrayLength3.toString(), &quot;1&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectUriLength = scope.getValue(&quot;objectUriLength&quot;);&#xD;
+//			Assert.assertEquals(objectUriLength.toString(), &quot;3&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object objectTimeArrayLength = scope.getValue(&quot;objectTimeArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectTimeArrayLength.toString(), &quot;6&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object bomLocallyCalledClassEvaluate = scope.getValue(&quot;bomLocallyCalledClass_Evaluate_1&quot;);&#xD;
+//			System.out.println(&quot;bomLocallyCalledClass_Evaluate is: &quot; + bomLocallyCalledClassEvaluate);&#xD;
+//			Assert.assertEquals(bomLocallyCalledClassEvaluate,&#xD;
+//					&quot;{\&quot;attributeTextLocallyCalled\&quot;: \&quot;First\&quot;, \&quot;attributeNumberLocallyCalled\&quot;: 4, \&quot;attributeDateLocallyCalledArray\&quot;: [\&quot;1990-04-26\&quot;, \&quot;2019-07-07\&quot;, \&quot;2019-10-15\&quot;, \&quot;1948-01-30\&quot;], \&quot;attributeLocallyCalledEnumeration\&quot;: \&quot;CANCELLED\&quot;}&quot;,&#xD;
+//					&quot;incorrect payload for the object&quot;);&#xD;
+&#xD;
+//			bomLocallyCalledClassEvaluate = scope.getValue(&quot;bomLocallyCalledClass_Evaluate_2&quot;);&#xD;
+//			System.out.println(&quot;bomLocallyCalledClass_Evaluate is: &quot; + bomLocallyCalledClassEvaluate);&#xD;
+//			Assert.assertEquals(bomLocallyCalledClassEvaluate,&#xD;
+//					&quot;{\&quot;attributeTextLocallyCalled\&quot;: \&quot;secon\&quot;, \&quot;attributeNumberLocallyCalled\&quot;: 2468, \&quot;attributeLocallyCalledEnumeration\&quot;: \&quot;COMPLETED1234435645689\&quot;}&quot;,&#xD;
+//					&quot;incorrect payload for the object&quot;);&#xD;
+&#xD;
+//			Object objectLocallyCalledObjectArrayLength = scope.getValue(&quot;objectLocallyCalledObjectArrayLength&quot;);&#xD;
+//			Assert.assertEquals(objectLocallyCalledObjectArrayLength.toString(), &quot;4&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Map&lt;String, Object> result = scope.getData();&#xD;
+&#xD;
+//			String bomCallingClass = (String) result.get(&quot;BOMCallingClass&quot;);&#xD;
+//			System.out.println(&quot;BOMCallingClass is &quot; + bomCallingClass);&#xD;
+//			Assert.assertEquals(bomCallingClass,&#xD;
+//					&quot;{\&quot;attributeTextArray\&quot;:[\&quot;first value in bom text array\&quot;,\&quot;second value in bom text array\&quot;,\&quot;THIRD VALUE IN BOM TEXT ARRAY\&quot;,\&quot;4TH value in bom text array\&quot;,\&quot;5th value in bom text array\&quot;,\&quot;6TH v\&quot;,\&quot;7TH value in bom text array\&quot;,\&quot;8TH value in bom text array\&quot;],\&quot;attributeTimeArray\&quot;:[\&quot;10:11:12\&quot;,\&quot;13:14:15\&quot;,\&quot;16:17:18\&quot;,\&quot;19:20:21\&quot;,\&quot;01:02:03\&quot;],\&quot;attributeDateArray\&quot;:[\&quot;1992-11-19\&quot;,\&quot;2002-10-18\&quot;,\&quot;1968-02-11\&quot;,\&quot;2023-09-08\&quot;,\&quot;2029-01-03\&quot;],\&quot;attributeDateTimeTZArray\&quot;:[\&quot;1993-11-28T14:40:13.979Z\&quot;,\&quot;1992-06-01T17:54:16.343Z\&quot;,\&quot;2021-12-26T03:12:13.123Z\&quot;],\&quot;attributeUriArray\&quot;:[\&quot;http://www.citibank.com/guid=abcd/customer-success-story\&quot;,\&quot;http://www.vista-equity.com\&quot;,\&quot;http://www.tibco.com\&quot;,\&quot;http://www.spotfire.org/\&quot;],\&quot;attributeBooleanArray\&quot;:[false,false,true,true],\&quot;attributeFixedPointNumberArray\&quot;:[1001.234,2002.345,3003.456,4004.567,5005.801],\&quot;attributeOutsideEnumeration\&quot;:\&quot;OUTSIDEENUMERATION1\&quot;,\&quot;attributeLocalCallingArray\&quot;:[{\&quot;attributeTextLocallyCalled\&quot;:\&quot;THIRD\&quot;,\&quot;attributeDateLocallyCalledArray\&quot;:[\&quot;2990-04-26\&quot;,\&quot;1019-07-07\&quot;,\&quot;1947-08-15\&quot;,\&quot;1984-04-26\&quot;]},{\&quot;attributeTextLocallyCalled\&quot;:\&quot;secon\&quot;,\&quot;attributeNumberLocallyCalled\&quot;:2468,\&quot;attributeLocallyCalledEnumeration\&quot;:\&quot;COMPLETED1234435645689\&quot;},{\&quot;attributeTextLocallyCalled\&quot;:\&quot;First\&quot;,\&quot;attributeNumberLocallyCalled\&quot;:4,\&quot;attributeDateLocallyCalledArray\&quot;:[\&quot;1990-04-26\&quot;,\&quot;2019-07-07\&quot;,\&quot;2019-10-15\&quot;,\&quot;1948-01-30\&quot;],\&quot;attributeLocallyCalledEnumeration\&quot;:\&quot;CANCELLED\&quot;},{\&quot;attributeTextLocallyCalled\&quot;:\&quot;First\&quot;,\&quot;attributeNumberLocallyCalled\&quot;:4,\&quot;attributeDateLocallyCalledArray\&quot;:[\&quot;1990-04-26\&quot;,\&quot;2019-07-07\&quot;,\&quot;2019-10-15\&quot;,\&quot;1948-01-30\&quot;],\&quot;attributeLocallyCalledEnumeration\&quot;:\&quot;CANCELLED\&quot;}],\&quot;attributeOutsideCallingArray\&quot;:[{\&quot;outsideAttributeDateTimeZoneArray\&quot;:[\&quot;1994-11-18T22:00:00.000Z\&quot;,\&quot;2004-10-17T23:00:00.000Z\&quot;,\&quot;1857-06-12T22:00:00.000Z\&quot;,\&quot;1680-05-28T23:00:00.000Z\&quot;],\&quot;outsideAttributeTextArray\&quot;:[\&quot;single value in text array - should still be considered as array\&quot;],\&quot;outsideAttributeObject\&quot;:{\&quot;outsideClassObjectAttributeURI\&quot;:\&quot;http://www.twitter.com/celebrityProfile1/politicianProfile1\&quot;,\&quot;outsideClassObjectAttributeBoolean\&quot;:false}},{\&quot;outsideAttributeDateTimeZoneArray\&quot;:[\&quot;1993-11-18T22:00:00.000Z\&quot;,\&quot;2003-10-17T23:00:00.000Z\&quot;,\&quot;1680-05-28T23:00:00.000Z\&quot;],\&quot;outsideAttributeTextArray\&quot;:[\&quot;1st text value inserted using pushAll(array)\&quot;,\&quot;2nd text value inserted using pushAll(array)\&quot;,\&quot;3rd text value inserted using push(object)\&quot;],\&quot;outsideAttributeObject\&quot;:{\&quot;outsideClassObjectAttributeURI\&quot;:\&quot;http://www.twitter.com/celebrityProfile1\&quot;,\&quot;outsideClassObjectAttributeBoolean\&quot;:true}}]}&quot;,&#xD;
+//					&quot;incorrect payload for the object&quot;);&#xD;
+&#xD;
+&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_Wpx4oZ1xEem5lq9Ch4kVBA" Width="205.0">
+              <xpdl2:Coordinates XCoordinate="228.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_Wpx4pp1xEem5lq9Ch4kVBA" Name="ScriptTaskSimpleDataManipulation" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task Simple Data Manipulation">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">data.DFBooleanArray.push(true);&#xD;
+data.DFBooleanArray.push(false); &#xD;
+var booleanArrayLength = data.DFBooleanArray.length;&#xD;
+data.DFBooleanArray.push(false);&#xD;
+for(var i=0; i&lt; data.DFBooleanArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of boolean array elements: ' + data.DFBooleanArray[i]);&#xD;
+} //expected value - true, false, false&#xD;
+data.DFDateArray.push(new Date('1990-04-26'));&#xD;
+data.DFDateArray.push(new Date());&#xD;
+data.DFDateArray[1].setDate(10);&#xD;
+data.DFDateArray[1].setMonth(10);&#xD;
+data.DFDateArray[1].setFullYear(1991);&#xD;
+var dateArrayLength = data.DFDateArray.length;&#xD;
+data.DFDateArray.push(new Date('1990-04-26')); &#xD;
+for(var i=0; i&lt; data.DFDateArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of date array elements: ' + data.DFDateArray[i]);&#xD;
+}//expected value - 1990-04-26, 1991-11-10, 1990-04-26&#xD;
+data.DFTimeArray.push(new Date('10:11:12'));&#xD;
+data.DFTimeArray.push(new Date('13:14:15'));&#xD;
+data.DFTimeArray.push(new Date('16:17:18')); &#xD;
+data.DFTimeArray.push(new Date('19:20:21'));&#xD;
+data.DFTimeArray.push(new Date('22:23:24')); &#xD;
+data.DFTimeArray.push(new Date('01:02:03'));&#xD;
+data.DFTimeArray.push(new Date('04:05:06')); &#xD;
+data.DFTimeArray.push(new Date('13:14:15'));&#xD;
+var timeArrayLength = data.DFTimeArray.length; &#xD;
+data.DFTimeArray.push(new Date('13:14:15'));&#xD;
+for(var i=0; i&lt; data.DFTimeArray.length; i++) &#xD;
+{&#xD;
+Log.write('value of time array elements: ' + data.DFTimeArray[i].toString());&#xD;
+}//expected value - 10:11:12, 13:14:15, 16:17:18, 19:20:21, 22:23:24, 01:02:03, 04:05:06, 13:14:15, 13:14:15&#xD;
+data.DFDateTimeZoneArray.push(new Date('1992-06-01T18:24:16.343+00:30'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1993-07-02T19:25:26.344+01:00'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1994-08-03T20:26:36.444+01:30'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1995-09-04T21:27:46.555+02:00'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1995-09-04T21:27:46.555-11:00'));&#xD;
+data.DFDateTimeZoneArray.push(new Date('1995-09-04T21:27:46.555-11:00'));&#xD;
+var dateTimeZoneArrayLength = data.DFDateTimeZoneArray.length;&#xD;
+data.DFDateTimeZoneArray.pop();&#xD;
+for(var i=0; i&lt; data.DFDateTimeZoneArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of date time array elements: ' + data.DFDateTimeZoneArray[i]);&#xD;
+}//expected value - 1992-06-01T18:24:16.343+00:30, 1993-07-02T19:25:26.344+01:00, 1994-08-03T20:26:36.444+01:30, 1995-09-04T21:27:46.555+02:00, 1995-09-04T21:27:46.555-11:00&#xD;
+data.DFFixedPointNumberArray.push((4.5*60)+1.29811); //‭271.29811‬&#xD;
+data.DFFixedPointNumberArray.push(Math.PI); //3.14159&#xD;
+data.DFFixedPointNumberArray.push(Math.LN10); //2.302&#xD;
+data.DFFixedPointNumberArray.push(Math.LN2); //0.693&#xD;
+data.DFFixedPointNumberArray.push(Math.floor(-231.4213)); //-232&#xD;
+data.DFFixedPointNumberArray.push(Math.sqrt(6.25)); //-2.5&#xD;
+data.DFFixedPointNumberArray.push(Math.max(-111.111, -222.2222, -333.33333)); //-111.111&#xD;
+data.DFFixedPointNumberArray.push(Math.min(-111.111, -222.2222, -333.33333)); //-333.33333&#xD;
+data.DFFixedPointNumberArray.push(Math.ceil(-231.4213)); //-231&#xD;
+var fixedPointArrayLength = data.DFFixedPointNumberArray.length;&#xD;
+for(var i=0; i&lt; data.DFFixedPointNumberArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of fixed point array elements: ' + data.DFFixedPointNumberArray[i]);&#xD;
+}&#xD;
+data.DFFixedPointNumberArray.pop();&#xD;
+var a = 101;&#xD;
+var b = 1.012;&#xD;
+data.DFNumberArray.push((2.5*60)+13+(21/7)); //21&#xD;
+data.DFNumberArray.push(Math.PI * 100); //314.159&#xD;
+data.DFNumberArray.push(Math.LN10 / 100); //0.02302&#xD;
+data.DFNumberArray.push(Math.LN2 * (a)); //‭69.993‬&#xD;
+data.DFNumberArray.push(Math.floor(-231.4213) + (a)); //-131&#xD;
+data.DFNumberArray.push(Math.sqrt(6.25) + (a*b)); //104.712&#xD;
+data.DFNumberArray.push(Math.max(-111.111, -222.2222, -333.33333) * 100); //-11111.1&#xD;
+data.DFNumberArray.push(Math.min(-111.111, -222.2222, -333.333) / 100); //-3.3333333&#xD;
+var numberArrayLength = data.DFNumberArray.length;&#xD;
+data.DFNumberArray.push(a+b);//‭102.012‬&#xD;
+for(var i=0; i&lt; data.DFNumberArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of number array elements: ' + data.DFNumberArray[i]);&#xD;
+}&#xD;
+var aString = &quot;third&quot;;&#xD;
+var bString = ' VALUE';&#xD;
+data.DFTextArray.push(&quot;FIRST VALUE&quot;); //FIRST VALUE&#xD;
+data.DFTextArray.push('second value'); //second value&#xD;
+data.DFTextArray.push(aString + bString); //third VALUE&#xD;
+data.DFTextArray.push(data.DFTextArray[0].concat(bString)); //FIRST VALUE  VALUE&#xD;
+data.DFTextArray.push(data.DFDateArray[0].toString()); //1990-04-26&#xD;
+var textArrayLength = data.DFTextArray.length;&#xD;
+for(var i=0; i&lt; data.DFTextArray.length; i++)&#xD;
+{&#xD;
+Log.write('value of text array elements: ' + data.DFTextArray[i]);&#xD;
+}&#xD;
+&#xD;
+//			Object booleanArrayLength = scope.getValue(&quot;booleanArrayLength&quot;);&#xD;
+//			Assert.assertEquals(booleanArrayLength.toString(), &quot;2&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object dateArrayLength = scope.getValue(&quot;dateArrayLength&quot;);&#xD;
+//			Assert.assertEquals(dateArrayLength.toString(), &quot;2&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object timeArrayLength = scope.getValue(&quot;timeArrayLength&quot;);&#xD;
+//			Assert.assertEquals(timeArrayLength.toString(), &quot;8&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object dateTimeZoneArrayLength = scope.getValue(&quot;dateTimeZoneArrayLength&quot;);&#xD;
+//			Assert.assertEquals(dateTimeZoneArrayLength.toString(), &quot;6&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object fixedPointArrayLength = scope.getValue(&quot;fixedPointArrayLength&quot;);&#xD;
+//			Assert.assertEquals(fixedPointArrayLength.toString(), &quot;9&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object numberArrayLength = scope.getValue(&quot;numberArrayLength&quot;);&#xD;
+//			Assert.assertEquals(numberArrayLength.toString(), &quot;8&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object textArrayLength = scope.getValue(&quot;textArrayLength&quot;);&#xD;
+//			Assert.assertEquals(textArrayLength.toString(), &quot;5&quot;, &quot;incorrect number of elements&quot;);&#xD;
+&#xD;
+//			Object dFTextArray = result.get(&quot;DFTextArray&quot;);&#xD;
+//			System.out.println(&quot;DFTextArray is &quot; + dFTextArray);&#xD;
+//			Assert.assertEquals(dFTextArray.toString(),&#xD;
+//					&quot;[FIRST VALUE, second value, third VALUE, FIRST VALUE VALUE, Thu Apr 26 1990 00:00:00 GMT+0100 (BST)]&quot;,&#xD;
+//					&quot;incorrect values for text array&quot;);&#xD;
+&#xD;
+//			Object dFNumberArray = result.get(&quot;DFNumberArray&quot;);&#xD;
+//			System.out.println(&quot;DFNumberArray is &quot; + dFNumberArray);&#xD;
+//			Assert.assertEquals(dFNumberArray.toString(), &quot;[166, 314, 0, 70, -131, 105, -11111, -3, 102]&quot;,&#xD;
+//					&quot;incorrect values for number array&quot;);&#xD;
+&#xD;
+//			Object dFFixedPointNumberArray = result.get(&quot;DFFixedPointNumberArray&quot;);&#xD;
+//			System.out.println(&quot;DFFixedPointNumberArray is &quot; + dFFixedPointNumberArray);&#xD;
+//			Assert.assertEquals(dFFixedPointNumberArray.toString(),&#xD;
+//					&quot;[271.29811, 3.14159, 2.30259, 0.69315, -232, 2.5, -111.111, -333.33333]&quot;,&#xD;
+//					&quot;incorrect values for fixed point number array&quot;);&#xD;
+&#xD;
+//			Object dFBooleanArray = result.get(&quot;DFBooleanArray&quot;);&#xD;
+//			System.out.println(&quot;DFBooleanArray is &quot; + dFBooleanArray);&#xD;
+//			Assert.assertEquals(dFBooleanArray.toString(), &quot;[true, false, false]&quot;, &quot;incorrect values for text array&quot;);&#xD;
+&#xD;
+//			Object dFDateTimeZoneArray = result.get(&quot;DFDateTimeZoneArray&quot;);&#xD;
+//			System.out.println(&quot;DFDateTimeZoneArray is &quot; + dFDateTimeZoneArray);&#xD;
+//			Assert.assertEquals(dFDateTimeZoneArray.toString(),&#xD;
+//					&quot;[1992-06-01T17:54:16.343Z, 1993-07-02T18:25:26.344Z, 1994-08-03T18:56:36.444Z, 1995-09-04T19:27:46.555Z, 1995-09-05T08:27:46.555Z]&quot;,&#xD;
+//					&quot;incorrect values for date time zone array&quot;);&#xD;
+&#xD;
+//			Object dFTimeArray = result.get(&quot;DFTimeArray&quot;);&#xD;
+//			System.out.println(&quot;DFTimeArray is &quot; + dFTimeArray);&#xD;
+//			Assert.assertEquals(dFTimeArray.toString(),&#xD;
+//					&quot;[10:11:12, 13:14:15, 16:17:18, 19:20:21, 22:23:24, 01:02:03, 04:05:06, 13:14:15, 13:14:15]&quot;,&#xD;
+//					&quot;incorrect values for text array&quot;);&#xD;
+&#xD;
+//			Object dFDateArray = result.get(&quot;DFDateArray&quot;);&#xD;
+//			System.out.println(&quot;DFDateArray is &quot; + dFDateArray);&#xD;
+//			Assert.assertEquals(dFDateArray.toString(), &quot;[1990-04-26, 1991-11-10, 1990-04-26]&quot;,&#xD;
+//					&quot;incorrect values for text array&quot;);</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_Wpx4oZ1xEem5lq9Ch4kVBA" Width="166.0">
+              <xpdl2:Coordinates XCoordinate="445.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_Wpx4p51xEem5lq9Ch4kVBA" xpdExt:DisplayName="" Name="" From="_Wpx4pp1xEem5lq9Ch4kVBA" To="_Wpx4pJ1xEem5lq9Ch4kVBA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_Wpx4qJ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="" Name="" From="_Wpx4o51xEem5lq9Ch4kVBA" To="_Wpx4pZ1xEem5lq9Ch4kVBA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_Wpx4qZ1xEem5lq9Ch4kVBA" xpdExt:DisplayName="" Name="" From="_Wpx4pZ1xEem5lq9Ch4kVBA" To="_Wpx4pp1xEem5lq9Ch4kVBA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+    <xpdl2:WorkflowProcess Id="_E-GJYNofEemKf7yDj0M7gA" xpdExt:DisplayName="testscript-Process_implicitConversionArrays" Name="testscriptProcess_implicitConversionArrays">
+      <xpdl2:ProcessHeader/>
+      <xpdl2:DataFields>
+        <xpdl2:DataField Id="_bsYfM9ofEemKf7yDj0M7gA" xpdExt:DisplayName="DFNumber" Name="DFNumber">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>4</xpdl2:Precision>
+              <xpdl2:Scale>0</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfNNofEemKf7yDj0M7gA" xpdExt:DisplayName="DFTime" Name="DFTime">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="TIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfNdofEemKf7yDj0M7gA" xpdExt:DisplayName="DFUri" Name="DFUri">
+          <xpdl2:DataType>
+            <xpdl2:BasicType xpdExt:FieldFormat="URI" Type="STRING"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfN9ofEemKf7yDj0M7gA" xpdExt:DisplayName="DFDateTimeZone" Name="DFDateTimeZone">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATETIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfONofEemKf7yDj0M7gA" xpdExt:DisplayName="DFDate" Name="DFDate">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATE"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfOdofEemKf7yDj0M7gA" xpdExt:DisplayName="DFImplicitTexts" Name="DFImplicitTexts" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>500</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfOtofEemKf7yDj0M7gA" xpdExt:DisplayName="DFBoolean" Name="DFBoolean">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_bsYfPNofEemKf7yDj0M7gA" xpdExt:DisplayName="DFPerformer" Name="DFPerformer">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUh9ofEemKf7yDj0M7gA" xpdExt:DisplayName="DFDateTimeZones" Name="DFDateTimeZones" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATETIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUiNofEemKf7yDj0M7gA" xpdExt:DisplayName="DFBooleans" Name="DFBooleans" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="BOOLEAN"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUidofEemKf7yDj0M7gA" xpdExt:DisplayName="DFTimes" Name="DFTimes" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="TIME"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUitofEemKf7yDj0M7gA" xpdExt:DisplayName="DFUris" Name="DFUris" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType xpdExt:FieldFormat="URI" Type="STRING"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUi9ofEemKf7yDj0M7gA" xpdExt:DisplayName="DFPerformers" Name="DFPerformers" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="PERFORMER"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUjNofEemKf7yDj0M7gA" xpdExt:DisplayName="DFDates" Name="DFDates" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="DATE"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_uWlUjdofEemKf7yDj0M7gA" xpdExt:DisplayName="DFTexts" Name="DFTexts" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="STRING">
+              <xpdl2:Length>200</xpdl2:Length>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_EaHjcdrsEem48ey02mVbRA" xpdExt:DisplayName="DFFixedPointNumbers" Name="DFFixedPointNumbers" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT">
+              <xpdl2:Precision>6</xpdl2:Precision>
+              <xpdl2:Scale>3</xpdl2:Scale>
+            </xpdl2:BasicType>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_ZGrSENrsEem48ey02mVbRA" xpdExt:DisplayName="DFFloatingPointNumbers" Name="DFFloatingPointNumbers" IsArray="true">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+        <xpdl2:DataField Id="_cfbWkdrsEem48ey02mVbRA" xpdExt:DisplayName="DFFloatingPointNumber" Name="DFFloatingPointNumber" IsArray="false">
+          <xpdl2:DataType>
+            <xpdl2:BasicType Type="FLOAT"/>
+          </xpdl2:DataType>
+        </xpdl2:DataField>
+      </xpdl2:DataFields>
+      <xpdl2:Activities>
+        <xpdl2:Activity Id="_E-S9stofEemKf7yDj0M7gA" Name="StartEvent" xpdExt:DisplayName="Start Event">
+          <xpdl2:Event>
+            <xpdl2:StartEvent Trigger="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="27.0" LaneId="_E-S9sdofEemKf7yDj0M7gA" Width="27.0">
+              <xpdl2:Coordinates XCoordinate="55.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_E-S9s9ofEemKf7yDj0M7gA" Name="EndEvent" xpdExt:DisplayName="End Event">
+          <xpdl2:Event>
+            <xpdl2:EndEvent Result="None"/>
+          </xpdl2:Event>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="30.0" LaneId="_E-S9sdofEemKf7yDj0M7gA" Width="30.0">
+              <xpdl2:Coordinates XCoordinate="592.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+        </xpdl2:Activity>
+        <xpdl2:Activity Id="_OdNIINofEemKf7yDj0M7gA" Name="ScriptTaskImplicitTypeConversion" xpdExt:Visibility="Private" xpdExt:DisplayName="Script Task Implicit Type Conversion">
+          <xpdl2:Implementation>
+            <xpdl2:Task>
+              <xpdl2:TaskScript>
+                <xpdl2:Script ScriptGrammar="JavaScript">//text&#xD;
+data.DFTexts.push('abc012');&#xD;
+data.DFTexts.push('def345');&#xD;
+var lengthDFTexts = data.DFTexts.length; //2&#xD;
+data.DFImplicitTexts.push('Texts:');&#xD;
+data.DFImplicitTexts.pushAll(data.DFTexts);&#xD;
+//boolean &#xD;
+data.DFBoolean = true;&#xD;
+data.DFBooleans.push(true);&#xD;
+data.DFBooleans.push(false); &#xD;
+var lengthDFBooleans = data.DFBooleans.length; //2&#xD;
+data.DFImplicitTexts.push('Booleans:');&#xD;
+data.DFImplicitTexts.pushAll(data.DFBooleans);&#xD;
+data.DFImplicitTexts.push(data.DFBoolean);&#xD;
+//date&#xD;
+data.DFDates.push(new Date('1990-04-26'));&#xD;
+data.DFDates.push(new Date('1992-01-06'));&#xD;
+data.DFDate = new Date('2001-01-01');&#xD;
+var lengthDFDates = data.DFDates.length; //2&#xD;
+data.DFImplicitTexts.push('Dates:');&#xD;
+data.DFImplicitTexts.push(new Date('1999-04-08'));&#xD;
+data.DFImplicitTexts.push(data.DFDate);&#xD;
+data.DFImplicitTexts.pushAll(data.DFDates);&#xD;
+//time&#xD;
+data.DFTimes.push(new Date('01:02:55'));&#xD;
+data.DFTimes.push(new Date('03:04:56'));&#xD;
+data.DFTime = new Date('13:24:57');&#xD;
+var lengthDFTimes = data.DFTimes.length; //2&#xD;
+data.DFImplicitTexts.push('Times:');&#xD;
+data.DFImplicitTexts.push(new Date('14:48:58'));&#xD;
+data.DFImplicitTexts.push(data.DFTime);&#xD;
+data.DFImplicitTexts.pushAll(data.DFTimes);&#xD;
+//date time zones&#xD;
+data.DFDateTimeZones.push(new Date('1995-09-015T18:24:16.343+00:30'));&#xD;
+data.DFDateTimeZones.push(new Date('1999-01-19T21:27:46.555-11:00'));&#xD;
+data.DFDateTimeZone = new Date('2006-02-14T20:26:36.444+01:30');&#xD;
+var lengthDFDateTimeZones= data.DFDateTimeZones.length; //2&#xD;
+data.DFImplicitTexts.push('DateTimeZones:');&#xD;
+data.DFImplicitTexts.push(new Date('2019-08-18T18:24:16.343'));&#xD;
+data.DFImplicitTexts.push(data.DFDateTimeZone);&#xD;
+data.DFImplicitTexts.pushAll(data.DFDateTimeZones);&#xD;
+//uris&#xD;
+data.DFUris.push('http://www.tibco.co.uk/');&#xD;
+data.DFUris.push('http://www.tibco.co.in/');&#xD;
+data.DFUri = 'http://www.tibco.co.de/';&#xD;
+var lengthDFUris = data.DFUris.length; //2&#xD;
+data.DFImplicitTexts.push('URIs:');&#xD;
+data.DFImplicitTexts.push('http://www.tibco.co.ca/');&#xD;
+data.DFImplicitTexts.push(data.DFUri);&#xD;
+data.DFImplicitTexts.pushAll(data.DFUris);&#xD;
+//performers&#xD;
+data.DFPerformers.push('resource1');&#xD;
+data.DFPerformers.push('resource2');&#xD;
+data.DFPerformer = 'resource3';&#xD;
+var lengthDFPerformers = data.DFPerformers.length; //2&#xD;
+data.DFImplicitTexts.push('Performers:');&#xD;
+data.DFImplicitTexts.push('resource4');&#xD;
+data.DFImplicitTexts.push(data.DFPerformer);&#xD;
+data.DFImplicitTexts.pushAll(data.DFPerformers);&#xD;
+&#xD;
+var lengthDFImplicitTexts = data.DFImplicitTexts.length; //32&#xD;
+//Texts: abc012 def345&#xD;
+//Booleans: true false true&#xD;
+//Dates: 1999-04-08 2001-01-01 1990-04-26 1992-01-06 &#xD;
+//Times: 14:48:58 13:24:57 01:02:55 03:04:56&#xD;
+//DateTimeZones : 2019-08-18T18:24:16.343 2006-02-14T20:26:36.444+01:30 1995-09-015T18:24:16.343+00:30 1999-01-19T21:27:46.555-11:00&#xD;
+//URIs: http://www.tibco.co.ca/ http://www.tibco.co.de/ http://www.tibco.co.uk/ http://www.tibco.co.in/&#xD;
+//Performers: resource4 resource3 resource1 resource2&#xD;
+&#xD;
+//Fixed point numbers&#xD;
+data.DFFloatingPointNumbers.push(-123.4567891);&#xD;
+data.DFFloatingPointNumbers.push(123.45889981);&#xD;
+var lengthDFFloatingPointNumbers = data.DFFloatingPointNumbers.length; //2&#xD;
+data.DFFloatingPointNumber = 211.11232;&#xD;
+data.DFFixedPointNumbers.push(-1.23445);&#xD;
+data.DFFixedPointNumbers.push(data.DFFloatingPointNumber);&#xD;
+data.DFFixedPointNumbers.pushAll(data.DFFloatingPointNumbers);&#xD;
+//Fixed Point Numbers:  -1.234, 211.112, -123.457, 123.459, 211.112&#xD;
+&#xD;
+//numbers&#xD;
+data.DFFloatingPointNumber = 1;&#xD;
+data.DFNumber = 2000;&#xD;
+data.DFFloatingPointNumbers.pushAll(data.DFFixedPointNumbers);&#xD;
+data.DFFloatingPointNumbers.push(-121212.3142131);&#xD;
+data.DFFloatingPointNumbers.push(data.DFFloatingPointNumber);&#xD;
+data.DFFloatingPointNumbers.push(data.DFNumber);&#xD;
+//Floating Point Numbers: -1.234, 211.112, -123.457, 123.459, 211.112, -121212.3142131, 1, 2000&#xD;
+</xpdl2:Script>
+              </xpdl2:TaskScript>
+            </xpdl2:Task>
+          </xpdl2:Implementation>
+          <xpdl2:NodeGraphicsInfos>
+            <xpdl2:NodeGraphicsInfo BorderColor="0,0,128" FillColor="255,219,74" Height="64.0" LaneId="_E-S9sdofEemKf7yDj0M7gA" Width="269.0">
+              <xpdl2:Coordinates XCoordinate="260.0" YCoordinate="155.0"/>
+            </xpdl2:NodeGraphicsInfo>
+          </xpdl2:NodeGraphicsInfos>
+          <xpdl2:Extensions/>
+          <xpdExt:ActivityResourcePatterns>
+            <xpdExt:AllocationStrategy xpdExt:Strategy="SYSTEM_DETERMINED"/>
+          </xpdExt:ActivityResourcePatterns>
+        </xpdl2:Activity>
+      </xpdl2:Activities>
+      <xpdl2:Transitions>
+        <xpdl2:Transition Id="_E-S9tNofEemKf7yDj0M7gA" xpdExt:DisplayName="" Name="" From="_OdNIINofEemKf7yDj0M7gA" To="_E-S9s9ofEemKf7yDj0M7gA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+            <xpdl2:ConnectorGraphicsInfo ToolId="XPD.StartAnchorPosition"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+        <xpdl2:Transition Id="_OdNIIdofEemKf7yDj0M7gA" xpdExt:DisplayName="" Name="" From="_E-S9stofEemKf7yDj0M7gA" To="_OdNIINofEemKf7yDj0M7gA">
+          <xpdl2:ConnectorGraphicsInfos>
+            <xpdl2:ConnectorGraphicsInfo BorderColor="0,0,128" ToolId="XPD.ConnectionInfo"/>
+          </xpdl2:ConnectorGraphicsInfos>
+        </xpdl2:Transition>
+      </xpdl2:Transitions>
+      <xpdl2:ExtendedAttributes>
+        <xpdl2:ExtendedAttribute Name="Destination" Value="CE"/>
+      </xpdl2:ExtendedAttributes>
+    </xpdl2:WorkflowProcess>
+  </xpdl2:WorkflowProcesses>
+  <xpdl2:ExtendedAttributes>
+    <xpdl2:ExtendedAttribute Name="CreatedBy" Value="TIBCO Business Studio"/>
+    <xpdl2:ExtendedAttribute Name="FormatVersion" Value="1000"/>
+    <xpdl2:ExtendedAttribute Name="OriginalFormatVersion" Value="23"/>
+  </xpdl2:ExtendedAttributes>
+</xpdl2:Package>

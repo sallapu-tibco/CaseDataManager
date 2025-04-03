@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:et="http://www.tibco.com/forms/model/elemtypes" xmlns:form="http://www.tibco.com/forms/model/form" xmlns:gwt="http://www.tibco.com/forms/model/gwt" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" generated="true" id="_ychJMLngEemEnOSmxnZnsg" formatVersion="11.0.0">
+  <form:runtimeDependencies>
+    <form:package>com.tibco.ace.datatypes.DatatypesPackage</form:package>
+    <form:factory>com.tibco.ace.datatypes.DatatypesFactory</form:factory>
+    <form:file>com.tibco.ace.acedatatypestest.bom_1/bom-js/com.tibco.ace.datatypes.js</form:file>
+  </form:runtimeDependencies>
+  <form:externalResources>
+    <form:externalResource name="resource.common" uri="pathmap://FORMS_RESOURCES/common.properties" internal="true" localized="true"/>
+    <form:externalResource name="resource.form" uri="UserTask3.properties" internal="true" localized="true"/>
+  </form:externalResources>
+  <form:dataModel>
+    <form:parameter generated="true" name="data.booleanParameter" label="Boolean Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.dateParameter" label="Date Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AmUlgHvBEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.dateTimeParameter" label="DateTime Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.numberDecimalParameter" label="Number (Decimal) Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g" decimalPlaces="2" length="10" inout="INOUT"/>
+    <form:parameter generated="true" name="data.numberIntegerParameter" label="Number (Integer) Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g" length="9" inout="INOUT"/>
+    <form:parameter generated="true" name="data.performerParameter" label="Performer Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" inout="INOUT"/>
+    <form:parameter generated="true" name="data.textParameter" label="Text Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.timeParameter" label="Time Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_BAs0YHvBEdy0U8_1u7Q20g" inout="INOUT"/>
+    <form:parameter generated="true" name="data.uriParameter" label="URI Parameter" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.simpleSingleAttributesParameter" label="Simple Single Attributes Parameter" dataType="uml:Class AceDataTypes.bom#_h3PT8EWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=SimpleSingle?" inout="INOUT"/>
+    <form:parameter generated="true" name="data.complexSingleParameter" label="Complex Single Parameter" dataType="uml:Class AceDataTypes.bom#_b9jHQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexParent?" inout="INOUT"/>
+    <form:parameter generated="true" name="data.booleanArrayField" label="Boolean Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_pSJ7cHvAEdy0U8_1u7Q20g" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.dateArrayField" label="Date Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AmUlgHvBEdy0U8_1u7Q20g" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.dateTimeArrayField" label="DateTime Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AMizkHvBEdy0U8_1u7Q20g" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.numberDecimalArrayField" label="Number (Decimal) Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g" isArray="true" decimalPlaces="2" length="10" inout="INOUT"/>
+    <form:parameter generated="true" name="data.numberIntegerArrayField" label="Number (Integer) Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_gzTqYHvBEdy0U8_1u7Q20g" isArray="true" length="9" inout="INOUT"/>
+    <form:parameter generated="true" name="data.performerArrayField" label="Performer Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.textArrayField" label="Text Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.timeArrayField" label="Time Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_BAs0YHvBEdy0U8_1u7Q20g" isArray="true" inout="INOUT"/>
+    <form:parameter generated="true" name="data.uriArrayField" label="URI Array Field" dataType="uml:PrimitiveType pathmap://BOM_TYPES/BomPrimitiveTypes.library.uml#_AGoC4HcNEdytQ9AWEvOuug" isArray="true" length="50" inout="INOUT"/>
+    <form:parameter generated="true" name="data.simpleArrayAttributesField" label="Simple Array Attributes Field" dataType="uml:Class AceDataTypes.bom#_oF-4sEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=SimpleArray?" inout="INOUT"/>
+    <form:parameter generated="true" name="data.complexArrayField" label="Complex Array Field" dataType="uml:Class AceDataTypes.bom#_b9jHQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexParent?" isArray="true" inout="INOUT"/>
+  </form:dataModel>
+  <form:actions/>
+  <form:rules>
+    <form:rule generated="true" name="rule.enable_complexArrayField__detail" label="Enable 'Complex Array Field' Detail">
+      <form:event source="#pane.complexArrayField__detail" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#update" subject="form.pane.complexArrayField__detail.update"/>
+      <form:action xsi:type="form:ComputationAction" generated="true" name="action.enable_complexArrayField__detail" label="Enable 'Complex Array Field' Detail">
+        <form:script>context.newValue != null;</form:script>
+        <form:destination target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/form#//UIElement/enabled" data="form.pane.complexArrayField__detail.enabled"></form:destination>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.cancel" label="Cancel">
+      <form:event source="#control.cancel" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.cancel.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.cancel"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.close" label="Close">
+      <form:event source="#control.close" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.close.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.close"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.submit" label="Submit">
+      <form:event source="#control.submit" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.submit.select"/>
+      <form:action ref="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#action.submit"/>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexArrayField__master__add" label="Add Master">
+      <form:event source="#control.complexArrayField__master__add" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexArrayField__master__add.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexArrayField__master__add" label="Add Master">
+        <form:script>var collectionPane = pane.complexArrayField__master;
+var newRecord = factory.com_tibco_ace_datatypes.createComplexParent();
+collectionPane.value.push(newRecord);
+collectionPane.selection = newRecord;
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexArrayField__master__delete" label="Delete Master">
+      <form:event source="#control.complexArrayField__master__delete" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexArrayField__master__delete.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexArrayField__master__delete" label="Delete Master">
+        <form:script>var collectionPane = pane.complexArrayField__master;
+var selection = collectionPane.selection;
+if (selection != null) {
+    var rc = confirm(&quot;Delete the current record?&quot;);
+    if (rc == true) {
+        var newSelection = null;
+        var array = collectionPane.value;
+        var selectedIndex = array.indexOf(selection);
+        if (selectedIndex != -1) {
+            array.splice(selectedIndex, 1);
+            if (selectedIndex == array.length - 1)
+                selectedIndex--;
+            newSelection = array[selectedIndex]
+        }
+        collectionPane.selection = newSelection;
+    }
+}</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexArrayField_children__add" label="Add Children">
+      <form:event source="#control.complexArrayField_children__add" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexArrayField_children__add.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexArrayField_children__add" label="Add Children">
+        <form:script>var collectionPane = pane.complexArrayField_children;
+var newRecord = factory.com_tibco_ace_datatypes.createComplexChild();
+collectionPane.value.push(newRecord);
+collectionPane.selection = newRecord;
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexArrayField_children__delete" label="Delete Children">
+      <form:event source="#control.complexArrayField_children__delete" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexArrayField_children__delete.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexArrayField_children__delete" label="Delete Children">
+        <form:script>var collectionPane = pane.complexArrayField_children;
+var selection = collectionPane.selection;
+if (selection != null) {
+    var rc = confirm(&quot;Delete the current record?&quot;);
+    if (rc == true) {
+        var newSelection = null;
+        var array = collectionPane.value;
+        var selectedIndex = array.indexOf(selection);
+        if (selectedIndex != -1) {
+            array.splice(selectedIndex, 1);
+            if (selectedIndex == array.length - 1)
+                selectedIndex--;
+            newSelection = array[selectedIndex]
+        }
+        collectionPane.selection = newSelection;
+    }
+}</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexSingleParameter_children__add" label="Add Children">
+      <form:event source="#control.complexSingleParameter_children__add" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexSingleParameter_children__add.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexSingleParameter_children__add" label="Add Children">
+        <form:script>var collectionPane = pane.complexSingleParameter_children;
+var newRecord = factory.com_tibco_ace_datatypes.createComplexChild();
+collectionPane.value.push(newRecord);
+collectionPane.selection = newRecord;
+</form:script>
+      </form:action>
+    </form:rule>
+    <form:rule generated="true" name="rule.complexSingleParameter_children__delete" label="Delete Children">
+      <form:event source="#control.complexSingleParameter_children__delete" eventType="pathmap://FORMS_LIBRARIES/Standard.library.elemtypes#select" subject="form.control.complexSingleParameter_children__delete.select"/>
+      <form:action xsi:type="form:ScriptAction" name="action.complexSingleParameter_children__delete" label="Delete Children">
+        <form:script>var collectionPane = pane.complexSingleParameter_children;
+var selection = collectionPane.selection;
+if (selection != null) {
+    var rc = confirm(&quot;Delete the current record?&quot;);
+    if (rc == true) {
+        var newSelection = null;
+        var array = collectionPane.value;
+        var selectedIndex = array.indexOf(selection);
+        if (selectedIndex != -1) {
+            array.splice(selectedIndex, 1);
+            if (selectedIndex == array.length - 1)
+                selectedIndex--;
+            newSelection = array[selectedIndex]
+        }
+        collectionPane.selection = newSelection;
+    }
+}</form:script>
+      </form:action>
+    </form:rule>
+  </form:rules>
+  <form:bindings>
+    <form:binding generated="true" direction="bothways" name="_ybDwoLngEemEnOSmxnZnsg">
+      <form:source target="data.booleanParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.booleanParameter.value"></form:source>
+      <form:destination target="control.booleanParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.booleanParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybEXsLngEemEnOSmxnZnsg">
+      <form:source target="data.dateParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dateParameter.value"></form:source>
+      <form:destination target="control.dateParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dateParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybEXsbngEemEnOSmxnZnsg">
+      <form:source target="data.dateTimeParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dateTimeParameter.value"></form:source>
+      <form:destination target="control.dateTimeParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dateTimeParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybEXsrngEemEnOSmxnZnsg">
+      <form:source target="data.numberDecimalParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.numberDecimalParameter.value"></form:source>
+      <form:destination target="control.numberDecimalParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.numberDecimalParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybEXs7ngEemEnOSmxnZnsg">
+      <form:source target="data.numberIntegerParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.numberIntegerParameter.value"></form:source>
+      <form:destination target="control.numberIntegerParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.numberIntegerParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybE-wLngEemEnOSmxnZnsg">
+      <form:source target="data.performerParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.performerParameter.value"></form:source>
+      <form:destination target="control.performerParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.performerParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybE-wbngEemEnOSmxnZnsg">
+      <form:source target="data.textParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.textParameter.value"></form:source>
+      <form:destination target="control.textParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.textParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybE-wrngEemEnOSmxnZnsg">
+      <form:source target="data.timeParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.timeParameter.value"></form:source>
+      <form:destination target="control.timeParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.timeParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybE-w7ngEemEnOSmxnZnsg">
+      <form:source target="data.uriParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.uriParameter.value"></form:source>
+      <form:destination target="control.uriParameter" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.uriParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybFl0LngEemEnOSmxnZnsg">
+      <form:source target="data.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.simpleSingleAttributesParameter.value"></form:source>
+      <form:destination target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.simpleSingleAttributesParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybHbArngEemEnOSmxnZnsg">
+      <form:source target="data.complexSingleParameter" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.complexSingleParameter.value"></form:source>
+      <form:destination target="pane.complexSingleParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.complexSingleParameter.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJQMrngEemEnOSmxnZnsg">
+      <form:source target="data.dateArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dateArrayField.value"></form:source>
+      <form:destination target="control.dateArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dateArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJQM7ngEemEnOSmxnZnsg">
+      <form:source target="data.dateTimeArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.dateTimeArrayField.value"></form:source>
+      <form:destination target="control.dateTimeArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.dateTimeArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJ3QLngEemEnOSmxnZnsg">
+      <form:source target="data.numberDecimalArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.numberDecimalArrayField.value"></form:source>
+      <form:destination target="control.numberDecimalArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.numberDecimalArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJ3QbngEemEnOSmxnZnsg">
+      <form:source target="data.numberIntegerArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.numberIntegerArrayField.value"></form:source>
+      <form:destination target="control.numberIntegerArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.numberIntegerArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJ3QrngEemEnOSmxnZnsg">
+      <form:source target="data.performerArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.performerArrayField.value"></form:source>
+      <form:destination target="control.performerArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.performerArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJ3Q7ngEemEnOSmxnZnsg">
+      <form:source target="data.textArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.textArrayField.value"></form:source>
+      <form:destination target="control.textArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.textArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJ3RLngEemEnOSmxnZnsg">
+      <form:source target="data.timeArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.timeArrayField.value"></form:source>
+      <form:destination target="control.timeArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.timeArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybKeULngEemEnOSmxnZnsg">
+      <form:source target="data.uriArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.uriArrayField.value"></form:source>
+      <form:destination target="control.uriArrayField" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.uriArrayField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybKeUbngEemEnOSmxnZnsg">
+      <form:source target="data.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.simpleArrayAttributesField.value"></form:source>
+      <form:destination target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.simpleArrayAttributesField.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybM6krngEemEnOSmxnZnsg">
+      <form:source target="data.complexArrayField" feature="http://www.tibco.com/forms/model/form#//Datum/value" data="form.data.complexArrayField.value"></form:source>
+      <form:destination target="pane.complexArrayField__master" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.complexArrayField__master.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybICErngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_VK7AFEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=child?" data="form.pane.complexSingleParameter.value.child"></form:source>
+      <form:destination target="pane.complexSingleParameter_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.complexSingleParameter_child.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybIpIrngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_q9KkZEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=children?" data="form.pane.complexSingleParameter.value.children"></form:source>
+      <form:destination target="pane.complexSingleParameter_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.complexSingleParameter_children.value"></form:destination>
+    </form:binding>
+    <form:binding direction="bothways" name="_ybM6k7ngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__master" feature="http://www.tibco.com/forms/model/elemtypes#//GridPanePropertySet/selection" data="form.pane.complexArrayField__master.selection"></form:source>
+      <form:destination target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.complexArrayField__detail.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOIsbngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_VK7AFEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=child?" data="form.pane.complexArrayField__detail.value.child"></form:source>
+      <form:destination target="pane.complexArrayField_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value" data="form.pane.complexArrayField_child.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOvwLngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_q9KkZEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=children?" data="form.pane.complexArrayField__detail.value.children"></form:source>
+      <form:destination target="pane.complexArrayField_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value" data="form.pane.complexArrayField_children.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybFl0bngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_u4sYEEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=booleanAttr?" data="form.pane.simpleSingleAttributesParameter.value.booleanAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_booleanAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_booleanAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybFl0rngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_0LvmEEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=dateAttr?" data="form.pane.simpleSingleAttributesParameter.value.dateAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_dateAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_dateAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybFl07ngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_1sOhYEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=dateTimeTZAttr?" data="form.pane.simpleSingleAttributesParameter.value.dateTimeTZAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_dateTimeTZAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_dateTimeTZAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybGM4LngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_3XABIEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=numberDecimalAttr?" data="form.pane.simpleSingleAttributesParameter.value.numberDecimalAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_numberDecimalAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_numberDecimalAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybGM4bngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_6z2igEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=numberIntegerAttr?" data="form.pane.simpleSingleAttributesParameter.value.numberIntegerAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_numberIntegerAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_numberIntegerAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybGM4rngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_8m4mYEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=performerAttr?" data="form.pane.simpleSingleAttributesParameter.value.performerAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_performerAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_performerAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybGz8LngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_-JlIMEWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=textAttr?" data="form.pane.simpleSingleAttributesParameter.value.textAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_textAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_textAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybGz8bngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_GF-XAEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=textEnumAttr?" data="form.pane.simpleSingleAttributesParameter.value.textEnumAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_textEnumAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_textEnumAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybHbALngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_INqcQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=timeAttr?" data="form.pane.simpleSingleAttributesParameter.value.timeAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_timeAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_timeAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybHbAbngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleSingleAttributesParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_JFDXQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleSingle%26n=uriAttr?" data="form.pane.simpleSingleAttributesParameter.value.uriAttr"></form:source>
+      <form:destination target="control.simpleSingleAttributesParameter_uriAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleSingleAttributesParameter_uriAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybICELngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_fK7CMEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr1?" data="form.pane.complexSingleParameter.value.parentAttr1"></form:source>
+      <form:destination target="control.complexSingleParameter_parentAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_parentAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybICEbngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_geI9kEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr2?" data="form.pane.complexSingleParameter.value.parentAttr2"></form:source>
+      <form:destination target="control.complexSingleParameter_parentAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_parentAttr2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybIpILngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_LIi8MEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr1?" data="form.pane.complexSingleParameter_child.value.childAttr1"></form:source>
+      <form:destination target="control.complexSingleParameter_child_childAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_child_childAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybIpIbngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_MVnMQEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr2?" data="form.pane.complexSingleParameter_child.value.childAttr2"></form:source>
+      <form:destination target="control.complexSingleParameter_child_childAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_child_childAttr2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJQMLngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_LIi8MEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr1?" data="form.pane.complexSingleParameter_children.value.childAttr1"></form:source>
+      <form:destination target="control.complexSingleParameter_children_childAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_children_childAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybJQMbngEemEnOSmxnZnsg">
+      <form:source target="pane.complexSingleParameter_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_MVnMQEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr2?" data="form.pane.complexSingleParameter_children.value.childAttr2"></form:source>
+      <form:destination target="control.complexSingleParameter_children_childAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexSingleParameter_children_childAttr2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybKeUrngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_ugNxMEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=dateArrayAttr?" data="form.pane.simpleArrayAttributesField.value.dateArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_dateArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_dateArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybLFYLngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_v4dWgEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=dateTimeTZArrayAttr?" data="form.pane.simpleArrayAttributesField.value.dateTimeTZArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_dateTimeTZArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_dateTimeTZArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybLFYbngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_zJDkkEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=numberDecimalArrayAttr?" data="form.pane.simpleArrayAttributesField.value.numberDecimalArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_numberDecimalArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_numberDecimalArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybLscLngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_1nZ2UEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=numberIntegerArrayAttr?" data="form.pane.simpleArrayAttributesField.value.numberIntegerArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_numberIntegerArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_numberIntegerArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybLscbngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_4TK5AEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=performerArrayAttr?" data="form.pane.simpleArrayAttributesField.value.performerArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_performerArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_performerArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybMTgLngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_OExusEWuEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=textArrayAttr?" data="form.pane.simpleArrayAttributesField.value.textArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_textArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_textArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybMTgbngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_PybjUEWuEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=textEnumArrayAttr?" data="form.pane.simpleArrayAttributesField.value.textEnumArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_textEnumArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_textEnumArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybM6kLngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_SrVDEEWuEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=timeArrayAttr?" data="form.pane.simpleArrayAttributesField.value.timeArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_timeArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_timeArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybM6kbngEemEnOSmxnZnsg">
+      <form:source target="pane.simpleArrayAttributesField" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_UeoMsEWuEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aSimpleArray%26n=uriArrayAttr?" data="form.pane.simpleArrayAttributesField.value.uriArrayAttr"></form:source>
+      <form:destination target="control.simpleArrayAttributesField_uriArrayAttr" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.simpleArrayAttributesField_uriArrayAttr.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybNhoLngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__master" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_fK7CMEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr1?" data="form.pane.complexArrayField__master.value.parentAttr1"></form:source>
+      <form:destination target="control.complexArrayField_parentAttr1__master" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_parentAttr1__master.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybNhobngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__master" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_geI9kEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr2?" data="form.pane.complexArrayField__master.value.parentAttr2"></form:source>
+      <form:destination target="control.complexArrayField_parentAttr2__master" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_parentAttr2__master.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybNhorngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_fK7CMEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr1?" data="form.pane.complexArrayField__detail.value.parentAttr1"></form:source>
+      <form:destination target="control.complexArrayField_parentAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_parentAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOIsLngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField__detail" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_geI9kEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexParent%26n=parentAttr2?" data="form.pane.complexArrayField__detail.value.parentAttr2"></form:source>
+      <form:destination target="control.complexArrayField_parentAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_parentAttr2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOIsrngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_LIi8MEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr1?" data="form.pane.complexArrayField_child.value.childAttr1"></form:source>
+      <form:destination target="control.complexArrayField_child_childAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_child_childAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOIs7ngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField_child" feature="http://www.tibco.com/forms/model/elemtypes#//SingletonPanePropertySet/value AceDataTypes.bom#_MVnMQEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr2?" data="form.pane.complexArrayField_child.value.childAttr2"></form:source>
+      <form:destination target="control.complexArrayField_child_childAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_child_childAttr2.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOvwbngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_LIi8MEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr1?" data="form.pane.complexArrayField_children.value.childAttr1"></form:source>
+      <form:destination target="control.complexArrayField_children_childAttr1" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_children_childAttr1.value"></form:destination>
+    </form:binding>
+    <form:binding generated="true" direction="bothways" name="_ybOvwrngEemEnOSmxnZnsg">
+      <form:source target="pane.complexArrayField_children" feature="http://www.tibco.com/forms/model/elemtypes#//CollectionPanePropertySet/value AceDataTypes.bom#_MVnMQEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aProperty%26q=com.tibco.ace.datatypes%3a%3aComplexChild%26n=childAttr2?" data="form.pane.complexArrayField_children.value.childAttr2"></form:source>
+      <form:destination target="control.complexArrayField_children_childAttr2" feature="http://www.tibco.com/forms/model/form#//Control/value" data="form.control.complexArrayField_children_childAttr2.value"></form:destination>
+    </form:binding>
+  </form:bindings>
+  <form:defaults>
+    <form:labelProperties position="top"/>
+  </form:defaults>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.content" paneType="com.tibco.forms.panes.vertical">
+    <form:label>User Task 3</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="true"/>
+    <form:defaults>
+      <form:labelProperties position="left"/>
+    </form:defaults>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.booleanParameter">
+      <form:label>Boolean Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.dateParameter">
+      <form:propertySet xsi:type="et:DatePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+      </form:propertySet>
+      <form:label>Date Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_date_format" name="dateParameter__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.dateTimeParameter">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>DateTime Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="dateTimeParameter__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.numberDecimalParameter">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>15</et:displayLength>
+        <et:maxLength>10</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_decimal_2</et:formatRef>
+      </form:propertySet>
+      <form:label>Number (Decimal) Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_decimal_fixed_point" name="numberDecimalParameter__fixed" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkNumberConstraint(context.stringValue, 10, 2) ? true : [context.control.label,'10', '2'] : !isNaN(context.value) &amp;&amp; context.form.numberFormat(context.value, 10, 2);</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.numberIntegerParameter">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>10</et:displayLength>
+        <et:maxLength>9</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_decimal</et:formatRef>
+      </form:propertySet>
+      <form:label>Number (Integer) Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.performerParameter">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+      </form:propertySet>
+      <form:label>Performer Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.textParameter">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Text Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="textParameter__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.time" controlType="com.tibco.forms.controls.time" name="control.timeParameter">
+      <form:propertySet xsi:type="et:TimePropertySet">
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>Time Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_time_format" name="timeParameter__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.uriParameter">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>URI Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="uriParameter__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_h3PT8EWrEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=SimpleSingle?" name="pane.simpleSingleAttributesParameter" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Simple Single Attributes Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.checkbox" controlType="com.tibco.forms.controls.checkbox" name="control.simpleSingleAttributesParameter_booleanAttr">
+        <form:label>Boolean Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.simpleSingleAttributesParameter_dateAttr">
+        <form:propertySet xsi:type="et:DatePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+        </form:propertySet>
+        <form:label>Date Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_date_format" name="simpleSingleAttributesParameter_dateAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.simpleSingleAttributesParameter_dateTimeTZAttr">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>DateTimeTZ Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="simpleSingleAttributesParameter_dateTimeTZAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleSingleAttributesParameter_numberDecimalAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Number (Decimal) Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_floating_point" name="simpleSingleAttributesParameter_numberDecimalAttr__float" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined'? context.value !== '' &amp;&amp; !isNaN(context.value) ? true : [context.control.label] : context.value !== '' &amp;&amp; !isNaN(context.value);</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleSingleAttributesParameter_numberIntegerAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>15</et:displayLength>
+          <et:maxLength>10</et:maxLength>
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Number (Integer) Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_fixed_point" name="simpleSingleAttributesParameter_numberIntegerAttr__fixed" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkNumberConstraint(context.stringValue, 10, 0) ? true : [context.control.label,'10', '0'] : !isNaN(context.value) &amp;&amp; context.form.numberFormat(context.value, 10, 0);</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleSingleAttributesParameter_performerAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Performer Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="simpleSingleAttributesParameter_performerAttr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleSingleAttributesParameter_textAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Text Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="simpleSingleAttributesParameter_textAttr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.simpleSingleAttributesParameter_textEnumAttr">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>ENUMLIT1</et:choiceValues>
+          <et:choiceValues>ENUMLIT2</et:choiceValues>
+          <et:choiceValues>ENUMLIT3</et:choiceValues>
+          <et:choiceValues>ENUMLIT4</et:choiceValues>
+          <et:choiceLabels>ENUMLIT1</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT2</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT3</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT4</et:choiceLabels>
+        </form:propertySet>
+        <form:label>Text (Enum) Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.time" controlType="com.tibco.forms.controls.time" name="control.simpleSingleAttributesParameter_timeAttr">
+        <form:propertySet xsi:type="et:TimePropertySet">
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Time Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_time_format" name="simpleSingleAttributesParameter_timeAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleSingleAttributesParameter_uriAttr">
+        <form:propertySet xsi:type="et:TextPropertySet"/>
+        <form:label>URI Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_pattern" name="simpleSingleAttributesParameter_uriAttr__pattern" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined') {
+ bpm.forms.Util.checkRegExp(context.value, new RegExp(&quot;^([a-zA-Z0-9+.\\-]+):(//((([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:]|%[0-9A-F]{2})*)@)?(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=]|%[0-9A-F]{2})*)(:(\\d*))?(/([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?|(/?([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@]|%[0-9A-F]{2})+([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?)(\\?(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?(#(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?$&quot;)) ? true : [context.control.label, 'URI'];
+} else {
+var regex = new RegExp(&quot;^([a-zA-Z0-9+.\-]+):(//((([a-zA-Z0-9\-._~!$&amp;'()*+,;=:]|%[0-9A-F]{2})*)@)?(([a-zA-Z0-9\-._~!$&amp;'()*+,;=]|%[0-9A-F]{2})*)(:(\d*))?(/([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?|(/?([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@]|%[0-9A-F]{2})+([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?)(\?(([a-zA-Z0-9\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?(#(([a-zA-Z0-9\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?$&quot;);
+regex.test(context.value);
+}</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_b9jHQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexParent?" name="pane.complexSingleParameter" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Complex Single Parameter</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="left"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_parentAttr1">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Parent Attr 1</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_parentAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_parentAttr2">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Parent Attr 2</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_parentAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_EH3uwEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexChild?" name="pane.complexSingleParameter_child" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Child</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_child_childAttr1">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Child Attr 1</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_child_childAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_child_childAttr2">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Child Attr 2</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_child_childAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class AceDataTypes.bom#_EH3uwEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexChild?" name="pane.complexSingleParameter_children" paneType="com.tibco.forms.panes.grid">
+        <form:propertySet xsi:type="et:GridPanePropertySet">
+          <et:showNavigator>false</et:showNavigator>
+          <et:supportAddOperation>true</et:supportAddOperation>
+          <et:supportDeleteOperation>true</et:supportDeleteOperation>
+          <et:addOperationLabelRef>resource.common.pane_new_label</et:addOperationLabelRef>
+          <et:deleteOperationLabelRef>resource.common.pane_delete_label</et:deleteOperationLabelRef>
+          <et:editable>true</et:editable>
+          <et:sortable>true</et:sortable>
+          <et:rowLabel>{0}</et:rowLabel>
+        </form:propertySet>
+        <form:label>Children</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="complexSingleParameter_children__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_children_childAttr1">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Child Attr 1</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_children_childAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexSingleParameter_children_childAttr2">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Child Attr 2</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexSingleParameter_children_childAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.complexSingleParameter_children__add_delete" paneType="com.tibco.forms.panes.horizontal">
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexSingleParameter_children__add">
+          <form:propertySet xsi:type="et:ButtonPropertySet"/>
+          <form:label valueRef="resource.common.pane_new_label"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexSingleParameter_children__delete">
+          <form:propertySet xsi:type="et:ButtonPropertySet"/>
+          <form:label valueRef="resource.common.pane_delete_label"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+    </form:pane>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.dateArrayField">
+      <form:propertySet xsi:type="et:DatePropertySet">
+        <form:list>true</form:list>
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+      </form:propertySet>
+      <form:label>Date Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_date_format" name="dateArrayField__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.dateTimeArrayField">
+      <form:propertySet xsi:type="et:DateTimePropertySet">
+        <form:list>true</form:list>
+        <et:minRelative>true</et:minRelative>
+        <et:maxRelative>true</et:maxRelative>
+        <et:year min="-20" max="20"/>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>DateTime Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="dateTimeArrayField__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.numberDecimalArrayField">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>15</et:displayLength>
+        <et:maxLength>10</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_decimal_2</et:formatRef>
+      </form:propertySet>
+      <form:label>Number (Decimal) Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_decimal_fixed_point" name="numberDecimalArrayField__fixed" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkNumberConstraint(context.stringValue, 10, 2) ? true : [context.control.label,'10', '2'] : !isNaN(context.value) &amp;&amp; context.form.numberFormat(context.value, 10, 2);</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.numberIntegerArrayField">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>10</et:displayLength>
+        <et:maxLength>9</et:maxLength>
+        <et:numeric>true</et:numeric>
+        <et:formatRef>resource.common.format_decimal</et:formatRef>
+      </form:propertySet>
+      <form:label>Number (Integer) Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textarea" controlType="com.tibco.forms.controls.textarea" name="control.performerArrayField">
+      <form:propertySet xsi:type="et:TextAreaPropertySet">
+        <form:list>true</form:list>
+        <et:rows>10</et:rows>
+        <et:cols>25</et:cols>
+      </form:propertySet>
+      <form:label>Performer Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.textArrayField">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>Text Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="textArrayField__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.time" controlType="com.tibco.forms.controls.time" name="control.timeArrayField">
+      <form:propertySet xsi:type="et:TimePropertySet">
+        <form:list>true</form:list>
+        <et:minute increment="15"/>
+      </form:propertySet>
+      <form:label>Time Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_time_format" name="timeArrayField__datetime" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.uriArrayField">
+      <form:propertySet xsi:type="et:TextPropertySet">
+        <form:list>true</form:list>
+        <et:displayLength>40</et:displayLength>
+        <et:maxLength>50</et:maxLength>
+      </form:propertySet>
+      <form:label>URI Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:validation generated="true" messageRef="resource.common.validation_text_length" name="uriArrayField__length" type="javascript" when="oncontrolchange" simple="true">
+        <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+      </form:validation>
+      <form:required>false</form:required>
+    </form:control>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_oF-4sEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=SimpleArray?" name="pane.simpleArrayAttributesField" paneType="com.tibco.forms.panes.vertical">
+      <form:label>Simple Array Attributes Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.date" controlType="com.tibco.forms.controls.date" name="control.simpleArrayAttributesField_dateArrayAttr">
+        <form:propertySet xsi:type="et:DatePropertySet">
+          <form:list>true</form:list>
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+        </form:propertySet>
+        <form:label>Date Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_date_format" name="simpleArrayAttributesField_dateArrayAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_dateArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.datetime" controlType="com.tibco.forms.controls.datetime" name="control.simpleArrayAttributesField_dateTimeTZArrayAttr">
+        <form:propertySet xsi:type="et:DateTimePropertySet">
+          <form:list>true</form:list>
+          <et:minRelative>true</et:minRelative>
+          <et:maxRelative>true</et:maxRelative>
+          <et:year min="-20" max="20"/>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>DateTimeTZ Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_datetime_format" name="simpleArrayAttributesField_dateTimeTZArrayAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkDateTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_dateTimeTZArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleArrayAttributesField_numberDecimalArrayAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <form:list>true</form:list>
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Number (Decimal) Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_floating_point" name="simpleArrayAttributesField_numberDecimalArrayAttr__float" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined'? context.value !== '' &amp;&amp; !isNaN(context.value) ? true : [context.control.label] : context.value !== '' &amp;&amp; !isNaN(context.value);</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_numberDecimalArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleArrayAttributesField_numberIntegerArrayAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <form:list>true</form:list>
+          <et:displayLength>15</et:displayLength>
+          <et:maxLength>10</et:maxLength>
+          <et:numeric>true</et:numeric>
+          <et:formatRef>resource.common.format_decimal</et:formatRef>
+        </form:propertySet>
+        <form:label>Number (Integer) Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_decimal_fixed_point" name="simpleArrayAttributesField_numberIntegerArrayAttr__fixed" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkNumberConstraint(context.stringValue, 10, 0) ? true : [context.control.label,'10', '0'] : !isNaN(context.value) &amp;&amp; context.form.numberFormat(context.value, 10, 0);</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_numberIntegerArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleArrayAttributesField_performerArrayAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <form:list>true</form:list>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Performer Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="simpleArrayAttributesField_performerArrayAttr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_performerArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleArrayAttributesField_textArrayAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <form:list>true</form:list>
+          <et:displayLength>40</et:displayLength>
+          <et:maxLength>50</et:maxLength>
+        </form:propertySet>
+        <form:label>Text Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_text_length" name="simpleArrayAttributesField_textArrayAttr__length" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_textArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.optionlist" controlType="com.tibco.forms.controls.optionlist" name="control.simpleArrayAttributesField_textEnumArrayAttr">
+        <form:propertySet xsi:type="et:MultiChoicePropertySet">
+          <et:choiceValues>ENUMLIT1</et:choiceValues>
+          <et:choiceValues>ENUMLIT2</et:choiceValues>
+          <et:choiceValues>ENUMLIT3</et:choiceValues>
+          <et:choiceValues>ENUMLIT4</et:choiceValues>
+          <et:choiceLabels>ENUMLIT1</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT2</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT3</et:choiceLabels>
+          <et:choiceLabels>ENUMLIT4</et:choiceLabels>
+          <et:multiSelect>true</et:multiSelect>
+        </form:propertySet>
+        <form:label>Text (Enum) Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.time" controlType="com.tibco.forms.controls.time" name="control.simpleArrayAttributesField_timeArrayAttr">
+        <form:propertySet xsi:type="et:TimePropertySet">
+          <form:list>true</form:list>
+          <et:minute increment="15"/>
+        </form:propertySet>
+        <form:label>Time Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_time_format" name="simpleArrayAttributesField_timeArrayAttr__datetime" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTimeFormat(context.stringValue) ?  true : [context.control.label] : true;</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_timeArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+      <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.simpleArrayAttributesField_uriArrayAttr">
+        <form:propertySet xsi:type="et:TextPropertySet">
+          <form:list>true</form:list>
+        </form:propertySet>
+        <form:label>URI Array Attr</form:label>
+        <form:hint></form:hint>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:validation generated="true" messageRef="resource.common.validation_pattern" name="simpleArrayAttributesField_uriArrayAttr__pattern" type="javascript" when="oncontrolchange" simple="true">
+          <form:script>if (typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined') {
+ bpm.forms.Util.checkRegExp(context.value, new RegExp(&quot;^([a-zA-Z0-9+.\\-]+):(//((([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:]|%[0-9A-F]{2})*)@)?(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=]|%[0-9A-F]{2})*)(:(\\d*))?(/([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?|(/?([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@]|%[0-9A-F]{2})+([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?)(\\?(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?(#(([a-zA-Z0-9\\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?$&quot;)) ? true : [context.control.label, 'URI'];
+} else {
+var regex = new RegExp(&quot;^([a-zA-Z0-9+.\-]+):(//((([a-zA-Z0-9\-._~!$&amp;'()*+,;=:]|%[0-9A-F]{2})*)@)?(([a-zA-Z0-9\-._~!$&amp;'()*+,;=]|%[0-9A-F]{2})*)(:(\d*))?(/([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?|(/?([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@]|%[0-9A-F]{2})+([a-zA-Z0-9\-._~!$&amp;'()*+,;=:@/]|%[0-9A-F]{2})*)?)(\?(([a-zA-Z0-9\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?(#(([a-zA-Z0-9\-._~!$&amp;'()*+,;=:/?@]|%[0-9A-F]{2})*))?$&quot;);
+regex.test(context.value);
+}</form:script>
+        </form:validation>
+        <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="simpleArrayAttributesField_uriArrayAttr__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+          <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+        </form:validation>
+        <form:required>false</form:required>
+      </form:control>
+    </form:pane>
+    <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.complexArrayField" paneType="com.tibco.forms.panes.horizontal">
+      <form:label>Complex Array Field</form:label>
+      <form:hint></form:hint>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:defaults>
+        <form:labelProperties position="top"/>
+      </form:defaults>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class AceDataTypes.bom#_b9jHQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexParent?" readOnly="true" name="pane.complexArrayField__master" paneType="com.tibco.forms.panes.grid">
+        <form:propertySet xsi:type="et:GridPanePropertySet">
+          <et:showNavigator>false</et:showNavigator>
+          <et:supportAddOperation>true</et:supportAddOperation>
+          <et:supportDeleteOperation>true</et:supportDeleteOperation>
+          <et:addOperationLabelRef>resource.common.pane_new_label</et:addOperationLabelRef>
+          <et:deleteOperationLabelRef>resource.common.pane_delete_label</et:deleteOperationLabelRef>
+          <et:sortable>true</et:sortable>
+        </form:propertySet>
+        <form:label>Master</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:defaults>
+          <form:labelProperties position="top"/>
+        </form:defaults>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_parentAttr1__master">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Parent Attr 1</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_parentAttr1__master__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_parentAttr2__master">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Parent Attr 2</form:label>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_parentAttr2__master__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" name="pane.complexArrayField__master__add_delete" paneType="com.tibco.forms.panes.vertical">
+        <form:visible>true</form:visible>
+        <form:enabled>true</form:enabled>
+        <form:labelProperties visible="false"/>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexArrayField__master__add">
+          <form:propertySet xsi:type="et:ButtonPropertySet"/>
+          <form:label valueRef="resource.common.pane_new_label"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexArrayField__master__delete">
+          <form:propertySet xsi:type="et:ButtonPropertySet"/>
+          <form:label valueRef="resource.common.pane_delete_label"/>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:required>false</form:required>
+        </form:control>
+      </form:pane>
+      <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_b9jHQEWsEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexParent?" name="pane.complexArrayField__detail" paneType="com.tibco.forms.panes.vertical">
+        <form:label>Detail</form:label>
+        <form:visible>true</form:visible>
+        <form:enabled>false</form:enabled>
+        <form:defaults>
+          <form:labelProperties position="left"/>
+        </form:defaults>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_parentAttr1">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Parent Attr 1</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_parentAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_parentAttr2">
+          <form:propertySet xsi:type="et:TextPropertySet">
+            <et:displayLength>40</et:displayLength>
+            <et:maxLength>50</et:maxLength>
+          </form:propertySet>
+          <form:label>Parent Attr 2</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_parentAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+            <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+          </form:validation>
+          <form:required>false</form:required>
+        </form:control>
+        <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.vertical" dataType="uml:Class AceDataTypes.bom#_EH3uwEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexChild?" name="pane.complexArrayField_child" paneType="com.tibco.forms.panes.vertical">
+          <form:label>Child</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_child_childAttr1">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Child Attr 1</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_child_childAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+              <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_child_childAttr2">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Child Attr 2</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_child_childAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+              <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.grid" dataType="uml:Class AceDataTypes.bom#_EH3uwEWwEem0nIBUfIpM8w?p=AceDataTypesTest-BOM%26s=Business%20Objects%26t=uml%3aClass%26q=com.tibco.ace.datatypes%26n=ComplexChild?" name="pane.complexArrayField_children" paneType="com.tibco.forms.panes.grid">
+          <form:propertySet xsi:type="et:GridPanePropertySet">
+            <et:showNavigator>false</et:showNavigator>
+            <et:supportAddOperation>true</et:supportAddOperation>
+            <et:supportDeleteOperation>true</et:supportDeleteOperation>
+            <et:addOperationLabelRef>resource.common.pane_new_label</et:addOperationLabelRef>
+            <et:deleteOperationLabelRef>resource.common.pane_delete_label</et:deleteOperationLabelRef>
+            <et:editable>true</et:editable>
+            <et:sortable>true</et:sortable>
+            <et:rowLabel>{0}</et:rowLabel>
+          </form:propertySet>
+          <form:label>Children</form:label>
+          <form:hint></form:hint>
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:validation generated="true" messageRef="resource.common.validation_multiplicity_minimum" name="complexArrayField_children__multiplicity" type="javascript" when="onformsubmit" list="true" simple="true">
+            <form:script>typeof bpm.forms.Util.checkMultiplicity != 'undefined' ? bpm.forms.Util.checkMultiplicity(context.value, 0, 2147483647) ?  true : [context.control.label, '0'] : true;</form:script>
+          </form:validation>
+          <form:defaults>
+            <form:labelProperties position="top"/>
+          </form:defaults>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_children_childAttr1">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Child Attr 1</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_children_childAttr1__length" type="javascript" when="oncontrolchange" simple="true">
+              <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.textinput" controlType="com.tibco.forms.controls.textinput" name="control.complexArrayField_children_childAttr2">
+            <form:propertySet xsi:type="et:TextPropertySet">
+              <et:displayLength>40</et:displayLength>
+              <et:maxLength>50</et:maxLength>
+            </form:propertySet>
+            <form:label>Child Attr 2</form:label>
+            <form:hint></form:hint>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:validation generated="true" messageRef="resource.common.validation_text_length" name="complexArrayField_children_childAttr2__length" type="javascript" when="oncontrolchange" simple="true">
+              <form:script>typeof context.stringValue != 'undefined' &amp;&amp; typeof bpm.forms.Util != 'undefined' ? bpm.forms.Util.checkTextLength(context.stringValue, 50) ? true : [context.control.label, '50'] : context.value.length &lt;= 50;</form:script>
+            </form:validation>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+        <form:pane generated="true" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.complexArrayField_children__add_delete" paneType="com.tibco.forms.panes.horizontal">
+          <form:visible>true</form:visible>
+          <form:enabled>true</form:enabled>
+          <form:labelProperties visible="false"/>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexArrayField_children__add">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label valueRef="resource.common.pane_new_label"/>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+          <form:control generated="true" elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.complexArrayField_children__delete">
+            <form:propertySet xsi:type="et:ButtonPropertySet"/>
+            <form:label valueRef="resource.common.pane_delete_label"/>
+            <form:visible>true</form:visible>
+            <form:enabled>true</form:enabled>
+            <form:required>false</form:required>
+          </form:control>
+        </form:pane>
+      </form:pane>
+    </form:pane>
+  </form:pane>
+  <form:pane gwt:toolbar="true" styleClass="toolbar" elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.horizontal" name="pane.toolbar" paneType="com.tibco.forms.panes.horizontal">
+    <form:label>Toolbar</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.cancel">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Cancel</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.close">
+      <form:propertySet xsi:type="et:ButtonPropertySet"/>
+      <form:label>Close</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+    <form:control elementType="form:ControlType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.controls.button" controlType="com.tibco.forms.controls.button" name="control.submit">
+      <form:propertySet xsi:type="et:ButtonPropertySet">
+        <et:type>primary</et:type>
+      </form:propertySet>
+      <form:label>Submit</form:label>
+      <form:visible>true</form:visible>
+      <form:enabled>true</form:enabled>
+      <form:required>false</form:required>
+    </form:control>
+  </form:pane>
+  <form:pane elementType="form:PaneType pathmap://FORMS_UI_ELEMENT_TYPES/UIElementTypes.library.elemtypes#com.tibco.forms.panes.messages" name="pane.messages" paneType="com.tibco.forms.panes.messages">
+    <form:propertySet xsi:type="et:MessagesPanePropertySet"/>
+    <form:label>Invalid Entries</form:label>
+    <form:visible>true</form:visible>
+    <form:enabled>true</form:enabled>
+    <form:labelProperties visible="false"/>
+  </form:pane>
+</form:form>

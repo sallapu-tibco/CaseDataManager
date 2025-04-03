@@ -1,0 +1,1 @@
+{"dataProjectDependencies":[{"projectId":"com.example.testcasedatascripting","version":"[1.0.0,2.0.0)"},{"projectId":"com.example.testdata_outside","version":"[1.0.0,2.0.0)"}]}
